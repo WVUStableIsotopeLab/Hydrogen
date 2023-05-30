@@ -1,0 +1,1712 @@
+Input: 
+     > data = thermo.tdat verify
+     > temperature = 9.8 C
+     > pressure = 1 MPa
+     > decouple CH3COO-
+     > decouple CH4(aq)
+     > decouple MnO4-
+     > decouple MnO4--
+     > decouple N2(aq)
+     > decouple NH4+
+     > decouple NO2-
+     > diagram Fe++
+     > diagram x = Fe++
+     > pH  = 7.2
+     > swap Fe+++ for O2(aq)
+     > diagram y = Fe+++
+     > activity Ca++ = .002262
+     > activity Cl- = .0007335
+     > activity HCO3- = .0119807
+     > activity K+ = 3.611e-5
+     > activity Mg++ = .0001527
+     > activity Na+ = .0006522
+     > activity NO3- = 5.421e-6
+     > activity SiO2(aq) = .0004683
+     > activity SO4-- = .0005128
+     > activity Al+++ = 1e-9
+     > x-axis from -20 to 2 increment 5
+     > y-axis from -32 to -5 increment 5
+     > line labels size = 12
+
+Output:
+
+ Temperature is 9.8 C;  Pressure is 10 bars
+
+ log a Fe++ plotted on the X axis from -20 to 2
+ log a Fe+++ (swapped for O2(aq)) plotted on the Y axis from -32 to -5
+
+ Stability limits of water
+
+  Reaction                                            Log K      Equation
+ ------------------------------------------------------------------------------------------------------
+  H2(g)  + 2 Fe+++  = 2 Fe++  + 2 H+                  26.81      Y =1        *X - 21.45
+  O2(g)  + 4 Fe++  + 4 H+  = 2 H2O  + 4 Fe+++         34.89      Y =1        *X + 1.945
+ ------------------------------------------------------------------------------------------------------
+
+ Diagram for Fe++
+
+  Basis species                    Activity/Fugacity
+ ------------------------------------------------------------------------
+  Fe++                                 -on X-axis-     (main species)
+  H2O                                  1               (solvent)
+  H+                                   6.31e-8         
+  Fe+++                                -on Y-axis-     
+  Ca++                                 .002262         
+  Cl-                                  .0007335        
+  HCO3-                                .01198          
+  K+                                   3.611e-5        
+  Mg++                                 .0001527        
+  Na+                                  .0006522        
+  NO3-                                 5.421e-6        
+  SiO2(aq)                             .0004683        
+  SO4--                                .0005128        
+  Al+++                                1e-12           
+ ------------------------------------------------------------------------
+
+ Species and minerals in main system
+
+                                 Activity    Reaction                                                        Log K
+ ---------------------------------------------------------------------------------------------------------------------
+  Fe++                            X-axis     Fe++  = Fe++                                                     0.0000
+  (O-phth)--                      X/30       (O-phth)--  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 36 H+  + 8 HC   290.8899
+                                             O3-                                                         
+  H2(aq)                          X/2        H2(aq)  + 2 Fe+++  = 2 Fe++  + 2 H+                             29.8760
+  HS-                             X/8        HS-  + 4 H2O  + 8 Fe+++  = 8 Fe++  + 9 H+  + SO4--              71.1823
+  Al(O-phth)+                     X/30       Al(O-phth)+  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 36 H+  + 8 H   286.1115
+                                             CO3-  + Al+++                                               
+  Al(O-phth)2-                    X/60       Al(O-phth)2-  + 40 H2O  + 60 Fe+++  = 60 Fe++  + 72 H+  + 16   573.3430
+                                              HCO3-  + Al+++                                             
+  Ca(O-phth)                      X/30       Ca(O-phth)  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 36 H+  + Ca++   288.4915
+                                               + 8 HCO3-                                                 
+  Fe(OH)2                         X-axis     Fe(OH)2  + 2 H+  = Fe++  + 2 H2O                                22.5617
+  Fe(OH)3-                        X-axis     Fe(OH)3-  + 3 H+  = Fe++  + 3 H2O                               35.9034
+  FeCl+                           X-axis     FeCl+  = Fe++  + Cl-                                            -0.0994
+  FeCl2                           X-axis     FeCl2  = Fe++  + 2 Cl-                                           0.1759
+  FeCO3                           X-axis     FeCO3  + H+  = Fe++  + HCO3-                                     6.3952
+  FeHCO3+                         X-axis     FeHCO3+  = Fe++  + HCO3-                                        -1.4743
+  FeOH+                           X-axis     FeOH+  + H+  = Fe++  + H2O                                      10.5617
+  FeSO4                           X-axis     FeSO4  = Fe++  + SO4--                                          -2.1949
+  H(O-phth)-                      X/30       H(O-phth)-  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 37 H+  + 8 HC   285.4804
+                                             O3-                                                         
+  H2(O-phth)                      X/30       H2(O-phth)  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 38 H+  + 8 HC   282.6214
+                                             O3-                                                         
+  H2S(aq)                         X/8        H2S(aq)  + 4 H2O  + 8 Fe+++  = 8 Fe++  + 10 H+  + SO4--         63.8322
+  Na(O-phth)-                     X/30       Na(O-phth)-  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 36 H+  + 8 H   290.2111
+                                             CO3-  + Na+                                                 
+  S--                             X/8        S--  + 4 H2O  + 8 Fe+++  = 8 Fe++  + 8 H+  + SO4--              85.5548
+  S2--                            X/14       S2--  + 8 H2O  + 14 Fe+++  = 14 Fe++  + 16 H+  + 2 SO4--       126.9946
+  S3--                            X/20       S3--  + 12 H2O  + 20 Fe+++  = 20 Fe++  + 24 H+  + 3 SO4--      168.9187
+  S4--                            X/26       S4--  + 16 H2O  + 26 Fe+++  = 26 Fe++  + 32 H+  + 4 SO4--      208.3353
+  S5--                            X/32       S5--  + 20 H2O  + 32 Fe+++  = 32 Fe++  + 40 H+  + 5 SO4--      250.6253
+  S6--                            X/38       S6--  + 24 H2O  + 38 Fe+++  = 38 Fe++  + 48 H+  + 6 SO4--      293.2409
+  Annite                          1          Annite  + 10 H+  = 3 Fe++  + 6 H2O  + K+  + 3 SiO2(aq)  + Al    32.1711
+                                             +++                                                         
+  Chamosite-7A                    1          Chamosite-7A  + 10 H+  = 2 Fe++  + 7 H2O  + SiO2(aq)  + 2 Al    36.7335
+                                             +++                                                         
+  Cronstedt-7A                    1          Cronstedt-7A  + 10 H+  = 2 Fe++  + 7 H2O  + 2 Fe+++  + SiO2(    18.4601
+                                             aq)                                                         
+  Daphnite-14A                    1          Daphnite-14A  + 16 H+  = 5 Fe++  + 12 H2O  + 3 SiO2(aq)  + 2    57.5527
+                                              Al+++                                                      
+  Daphnite-7A                     1          Daphnite-7A  + 16 H+  = 5 Fe++  + 12 H2O  + 3 SiO2(aq)  + 2     61.0673
+                                             Al+++                                                       
+  Fayalite                        1          Fayalite  + 4 H+  = 2 Fe++  + 2 H2O  + SiO2(aq)                 20.4958
+  Fe(OH)2(ppd)                    1          Fe(OH)2(ppd)  + 2 H+  = Fe++  + 2 H2O                           13.6906
+  FeO(c)                          1          FeO(c)  + 2 H+  = Fe++  + H2O                                   12.2398
+  Ferrosilite                     1          Ferrosilite  + 2 H+  = Fe++  + H2O  + SiO2(aq)                   7.9745
+  FeSO4(c)                        1          FeSO4(c)  = Fe++  + SO4--                                        3.2877
+  Greenalite                      1          Greenalite  + 6 H+  = 3 Fe++  + 5 H2O  + 2 SiO2(aq)             24.1638
+  Hedenbergite                    1          Hedenbergite  + 4 H+  = Fe++  + 2 H2O  + Ca++  + 2 SiO2(aq)     20.6331
+  Hercynite                       1          Hercynite  + 8 H+  = Fe++  + 4 H2O  + 2 Al+++                   32.5813
+  Lawrencite                      1          Lawrencite  = Fe++  + 2 Cl-                                      9.8085
+  Magnetite                       1          Magnetite  + 8 H+  = Fe++  + 4 H2O  + 2 Fe+++                   12.3411
+  Melanterite                     1          Melanterite  = Fe++  + 7 H2O  + SO4--                           -2.5059
+  Minnesotaite                    1          Minnesotaite  + 6 H+  = 3 Fe++  + 4 H2O  + 4 SiO2(aq)           14.9416
+  O-phth acid(c)                  1          "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  = 30 Fe++  + 38 H+     280.8899
+                                             + 8 HCO3-                                                   
+  Pyrite                          1          Pyrite  + 8 H2O  + 14 Fe+++  = 15 Fe++  + 16 H+  + 2 SO4--      98.8094
+  Pyrrhotite                      1          Pyrrhotite  + 4 H2O  + 7.75 Fe+++  = 8.625 Fe++  + 8 H+  + S    63.3658
+                                             O4--                                                        
+  Ripidolit-14A                   1          Ripidolit-14A  + 16 H+  = 2 Fe++  + 12 H2O  + 3 Mg++  + 3 Si    67.2913
+                                             O2(aq)  + 2 Al+++                                           
+  Ripidolit-7A                    1          Ripidolit-7A  + 16 H+  = 2 Fe++  + 12 H2O  + 3 Mg++  + 3 SiO    70.7973
+                                             2(aq)  + 2 Al+++                                            
+  Siderite                        1          Siderite  + H+  = Fe++  + HCO3-                                  0.0652
+  Smectite-high-Fe-Mg             1          Smectite-high-Fe-Mg  + 8 H+  = .5 Fe++  + 5 H2O  + .2 Fe+++     19.8429
+                                              + .025 Ca++  + .2 K+  + 1.15 Mg++  + .1 Na+  + 3.5 SiO2(aq)  + 1.25 Al+++
+  Smectite-low-Fe-Mg              1          Smectite-low-Fe-Mg  + 7 H+  = .29 Fe++  + 4.5 H2O  + .16 Fe+    12.9225
+                                             ++  + .02 Ca++  + .2 K+  + .9 Mg++  + .15 Na+  + 3.75 SiO2(aq)  + 1.25 Al+++
+  Sulfur-Rhmb                     1          Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  = 6 Fe++  + 8 H+  + SO4--      42.4112
+  Troilite                        1          Troilite  + 4 H2O  + 8 Fe+++  = 9 Fe++  + 8 H+  + SO4--         67.4835
+  Wustite                         1          Wustite  + 2 H+  = .841 Fe++  + H2O  + .106 Fe+++               13.3406
+  H2(g)                           49.34      H2(g)  + 2 Fe+++  = 2 Fe++  + 2 H+                              26.8125
+  H2S(g)                          49.34      H2S(g)  + 4 H2O  + 8 Fe+++  = 8 Fe++  + 10 H+  + SO4--          63.1775
+  S2(g)                           49.34      S2(g)  + 8 H2O  + 12 Fe+++  = 12 Fe++  + 16 H+  + 2 SO4--       99.9339
+ ---------------------------------------------------------------------------------------------------------------------
+
+    No.     Line equation               Reaction
+ ------------------------------------------------------------------------------------------------------------------------
+      1     Y = -18.799 +   0.967*X     30 Fe++  + 36 H+  + 8 HCO3-  = (O-phth)--  + 20 H2O  + 30 Fe+++
+      2     Y = -21.987 +   0.500*X     2 Fe++  + 2 H+  = H2(aq)  + 2 Fe+++
+      3     Y = -17.296 +   0.875*X     8 Fe++  + 9 H+  + SO4--  = HS-  + 4 H2O  + 8 Fe+++
+      4     Y = -19.040 +   0.967*X     30 Fe++  + 36 H+  + 8 HCO3-  + Al+++  = Al(O-phth)+  + 20 H2O  + 30 Fe+++
+      5     Y = -18.878 +   0.983*X     60 Fe++  + 72 H+  + 16 HCO3-  + Al+++  = Al(O-phth)2-  + 40 H2O  + 60 Fe+++
+      6     Y = -18.808 +   0.967*X     30 Fe++  + 36 H+  + Ca++  + 8 HCO3-  = Ca(O-phth)  + 20 H2O  + 30 Fe+++
+      7        Reactants favored        Fe++  + 2 H2O  = Fe(OH)2  + 2 H+
+      8        Reactants favored        Fe++  + 3 H2O  = Fe(OH)3-  + 3 H+
+      9        Reactants favored        Fe++  + Cl-  = FeCl+
+     10        Reactants favored        Fe++  + 2 Cl-  = FeCl2
+     11        Reactants favored        Fe++  + HCO3-  = FeCO3  + H+
+     12        Reactants favored        Fe++  + HCO3-  = FeHCO3+
+     13        Reactants favored        Fe++  + H2O  = FeOH+  + H+
+     14        Reactants favored        Fe++  + SO4--  = FeSO4
+     15     Y = -18.859 +   0.967*X     30 Fe++  + 37 H+  + 8 HCO3-  = H(O-phth)-  + 20 H2O  + 30 Fe+++
+     16     Y = -19.004 +   0.967*X     30 Fe++  + 38 H+  + 8 HCO3-  = H2(O-phth)  + 20 H2O  + 30 Fe+++
+     17     Y = -17.277 +   0.875*X     8 Fe++  + 10 H+  + SO4--  = H2S(aq)  + 4 H2O  + 8 Fe+++
+     18     Y = -18.883 +   0.967*X     30 Fe++  + 36 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++
+     19     Y = -18.193 +   0.875*X     8 Fe++  + 8 H+  + SO4--  = S--  + 4 H2O  + 8 Fe+++
+     20     Y = -17.688 +   0.929*X     14 Fe++  + 16 H+  + 2 SO4--  = S2--  + 8 H2O  + 14 Fe+++
+     21     Y = -17.514 +   0.950*X     20 Fe++  + 24 H+  + 3 SO4--  = S3--  + 12 H2O  + 20 Fe+++
+     22     Y = -17.326 +   0.962*X     26 Fe++  + 32 H+  + 4 SO4--  = S4--  + 16 H2O  + 26 Fe+++
+     23     Y = -17.299 +   0.969*X     32 Fe++  + 40 H+  + 5 SO4--  = S5--  + 20 H2O  + 32 Fe+++
+     24     Y = -17.290 +   0.974*X     38 Fe++  + 48 H+  + 6 SO4--  = S6--  + 24 H2O  + 38 Fe+++
+     25     X =  -4.466                 3 Fe++  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 10 H+
+     26     X =  -3.969                 2 Fe++  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 10 H+
+     27     Y = -25.105 -   1.000*X     2 Fe++  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 10 H+
+     28     X =  -4.732                 5 Fe++  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 16 H+
+     29     X =  -4.029                 5 Fe++  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 16 H+
+     30     X =  -2.487                 2 Fe++  + 2 H2O  + SiO2(aq)  = Fayalite  + 4 H+
+     31     X =  -0.709                 Fe++  + 2 H2O  = Fe(OH)2(ppd)  + 2 H+
+     32     X =  -2.160                 Fe++  + H2O  = FeO(c)  + 2 H+
+     33     X =  -3.096                 Fe++  + H2O  + SiO2(aq)  = Ferrosilite  + 2 H+
+     34     X =   6.578                 Fe++  + SO4--  = FeSO4(c)
+     35     X =  -4.126                 3 Fe++  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+
+     36     X =   1.138                 Fe++  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+
+     37     X =  -1.019                 Fe++  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+
+     38     X =  16.078                 Fe++  + 2 Cl-  = Lawrencite
+     39     Y = -22.629 -   0.500*X     Fe++  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+
+     40     X =   0.784                 Fe++  + 7 H2O  + SO4--  = Melanterite
+     41     X =  -4.980                 3 Fe++  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+
+     42     Y = -18.995 +   1.000*X     30 Fe++  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++
+     43     Y = -15.756 +   1.071*X     15 Fe++  + 16 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++
+     44     Y = -16.033 +   1.113*X     8.625 Fe++  + 8 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++
+     45     X =  -1.236                 2 Fe++  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+
+     46     X =   0.517                 2 Fe++  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+
+     47     X =  -5.213                 Fe++  + HCO3-  = Siderite  + H+
+     48     Y = -27.211 -   2.500*X     Fe++  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+
+     49     Y = -32.114 -   1.812*X     Fe++  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+
+     50     Y = -17.217 +   1.000*X     6 Fe++  + 8 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++
+     51     Y = -16.047 +   1.125*X     9 Fe++  + 8 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++
+     52     Y =  -9.994 -   7.934*X     Fe++  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+
+     53     Y = -21.453 +   1.000*X     2 Fe++  + 2 H+  = H2(g)  + 2 Fe+++
+     54     Y = -17.520 +   1.000*X     8 Fe++  + 10 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++
+     55     Y = -18.617 +   1.000*X     12 Fe++  + 16 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++
+     56     X =  -6.831                 (O-phth)--  + 20 H2O  = 15 H2(aq)  + 6 H+  + 8 HCO3-
+     57     X =  16.400                 (O-phth)--  + 5 H2O  + 3.75 SO4--  = 3.75 HS-  + 2.25 H+  + 8 HCO3-
+     58        Reactants favored        (O-phth)--  + Al+++  = Al(O-phth)+
+     59     X =   4.739                 2 (O-phth)--  + Al+++  = Al(O-phth)2-
+     60        Reactants favored        (O-phth)--  + Ca++  = Ca(O-phth)
+     61     Y = -10.638 +   0.967*X     (O-phth)--  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2  + 96 H+  + 8 HCO3-
+     62     Y =  -4.496 +   0.967*X     (O-phth)--  + 110 H2O  + 30 Fe+++  = 30 Fe(OH)3-  + 126 H+  + 8 HCO3-
+     63     Y = -15.764 +   0.967*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 30 Cl-  = 30 FeCl+  + 36 H+  + 8 HCO3-
+     64     Y = -12.354 +   0.967*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 FeCl2  + 36 H+  + 8 HCO3-
+     65     Y = -17.683 +   0.967*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeCO3  + 66 H+
+     66     Y = -18.352 +   0.967*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeHCO3+  + 36 H+
+     67     Y = -15.438 +   0.967*X     (O-phth)--  + 50 H2O  + 30 Fe+++  = 30 FeOH+  + 66 H+  + 8 HCO3-
+     68     Y = -17.704 +   0.967*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4  + 36 H+  + 8 HCO3-
+     69        Reactants favored        (O-phth)--  + H+  = H(O-phth)-
+     70        Reactants favored        (O-phth)--  + 2 H+  = H2(O-phth)
+     71     X =  16.605                 (O-phth)--  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(aq)  + 8 HCO3-
+     72        Reactants favored        (O-phth)--  + Na+  = Na(O-phth)-
+     73     X =   6.619                 (O-phth)--  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 6 H+  + 8 HCO3-
+     74     X =  29.183                 (O-phth)--  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 1.714 H+  + 8 HCO3-
+     75     X =  77.107                 (O-phth)--  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + 8 HCO3-
+     76     X = 287.299                 (O-phth)--  + 1.538 H2O  + .9231 H+  + 4.615 SO4--  = 1.154 S4--  + 8 HCO3-
+     77     X =-720.203                 1.067 (O-phth)--  + 1.333 H2O  + 1.6 H+  + 5 SO4--  = S5--  + 8.533 HCO3-
+     78     X =-215.173                 1.267 (O-phth)--  + 1.333 H2O  + 2.4 H+  + 6 SO4--  = S6--  + 10.13 HCO3-
+     79     Y = -23.266 -   0.033*X     (O-phth)--  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++  = 10 Annite  + 136 H+  + 8 HCO3-
+     80     Y = -22.768 -   0.033*X     (O-phth)--  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++  = 15 Chamosite-7A  + 186 H+  + 8 HCO3-
+     81     Y = -21.952 -   0.017*X     (O-phth)--  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 186 H+  + 8 HCO3-
+     82     Y = -23.531 -   0.033*X     (O-phth)--  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-14A  + 132 H+  + 8 HCO3-
+     83     Y = -22.828 -   0.033*X     (O-phth)--  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-7A  + 132 H+  + 8 HCO3-
+     84     Y = -21.287 -   0.033*X     (O-phth)--  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 96 H+  + 8 HCO3-
+     85     Y = -19.509 -   0.033*X     (O-phth)--  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 96 H+  + 8 HCO3-
+     86     Y = -20.960 -   0.033*X     (O-phth)--  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 96 H+  + 8 HCO3-
+     87     Y = -21.896 -   0.033*X     (O-phth)--  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 96 H+  + 8 HCO3-
+     88     Y = -12.222 -   0.033*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 36 H+  + 8 HCO3-
+     89     Y = -22.925 -   0.033*X     (O-phth)--  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 96 H+  + 8 HCO3-
+     90     Y = -17.662 -   0.033*X     (O-phth)--  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 156 H+  + 8 HCO3-
+     91     Y = -19.818 -   0.033*X     (O-phth)--  + 140 H2O  + 30 Fe+++  + 60 Al+++  = 30 Hercynite  + 276 H+  + 8 HCO3-
+     92     Y =  -2.722 -   0.033*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 36 H+  + 8 HCO3-
+     93     Y = -21.353 -   0.011*X     (O-phth)--  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 276 H+  + 8 HCO3-
+     94     Y = -18.015 -   0.033*X     (O-phth)--  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 36 H+  + 8 HCO3-
+     95     Y = -23.780 -   0.033*X     (O-phth)--  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 96 H+  + 8 HCO3-
+     96     X =   5.877                 (O-phth)--  + 2 H+  = "O-phth acid(c)"
+     97     Y = -61.403 -   0.500*X     (O-phth)--  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 4 H+  + 8 HCO3-
+     98     Y = -43.303 -   0.329*X     (O-phth)--  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 8.174 H+  + 8 HCO3-
+     99     Y = -20.035 -   0.033*X     (O-phth)--  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 276 H+  + 8 HCO3-
+    100     Y = -18.282 -   0.033*X     (O-phth)--  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 276 H+  + 8 HCO3-
+    101     Y = -24.013 -   0.033*X     (O-phth)--  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 66 H+
+    102     Y = -21.203 -   0.024*X     (O-phth)--  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 516 H+  + 8 HCO3-
+    103     Y = -23.533 -   0.021*X     (O-phth)--  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 760.1 H+  + 8 HCO3-
+    104     X = -47.479                 (O-phth)--  + 4 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-
+    105     Y = -40.822 -   0.300*X     (O-phth)--  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 9.333 H+  + 8 HCO3-
+    106     Y = -17.814 -   0.030*X     (O-phth)--  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 107.3 H+  + 8 HCO3-
+    107     X =  79.601                 (O-phth)--  + 20 H2O  = 15 H2(g)  + 6 H+  + 8 HCO3-
+    108     X = -38.382                 (O-phth)--  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(g)  + 8 HCO3-
+    109     X =  -5.467                 (O-phth)--  + 4 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-
+    110     X = -12.510                 4 H2(aq)  + H+  + SO4--  = HS-  + 4 H2O
+    111     X =  -6.316                 15 H2(aq)  + 6 H+  + 8 HCO3-  + Al+++  = Al(O-phth)+  + 20 H2O
+    112     X =  -6.432                 30 H2(aq)  + 12 H+  + 16 HCO3-  + Al+++  = Al(O-phth)2-  + 40 H2O
+    113     X =  -6.814                 15 H2(aq)  + 6 H+  + Ca++  + 8 HCO3-  = Ca(O-phth)  + 20 H2O
+    114     Y = -13.826 +   0.500*X     H2(aq)  + 4 H2O  + 2 Fe+++  = 2 Fe(OH)2  + 6 H+
+    115     Y =  -7.684 +   0.500*X     H2(aq)  + 6 H2O  + 2 Fe+++  = 2 Fe(OH)3-  + 8 H+
+    116     Y = -18.952 +   0.500*X     H2(aq)  + 2 Fe+++  + 2 Cl-  = 2 FeCl+  + 2 H+
+    117     Y = -15.542 +   0.500*X     H2(aq)  + 2 Fe+++  + 4 Cl-  = 2 FeCl2  + 2 H+
+    118     Y = -20.871 +   0.500*X     H2(aq)  + 2 Fe+++  + 2 HCO3-  = 2 FeCO3  + 4 H+
+    119     Y = -21.540 +   0.500*X     H2(aq)  + 2 Fe+++  + 2 HCO3-  = 2 FeHCO3+  + 2 H+
+    120     Y = -18.626 +   0.500*X     H2(aq)  + 2 H2O  + 2 Fe+++  = 2 FeOH+  + 4 H+
+    121     Y = -20.892 +   0.500*X     H2(aq)  + 2 Fe+++  + 2 SO4--  = 2 FeSO4  + 2 H+
+    122     X =  -6.703                 15 H2(aq)  + 7 H+  + 8 HCO3-  = H(O-phth)-  + 20 H2O
+    123     X =  -6.393                 15 H2(aq)  + 8 H+  + 8 HCO3-  = H2(O-phth)  + 20 H2O
+    124     X = -12.560                 4 H2(aq)  + 2 H+  + SO4--  = H2S(aq)  + 4 H2O
+    125     X =  -6.652                 15 H2(aq)  + 6 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 20 H2O
+    126     X = -10.119                 4 H2(aq)  + SO4--  = S--  + 4 H2O
+    127     X = -10.033                 7 H2(aq)  + 2 H+  + 2 SO4--  = S2--  + 8 H2O
+    128     X =  -9.940                 10 H2(aq)  + 4 H+  + 3 SO4--  = S3--  + 12 H2O
+    129     X = -10.099                 13 H2(aq)  + 6 H+  + 4 SO4--  = S4--  + 16 H2O
+    130     X = -10.002                 16 H2(aq)  + 8 H+  + 5 SO4--  = S5--  + 20 H2O
+    131     X =  -9.918                 19 H2(aq)  + 10 H+  + 6 SO4--  = S6--  + 24 H2O
+    132     Y = -26.454 -   0.500*X     1.5 H2(aq)  + 6 H2O  + 3 Fe+++  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 13 H+
+    133     Y = -25.956 -   0.500*X     H2(aq)  + 7 H2O  + 2 Fe+++  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 12 H+
+    134     Y = -23.546 -   0.250*X     H2(aq)  + 7 H2O  + 4 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 12 H+
+    135     Y = -26.719 -   0.500*X     2.5 H2(aq)  + 12 H2O  + 5 Fe+++  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 21 H+
+    136     Y = -26.016 -   0.500*X     2.5 H2(aq)  + 12 H2O  + 5 Fe+++  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 21 H+
+    137     Y = -24.475 -   0.500*X     H2(aq)  + 2 H2O  + 2 Fe+++  + SiO2(aq)  = Fayalite  + 6 H+
+    138     Y = -22.697 -   0.500*X     H2(aq)  + 4 H2O  + 2 Fe+++  = 2 Fe(OH)2(ppd)  + 6 H+
+    139     Y = -24.148 -   0.500*X     H2(aq)  + 2 H2O  + 2 Fe+++  = 2 FeO(c)  + 6 H+
+    140     Y = -25.083 -   0.500*X     H2(aq)  + 2 H2O  + 2 Fe+++  + 2 SiO2(aq)  = 2 Ferrosilite  + 6 H+
+    141     Y = -15.410 -   0.500*X     H2(aq)  + 2 Fe+++  + 2 SO4--  = 2 FeSO4(c)  + 2 H+
+    142     Y = -26.113 -   0.500*X     1.5 H2(aq)  + 5 H2O  + 3 Fe+++  + 2 SiO2(aq)  = Greenalite  + 9 H+
+    143     Y = -20.850 -   0.500*X     H2(aq)  + 4 H2O  + 2 Fe+++  + 2 Ca++  + 4 SiO2(aq)  = 2 Hedenbergite  + 10 H+
+    144     Y = -23.006 -   0.500*X     H2(aq)  + 8 H2O  + 2 Fe+++  + 4 Al+++  = 2 Hercynite  + 18 H+
+    145     Y =  -5.910 -   0.500*X     H2(aq)  + 2 Fe+++  + 4 Cl-  = 2 Lawrencite  + 2 H+
+    146     Y = -22.415 -   0.167*X     H2(aq)  + 8 H2O  + 6 Fe+++  = 2 Magnetite  + 18 H+
+    147     Y = -21.203 -   0.500*X     H2(aq)  + 14 H2O  + 2 Fe+++  + 2 SO4--  = 2 Melanterite  + 2 H+
+    148     Y = -26.968 -   0.500*X     1.5 H2(aq)  + 4 H2O  + 3 Fe+++  + 4 SiO2(aq)  = Minnesotaite  + 9 H+
+    149     X =  -5.984                 15 H2(aq)  + 8 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O
+    150     Y =-109.222 -   7.500*X     7.5 H2(aq)  + H+  + Fe+++  + 2 SO4--  = Pyrite  + 8 H2O
+    151     Y = -74.727 -   4.929*X     4.313 H2(aq)  + .875 Fe+++  + SO4--  = Pyrrhotite  + 4 H2O  + .625 H+
+    152     Y = -23.223 -   0.500*X     H2(aq)  + 12 H2O  + 2 Fe+++  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 18 H+
+    153     Y = -21.470 -   0.500*X     H2(aq)  + 12 H2O  + 2 Fe+++  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 18 H+
+    154     Y = -27.201 -   0.500*X     H2(aq)  + 2 Fe+++  + 2 HCO3-  = 2 Siderite  + 4 H+
+    155     Y = -23.480 -   0.357*X     H2(aq)  + 20 H2O  + 2.8 Fe+++  + .1 Ca++  + .8 K+  + 4.6 Mg++  + .4 Na+  + 14 SiO2(aq)  + 5 Al+++  = 4 Smectite-high-Fe-Mg  + 34 H+
+    156     Y = -25.588 -   0.322*X     H2(aq)  + 31.03 H2O  + 3.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 6.207 Mg++  + 1.034 Na+  + 25.86 SiO2(aq)  + 8.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 50.28 H+
+    157     X =  -9.541                 3 H2(aq)  + 2 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O
+    158     Y = -69.514 -   4.500*X     4.5 H2(aq)  + Fe+++  + SO4--  = Troilite  + 4 H2O  + H+
+    159     Y = -20.645 -   0.444*X     H2(aq)  + 2.378 H2O  + 2.252 Fe+++  = 2.378 Wustite  + 6.756 H+
+    160     X =  -1.069                 H2(aq)  = H2(g)
+    161     X =  -8.935                 4 H2(aq)  + 2 H+  + SO4--  = H2S(g)  + 4 H2O
+    162     X =  -6.740                 6 H2(aq)  + 4 H+  + 2 SO4--  = S2(g)  + 8 H2O
+    163     X =  19.026                 3.75 HS-  + 2.25 H+  + 8 HCO3-  + Al+++  = Al(O-phth)+  + 5 H2O  + 3.75 SO4--
+    164     X =  14.606                 7.5 HS-  + 4.5 H+  + 16 HCO3-  + Al+++  = Al(O-phth)2-  + 10 H2O  + 7.5 SO4--
+    165     X =  16.490                 3.75 HS-  + 2.25 H+  + Ca++  + 8 HCO3-  = Ca(O-phth)  + 5 H2O  + 3.75 SO4--
+    166     Y =  -9.134 +   0.875*X     HS-  + 20 H2O  + 8 Fe+++  = 8 Fe(OH)2  + 25 H+  + SO4--
+    167     Y =  -2.993 +   0.875*X     HS-  + 28 H2O  + 8 Fe+++  = 8 Fe(OH)3-  + 33 H+  + SO4--
+    168     Y = -14.261 +   0.875*X     HS-  + 4 H2O  + 8 Fe+++  + 8 Cl-  = 8 FeCl+  + 9 H+  + SO4--
+    169     Y = -10.851 +   0.875*X     HS-  + 4 H2O  + 8 Fe+++  + 16 Cl-  = 8 FeCl2  + 9 H+  + SO4--
+    170     Y = -16.179 +   0.875*X     HS-  + 4 H2O  + 8 Fe+++  + 8 HCO3-  = 8 FeCO3  + 17 H+  + SO4--
+    171     Y = -16.849 +   0.875*X     HS-  + 4 H2O  + 8 Fe+++  + 8 HCO3-  = 8 FeHCO3+  + 9 H+  + SO4--
+    172     Y = -13.934 +   0.875*X     HS-  + 12 H2O  + 8 Fe+++  = 8 FeOH+  + 17 H+  + SO4--
+    173     Y = -16.201 +   0.875*X     HS-  + 4 H2O  + 8 Fe+++  + 7 SO4--  = 8 FeSO4  + 9 H+
+    174     X =  17.051                 3.75 HS-  + 3.25 H+  + 8 HCO3-  = H(O-phth)-  + 5 H2O  + 3.75 SO4--
+    175     X =  18.630                 3.75 HS-  + 4.25 H+  + 8 HCO3-  = H2(O-phth)  + 5 H2O  + 3.75 SO4--
+    176        Products  favored        HS-  + H+  = H2S(aq)
+    177     X =  17.312                 3.75 HS-  + 2.25 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 5 H2O  + 3.75 SO4--
+    178        Reactants favored        HS-  = S--  + H+
+    179     X =   7.310                 1.75 HS-  + .25 H+  + .25 SO4--  = S2--  + H2O
+    180     X =   2.910                 2.5 HS-  + 1.5 H+  + .5 SO4--  = S3--  + 2 H2O
+    181     X =   0.347                 3.25 HS-  + 2.75 H+  + .75 SO4--  = S4--  + 3 H2O
+    182     X =   0.031                 4 HS-  + 4 H+  + SO4--  = S5--  + 4 H2O
+    183     X =  -0.067                 4.75 HS-  + 5.25 H+  + 1.25 SO4--  = S6--  + 5 H2O
+    184     Y = -21.762 -   0.125*X     HS-  + 20 H2O  + 8 Fe+++  + 2.667 K+  + 8 SiO2(aq)  + 2.667 Al+++  = 2.667 Annite  + 35.67 H+  + SO4--
+    185     Y = -21.265 -   0.125*X     HS-  + 32 H2O  + 8 Fe+++  + 4 SiO2(aq)  + 8 Al+++  = 4 Chamosite-7A  + 49 H+  + SO4--
+    186     Y = -21.201 -   0.062*X     HS-  + 32 H2O  + 16 Fe+++  + 4 SiO2(aq)  = 4 Cronstedt-7A  + 49 H+  + SO4--
+    187     Y = -22.028 -   0.125*X     HS-  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-14A  + 34.6 H+  + SO4--
+    188     Y = -21.325 -   0.125*X     HS-  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-7A  + 34.6 H+  + SO4--
+    189     Y = -19.784 -   0.125*X     HS-  + 12 H2O  + 8 Fe+++  + 4 SiO2(aq)  = 4 Fayalite  + 25 H+  + SO4--
+    190     Y = -18.006 -   0.125*X     HS-  + 20 H2O  + 8 Fe+++  = 8 Fe(OH)2(ppd)  + 25 H+  + SO4--
+    191     Y = -19.456 -   0.125*X     HS-  + 12 H2O  + 8 Fe+++  = 8 FeO(c)  + 25 H+  + SO4--
+    192     Y = -20.392 -   0.125*X     HS-  + 12 H2O  + 8 Fe+++  + 8 SiO2(aq)  = 8 Ferrosilite  + 25 H+  + SO4--
+    193     Y = -10.718 -   0.125*X     HS-  + 4 H2O  + 8 Fe+++  + 7 SO4--  = 8 FeSO4(c)  + 9 H+
+    194     Y = -21.422 -   0.125*X     HS-  + 17.33 H2O  + 8 Fe+++  + 5.333 SiO2(aq)  = 2.667 Greenalite  + 25 H+  + SO4--
+    195     Y = -16.159 -   0.125*X     HS-  + 20 H2O  + 8 Fe+++  + 8 Ca++  + 16 SiO2(aq)  = 8 Hedenbergite  + 41 H+  + SO4--
+    196     Y = -18.315 -   0.125*X     HS-  + 36 H2O  + 8 Fe+++  + 16 Al+++  = 8 Hercynite  + 73 H+  + SO4--
+    197     Y =  -1.218 -   0.125*X     HS-  + 4 H2O  + 8 Fe+++  + 16 Cl-  = 8 Lawrencite  + 9 H+  + SO4--
+    198     Y = -20.852 -   0.042*X     HS-  + 36 H2O  + 24 Fe+++  = 8 Magnetite  + 73 H+  + SO4--
+    199     Y = -16.512 -   0.125*X     HS-  + 60 H2O  + 8 Fe+++  + 7 SO4--  = 8 Melanterite  + 9 H+
+    200     Y = -22.276 -   0.125*X     HS-  + 14.67 H2O  + 8 Fe+++  + 10.67 SiO2(aq)  = 2.667 Minnesotaite  + 25 H+  + SO4--
+    201     X =  13.594                 3.75 HS-  + 4.25 H+  + 8 HCO3-  = "O-phth acid(c)"  + 5 H2O  + 3.75 SO4--
+    202     Y = -38.853 -   1.875*X     1.875 HS-  + Fe+++  + .125 SO4--  = Pyrite  + .5 H2O  + .875 H+
+    203     Y = -28.484 -   1.232*X     1.078 HS-  + .3125 H2O  + .875 Fe+++  = Pyrrhotite  + 1.703 H+  + .07813 SO4--
+    204     Y = -18.532 -   0.125*X     HS-  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-14A  + 73 H+  + SO4--
+    205     Y = -16.779 -   0.125*X     HS-  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-7A  + 73 H+  + SO4--
+    206     Y = -22.509 -   0.125*X     HS-  + 4 H2O  + 8 Fe+++  + 8 HCO3-  = 8 Siderite  + 17 H+  + SO4--
+    207     Y = -20.129 -   0.089*X     HS-  + 84 H2O  + 11.2 Fe+++  + .4 Ca++  + 3.2 K+  + 18.4 Mg++  + 1.6 Na+  + 56 SiO2(aq)  + 20 Al+++  = 16 Smectite-high-Fe-Mg  + 137 H+  + SO4--
+    208     Y = -22.565 -   0.081*X     HS-  + 128.1 H2O  + 12.41 Fe+++  + .5517 Ca++  + 5.517 K+  + 24.83 Mg++  + 4.138 Na+  + 103.4 SiO2(aq)  + 34.48 Al+++  = 27.59 Smectite-low-Fe-Mg  + 202.1 H+  + SO4--
+    209     X =  -0.634                 HS-  + 1.667 H+  + .3333 SO4--  = 1.333 Sulfur-Rhmb  + 1.333 H2O
+    210     Y = -27.292 -   1.125*X     1.125 HS-  + .5 H2O  + Fe+++  = Troilite  + 2.125 H+  + .125 SO4--
+    211     Y = -16.479 -   0.111*X     HS-  + 13.51 H2O  + 9.008 Fe+++  = 9.512 Wustite  + 28.02 H+  + SO4--
+    212     X =  33.254                 HS-  + 4 H2O  = 4 H2(g)  + H+  + SO4--
+    213     X =   1.791                 HS-  + H+  = H2S(g)
+    214     X =  10.569                 1.5 HS-  + 2.5 H+  + .5 SO4--  = S2(g)  + 2 H2O
+    215     X =  -9.704                 2 Al(O-phth)+  = Al(O-phth)2-  + Al+++
+    216        Products  favored        Al(O-phth)+  + Ca++  = Ca(O-phth)  + Al+++
+    217     Y = -10.879 +   0.967*X     Al(O-phth)+  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2  + 96 H+  + 8 HCO3-  + Al+++
+    218     Y =  -4.737 +   0.967*X     Al(O-phth)+  + 110 H2O  + 30 Fe+++  = 30 Fe(OH)3-  + 126 H+  + 8 HCO3-  + Al+++
+    219     Y = -16.005 +   0.967*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 30 Cl-  = 30 FeCl+  + 36 H+  + 8 HCO3-  + Al+++
+    220     Y = -12.595 +   0.967*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 FeCl2  + 36 H+  + 8 HCO3-  + Al+++
+    221     Y = -17.924 +   0.967*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeCO3  + 66 H+  + Al+++
+    222     Y = -18.593 +   0.967*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeHCO3+  + 36 H+  + Al+++
+    223     Y = -15.678 +   0.967*X     Al(O-phth)+  + 50 H2O  + 30 Fe+++  = 30 FeOH+  + 66 H+  + 8 HCO3-  + Al+++
+    224     Y = -17.945 +   0.967*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4  + 36 H+  + 8 HCO3-  + Al+++
+    225        Products  favored        Al(O-phth)+  + H+  = H(O-phth)-  + Al+++
+    226        Products  favored        Al(O-phth)+  + 2 H+  = H2(O-phth)  + Al+++
+    227     X =  19.231                 Al(O-phth)+  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(aq)  + 8 HCO3-  + Al+++
+    228        Products  favored        Al(O-phth)+  + Na+  = Na(O-phth)-  + Al+++
+    229     X =   9.245                 Al(O-phth)+  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 6 H+  + 8 HCO3-  + Al+++
+    230     X =  35.502                 Al(O-phth)+  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 1.714 H+  + 8 HCO3-  + Al+++
+    231     X =  91.550                 Al(O-phth)+  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + 8 HCO3-  + Al+++
+    232     X = 334.239                 Al(O-phth)+  + 1.538 H2O  + .9231 H+  + 4.615 SO4--  = 1.154 S4--  + 8 HCO3-  + Al+++
+    233     X =-835.748                 1.067 Al(O-phth)+  + 1.333 H2O  + 1.6 H+  + 5 SO4--  = S5--  + 8.533 HCO3-  + 1.067 Al+++
+    234     X =-249.475                 1.267 Al(O-phth)+  + 1.333 H2O  + 2.4 H+  + 6 SO4--  = S6--  + 10.13 HCO3-  + 1.267 Al+++
+    235     Y = -23.506 -   0.033*X     Al(O-phth)+  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 9 Al+++  = 10 Annite  + 136 H+  + 8 HCO3-
+    236     Y = -23.009 -   0.033*X     Al(O-phth)+  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 29 Al+++  = 15 Chamosite-7A  + 186 H+  + 8 HCO3-
+    237     Y = -22.073 -   0.017*X     Al(O-phth)+  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 186 H+  + 8 HCO3-  + Al+++
+    238     Y = -23.772 -   0.033*X     Al(O-phth)+  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 11 Al+++  = 6 Daphnite-14A  + 132 H+  + 8 HCO3-
+    239     Y = -23.069 -   0.033*X     Al(O-phth)+  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 11 Al+++  = 6 Daphnite-7A  + 132 H+  + 8 HCO3-
+    240     Y = -21.528 -   0.033*X     Al(O-phth)+  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 96 H+  + 8 HCO3-  + Al+++
+    241     Y = -19.750 -   0.033*X     Al(O-phth)+  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 96 H+  + 8 HCO3-  + Al+++
+    242     Y = -21.200 -   0.033*X     Al(O-phth)+  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 96 H+  + 8 HCO3-  + Al+++
+    243     Y = -22.136 -   0.033*X     Al(O-phth)+  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 96 H+  + 8 HCO3-  + Al+++
+    244     Y = -12.462 -   0.033*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 36 H+  + 8 HCO3-  + Al+++
+    245     Y = -23.166 -   0.033*X     Al(O-phth)+  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 96 H+  + 8 HCO3-  + Al+++
+    246     Y = -17.903 -   0.033*X     Al(O-phth)+  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 156 H+  + 8 HCO3-  + Al+++
+    247     Y = -20.059 -   0.033*X     Al(O-phth)+  + 140 H2O  + 30 Fe+++  + 59 Al+++  = 30 Hercynite  + 276 H+  + 8 HCO3-
+    248     Y =  -2.962 -   0.033*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 36 H+  + 8 HCO3-  + Al+++
+    249     Y = -21.433 -   0.011*X     Al(O-phth)+  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 276 H+  + 8 HCO3-  + Al+++
+    250     Y = -18.256 -   0.033*X     Al(O-phth)+  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 36 H+  + 8 HCO3-  + Al+++
+    251     Y = -24.020 -   0.033*X     Al(O-phth)+  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 96 H+  + 8 HCO3-  + Al+++
+    252     X =  -1.345                 Al(O-phth)+  + 2 H+  = "O-phth acid(c)"  + Al+++
+    253     Y = -65.014 -   0.500*X     Al(O-phth)+  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 4 H+  + 8 HCO3-  + Al+++
+    254     Y = -45.675 -   0.329*X     Al(O-phth)+  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 8.174 H+  + 8 HCO3-  + Al+++
+    255     Y = -20.276 -   0.033*X     Al(O-phth)+  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 29 Al+++  = 15 Ripidolit-14A  + 276 H+  + 8 HCO3-
+    256     Y = -18.523 -   0.033*X     Al(O-phth)+  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 29 Al+++  = 15 Ripidolit-7A  + 276 H+  + 8 HCO3-
+    257     Y = -24.253 -   0.033*X     Al(O-phth)+  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 66 H+  + Al+++
+    258     Y = -21.375 -   0.024*X     Al(O-phth)+  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 74 Al+++  = 60 Smectite-high-Fe-Mg  + 516 H+  + 8 HCO3-
+    259     Y = -23.689 -   0.021*X     Al(O-phth)+  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 128.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 760.1 H+  + 8 HCO3-
+    260     X = -54.700                 Al(O-phth)+  + 4 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-  + Al+++
+    261     Y = -42.988 -   0.300*X     Al(O-phth)+  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 9.333 H+  + 8 HCO3-  + Al+++
+    262     Y = -18.028 -   0.030*X     Al(O-phth)+  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 107.3 H+  + 8 HCO3-  + Al+++
+    263     X =  72.379                 Al(O-phth)+  + 20 H2O  = 15 H2(g)  + 6 H+  + 8 HCO3-  + Al+++
+    264     X = -45.604                 Al(O-phth)+  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(g)  + 8 HCO3-  + Al+++
+    265     X = -12.688                 Al(O-phth)+  + 4 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-  + Al+++
+    266     X =   4.245                 Al(O-phth)2-  + 2 Ca++  = 2 Ca(O-phth)  + Al+++
+    267     Y = -10.717 +   0.983*X     Al(O-phth)2-  + 160 H2O  + 60 Fe+++  = 60 Fe(OH)2  + 192 H+  + 16 HCO3-  + Al+++
+    268     Y =  -4.575 +   0.983*X     Al(O-phth)2-  + 220 H2O  + 60 Fe+++  = 60 Fe(OH)3-  + 252 H+  + 16 HCO3-  + Al+++
+    269     Y = -15.843 +   0.983*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 60 Cl-  = 60 FeCl+  + 72 H+  + 16 HCO3-  + Al+++
+    270     Y = -12.433 +   0.983*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 120 Cl-  = 60 FeCl2  + 72 H+  + 16 HCO3-  + Al+++
+    271     Y = -17.762 +   0.983*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 44 HCO3-  = 60 FeCO3  + 132 H+  + Al+++
+    272     Y = -18.431 +   0.983*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 44 HCO3-  = 60 FeHCO3+  + 72 H+  + Al+++
+    273     Y = -15.517 +   0.983*X     Al(O-phth)2-  + 100 H2O  + 60 Fe+++  = 60 FeOH+  + 132 H+  + 16 HCO3-  + Al+++
+    274     Y = -17.783 +   0.983*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 60 SO4--  = 60 FeSO4  + 72 H+  + 16 HCO3-  + Al+++
+    275     X =   1.158                 Al(O-phth)2-  + 2 H+  = 2 H(O-phth)-  + Al+++
+    276     X =  -7.524                 Al(O-phth)2-  + 4 H+  = 2 H2(O-phth)  + Al+++
+    277     X =  14.779                 Al(O-phth)2-  + 10 H2O  + 3 H+  + 7.5 SO4--  = 7.5 H2S(aq)  + 16 HCO3-  + Al+++
+    278     X =  -0.274                 Al(O-phth)2-  + 2 Na+  = 2 Na(O-phth)-  + Al+++
+    279     X =   6.330                 Al(O-phth)2-  + 10 H2O  + 7.5 SO4--  = 7.5 S--  + 12 H+  + 16 HCO3-  + Al+++
+    280     X =  21.744                 Al(O-phth)2-  + 5.714 H2O  + 8.571 SO4--  = 4.286 S2--  + 3.429 H+  + 16 HCO3-  + Al+++
+    281     X =  40.923                 Al(O-phth)2-  + 4 H2O  + 9 SO4--  = 3 S3--  + 16 HCO3-  + Al+++
+    282     X =  71.224                 Al(O-phth)2-  + 3.077 H2O  + 1.846 H+  + 9.231 SO4--  = 2.308 S4--  + 16 HCO3-  + Al+++
+    283     X = 108.302                 Al(O-phth)2-  + 2.5 H2O  + 3 H+  + 9.375 SO4--  = 1.875 S5--  + 16 HCO3-  + Al+++
+    284     X = 164.675                 Al(O-phth)2-  + 2.105 H2O  + 3.789 H+  + 9.474 SO4--  = 1.579 S6--  + 16 HCO3-  + Al+++
+    285     Y = -23.345 -   0.017*X     Al(O-phth)2-  + 160 H2O  + 60 Fe+++  + 20 K+  + 60 SiO2(aq)  + 19 Al+++  = 20 Annite  + 272 H+  + 16 HCO3-
+    286     Y = -22.847 -   0.017*X     Al(O-phth)2-  + 250 H2O  + 60 Fe+++  + 30 SiO2(aq)  + 59 Al+++  = 30 Chamosite-7A  + 372 H+  + 16 HCO3-
+    287     Y = -21.992 -   0.008*X     Al(O-phth)2-  + 250 H2O  + 120 Fe+++  + 30 SiO2(aq)  = 30 Cronstedt-7A  + 372 H+  + 16 HCO3-  + Al+++
+    288     Y = -23.610 -   0.017*X     Al(O-phth)2-  + 184 H2O  + 60 Fe+++  + 36 SiO2(aq)  + 23 Al+++  = 12 Daphnite-14A  + 264 H+  + 16 HCO3-
+    289     Y = -22.907 -   0.017*X     Al(O-phth)2-  + 184 H2O  + 60 Fe+++  + 36 SiO2(aq)  + 23 Al+++  = 12 Daphnite-7A  + 264 H+  + 16 HCO3-
+    290     Y = -21.366 -   0.017*X     Al(O-phth)2-  + 100 H2O  + 60 Fe+++  + 30 SiO2(aq)  = 30 Fayalite  + 192 H+  + 16 HCO3-  + Al+++
+    291     Y = -19.588 -   0.017*X     Al(O-phth)2-  + 160 H2O  + 60 Fe+++  = 60 Fe(OH)2(ppd)  + 192 H+  + 16 HCO3-  + Al+++
+    292     Y = -21.039 -   0.017*X     Al(O-phth)2-  + 100 H2O  + 60 Fe+++  = 60 FeO(c)  + 192 H+  + 16 HCO3-  + Al+++
+    293     Y = -21.975 -   0.017*X     Al(O-phth)2-  + 100 H2O  + 60 Fe+++  + 60 SiO2(aq)  = 60 Ferrosilite  + 192 H+  + 16 HCO3-  + Al+++
+    294     Y = -12.301 -   0.017*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 60 SO4--  = 60 FeSO4(c)  + 72 H+  + 16 HCO3-  + Al+++
+    295     Y = -23.004 -   0.017*X     Al(O-phth)2-  + 140 H2O  + 60 Fe+++  + 40 SiO2(aq)  = 20 Greenalite  + 192 H+  + 16 HCO3-  + Al+++
+    296     Y = -17.741 -   0.017*X     Al(O-phth)2-  + 160 H2O  + 60 Fe+++  + 60 Ca++  + 120 SiO2(aq)  = 60 Hedenbergite  + 312 H+  + 16 HCO3-  + Al+++
+    297     Y = -19.897 -   0.017*X     Al(O-phth)2-  + 280 H2O  + 60 Fe+++  + 119 Al+++  = 60 Hercynite  + 552 H+  + 16 HCO3-
+    298     Y =  -2.801 -   0.017*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 120 Cl-  = 60 Lawrencite  + 72 H+  + 16 HCO3-  + Al+++
+    299     Y = -21.379 -   0.006*X     Al(O-phth)2-  + 280 H2O  + 180 Fe+++  = 60 Magnetite  + 552 H+  + 16 HCO3-  + Al+++
+    300     Y = -18.094 -   0.017*X     Al(O-phth)2-  + 460 H2O  + 60 Fe+++  + 60 SO4--  = 60 Melanterite  + 72 H+  + 16 HCO3-  + Al+++
+    301     Y = -23.859 -   0.017*X     Al(O-phth)2-  + 120 H2O  + 60 Fe+++  + 80 SiO2(aq)  = 20 Minnesotaite  + 192 H+  + 16 HCO3-  + Al+++
+    302     X =   7.015                 Al(O-phth)2-  + 4 H+  = 2 "O-phth acid(c)"  + Al+++
+    303     Y = -62.588 -   0.250*X     Al(O-phth)2-  + 8 H2O  + 4 Fe+++  + 8 SO4--  = 4 Pyrite  + 8 H+  + 16 HCO3-  + Al+++
+    304     Y = -44.081 -   0.164*X     Al(O-phth)2-  + 12.17 H2O  + 6.087 Fe+++  + 6.957 SO4--  = 6.957 Pyrrhotite  + 16.35 H+  + 16 HCO3-  + Al+++
+    305     Y = -20.114 -   0.017*X     Al(O-phth)2-  + 400 H2O  + 60 Fe+++  + 90 Mg++  + 90 SiO2(aq)  + 59 Al+++  = 30 Ripidolit-14A  + 552 H+  + 16 HCO3-
+    306     Y = -18.361 -   0.017*X     Al(O-phth)2-  + 400 H2O  + 60 Fe+++  + 90 Mg++  + 90 SiO2(aq)  + 59 Al+++  = 30 Ripidolit-7A  + 552 H+  + 16 HCO3-
+    307     Y = -24.092 -   0.017*X     Al(O-phth)2-  + 40 H2O  + 60 Fe+++  + 44 HCO3-  = 60 Siderite  + 132 H+  + Al+++
+    308     Y = -21.259 -   0.012*X     Al(O-phth)2-  + 640 H2O  + 84 Fe+++  + 3 Ca++  + 24 K+  + 138 Mg++  + 12 Na+  + 420 SiO2(aq)  + 149 Al+++  = 120 Smectite-high-Fe-Mg  + 1032 H+  + 16 HCO3-
+    309     Y = -23.584 -   0.011*X     Al(O-phth)2-  + 971 H2O  + 93.1 Fe+++  + 4.138 Ca++  + 41.38 K+  + 186.2 Mg++  + 31.03 Na+  + 775.9 SiO2(aq)  + 257.6 Al+++  = 206.9 Smectite-low-Fe-Mg  + 1520 H+  + 16 HCO3-
+    310     X = -99.696                 Al(O-phth)2-  + 8 H+  + 10 SO4--  = 10 Sulfur-Rhmb  + 16 HCO3-  + Al+++
+    311     Y = -41.533 -   0.150*X     Al(O-phth)2-  + 13.33 H2O  + 6.667 Fe+++  + 6.667 SO4--  = 6.667 Troilite  + 18.67 H+  + 16 HCO3-  + Al+++
+    312     Y = -17.884 -   0.015*X     Al(O-phth)2-  + 111.3 H2O  + 67.56 Fe+++  = 71.34 Wustite  + 214.7 H+  + 16 HCO3-  + Al+++
+    313     X = 154.462                 Al(O-phth)2-  + 40 H2O  = 30 H2(g)  + 12 H+  + 16 HCO3-  + Al+++
+    314     X = -81.503                 Al(O-phth)2-  + 10 H2O  + 3 H+  + 7.5 SO4--  = 7.5 H2S(g)  + 16 HCO3-  + Al+++
+    315     X = -15.673                 Al(O-phth)2-  + 8 H+  + 10 SO4--  = 5 S2(g)  + 16 HCO3-  + Al+++
+    316     Y = -10.646 +   0.967*X     Ca(O-phth)  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2  + 96 H+  + Ca++  + 8 HCO3-
+    317     Y =  -4.504 +   0.967*X     Ca(O-phth)  + 110 H2O  + 30 Fe+++  = 30 Fe(OH)3-  + 126 H+  + Ca++  + 8 HCO3-
+    318     Y = -15.773 +   0.967*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 30 Cl-  = 30 FeCl+  + 36 H+  + Ca++  + 8 HCO3-
+    319     Y = -12.363 +   0.967*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 FeCl2  + 36 H+  + Ca++  + 8 HCO3-
+    320     Y = -17.691 +   0.967*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeCO3  + 66 H+  + Ca++
+    321     Y = -18.361 +   0.967*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 FeHCO3+  + 36 H+  + Ca++
+    322     Y = -15.446 +   0.967*X     Ca(O-phth)  + 50 H2O  + 30 Fe+++  = 30 FeOH+  + 66 H+  + Ca++  + 8 HCO3-
+    323     Y = -17.713 +   0.967*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4  + 36 H+  + Ca++  + 8 HCO3-
+    324        Reactants favored        Ca(O-phth)  + H+  = H(O-phth)-  + Ca++
+    325        Reactants favored        Ca(O-phth)  + 2 H+  = H2(O-phth)  + Ca++
+    326     X =  16.695                 Ca(O-phth)  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(aq)  + Ca++  + 8 HCO3-
+    327        Reactants favored        Ca(O-phth)  + Na+  = Na(O-phth)-  + Ca++
+    328     X =   6.709                 Ca(O-phth)  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 6 H+  + Ca++  + 8 HCO3-
+    329     X =  29.399                 Ca(O-phth)  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 1.714 H+  + Ca++  + 8 HCO3-
+    330     X =  77.601                 Ca(O-phth)  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + Ca++  + 8 HCO3-
+    331     X = 288.904                 Ca(O-phth)  + 1.538 H2O  + .9231 H+  + 4.615 SO4--  = 1.154 S4--  + Ca++  + 8 HCO3-
+    332     X =-724.156                 1.067 Ca(O-phth)  + 1.333 H2O  + 1.6 H+  + 5 SO4--  = S5--  + 1.067 Ca++  + 8.533 HCO3-
+    333     X =-216.347                 1.267 Ca(O-phth)  + 1.333 H2O  + 2.4 H+  + 6 SO4--  = S6--  + 1.267 Ca++  + 10.13 HCO3-
+    334     Y = -23.274 -   0.033*X     Ca(O-phth)  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++  = 10 Annite  + 136 H+  + Ca++  + 8 HCO3-
+    335     Y = -22.776 -   0.033*X     Ca(O-phth)  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++  = 15 Chamosite-7A  + 186 H+  + Ca++  + 8 HCO3-
+    336     Y = -21.956 -   0.017*X     Ca(O-phth)  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 186 H+  + Ca++  + 8 HCO3-
+    337     Y = -23.540 -   0.033*X     Ca(O-phth)  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-14A  + 132 H+  + Ca++  + 8 HCO3-
+    338     Y = -22.837 -   0.033*X     Ca(O-phth)  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-7A  + 132 H+  + Ca++  + 8 HCO3-
+    339     Y = -21.295 -   0.033*X     Ca(O-phth)  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 96 H+  + Ca++  + 8 HCO3-
+    340     Y = -19.517 -   0.033*X     Ca(O-phth)  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 96 H+  + Ca++  + 8 HCO3-
+    341     Y = -20.968 -   0.033*X     Ca(O-phth)  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 96 H+  + Ca++  + 8 HCO3-
+    342     Y = -21.904 -   0.033*X     Ca(O-phth)  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 96 H+  + Ca++  + 8 HCO3-
+    343     Y = -12.230 -   0.033*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 36 H+  + Ca++  + 8 HCO3-
+    344     Y = -22.933 -   0.033*X     Ca(O-phth)  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 96 H+  + Ca++  + 8 HCO3-
+    345     Y = -17.670 -   0.033*X     Ca(O-phth)  + 80 H2O  + 30 Fe+++  + 29 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 156 H+  + 8 HCO3-
+    346     Y = -19.826 -   0.033*X     Ca(O-phth)  + 140 H2O  + 30 Fe+++  + 60 Al+++  = 30 Hercynite  + 276 H+  + Ca++  + 8 HCO3-
+    347     Y =  -2.730 -   0.033*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 36 H+  + Ca++  + 8 HCO3-
+    348     Y = -21.356 -   0.011*X     Ca(O-phth)  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 276 H+  + Ca++  + 8 HCO3-
+    349     Y = -18.024 -   0.033*X     Ca(O-phth)  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 36 H+  + Ca++  + 8 HCO3-
+    350     Y = -23.788 -   0.033*X     Ca(O-phth)  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 96 H+  + Ca++  + 8 HCO3-
+    351     X =   5.630                 Ca(O-phth)  + 2 H+  = "O-phth acid(c)"  + Ca++
+    352     Y = -61.526 -   0.500*X     Ca(O-phth)  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 4 H+  + Ca++  + 8 HCO3-
+    353     Y = -43.384 -   0.329*X     Ca(O-phth)  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 8.174 H+  + Ca++  + 8 HCO3-
+    354     Y = -20.044 -   0.033*X     Ca(O-phth)  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 276 H+  + Ca++  + 8 HCO3-
+    355     Y = -18.291 -   0.033*X     Ca(O-phth)  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 276 H+  + Ca++  + 8 HCO3-
+    356     Y = -24.021 -   0.033*X     Ca(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 66 H+  + Ca++
+    357     Y = -21.209 -   0.024*X     Ca(O-phth)  + 320 H2O  + 42 Fe+++  + .5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 516 H+  + 8 HCO3-
+    358     Y = -23.539 -   0.021*X     Ca(O-phth)  + 485.5 H2O  + 46.55 Fe+++  + 1.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 760.1 H+  + 8 HCO3-
+    359     X = -47.726                 Ca(O-phth)  + 4 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + Ca++  + 8 HCO3-
+    360     Y = -40.896 -   0.300*X     Ca(O-phth)  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 9.333 H+  + Ca++  + 8 HCO3-
+    361     Y = -17.821 -   0.030*X     Ca(O-phth)  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 107.3 H+  + Ca++  + 8 HCO3-
+    362     X =  79.354                 Ca(O-phth)  + 20 H2O  = 15 H2(g)  + 6 H+  + Ca++  + 8 HCO3-
+    363     X = -38.629                 Ca(O-phth)  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(g)  + Ca++  + 8 HCO3-
+    364     X =  -5.714                 Ca(O-phth)  + 4 H+  + 5 SO4--  = 2.5 S2(g)  + Ca++  + 8 HCO3-
+    365        Reactants favored        Fe(OH)2  + H2O  = Fe(OH)3-  + H+
+    366        Products  favored        Fe(OH)2  + 2 H+  + Cl-  = FeCl+  + 2 H2O
+    367        Products  favored        Fe(OH)2  + 2 H+  + 2 Cl-  = FeCl2  + 2 H2O
+    368        Products  favored        Fe(OH)2  + H+  + HCO3-  = FeCO3  + 2 H2O
+    369        Products  favored        Fe(OH)2  + 2 H+  + HCO3-  = FeHCO3+  + 2 H2O
+    370        Products  favored        Fe(OH)2  + H+  = FeOH+  + H2O
+    371        Products  favored        Fe(OH)2  + 2 H+  + SO4--  = FeSO4  + 2 H2O
+    372     Y = -10.697 +   0.967*X     30 Fe(OH)2  + 97 H+  + 8 HCO3-  = H(O-phth)-  + 80 H2O  + 30 Fe+++
+    373     Y = -10.842 +   0.967*X     30 Fe(OH)2  + 98 H+  + 8 HCO3-  = H2(O-phth)  + 80 H2O  + 30 Fe+++
+    374     Y =  -9.116 +   0.875*X     8 Fe(OH)2  + 26 H+  + SO4--  = H2S(aq)  + 20 H2O  + 8 Fe+++
+    375     Y = -10.721 +   0.967*X     30 Fe(OH)2  + 96 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 80 H2O  + 30 Fe+++
+    376     Y = -10.031 +   0.875*X     8 Fe(OH)2  + 24 H+  + SO4--  = S--  + 20 H2O  + 8 Fe+++
+    377     Y =  -9.526 +   0.929*X     14 Fe(OH)2  + 44 H+  + 2 SO4--  = S2--  + 36 H2O  + 14 Fe+++
+    378     Y =  -9.353 +   0.950*X     20 Fe(OH)2  + 64 H+  + 3 SO4--  = S3--  + 52 H2O  + 20 Fe+++
+    379     Y =  -9.164 +   0.962*X     26 Fe(OH)2  + 84 H+  + 4 SO4--  = S4--  + 68 H2O  + 26 Fe+++
+    380     Y =  -9.137 +   0.969*X     32 Fe(OH)2  + 104 H+  + 5 SO4--  = S5--  + 84 H2O  + 32 Fe+++
+    381     Y =  -9.128 +   0.974*X     38 Fe(OH)2  + 124 H+  + 6 SO4--  = S6--  + 100 H2O  + 38 Fe+++
+    382     X = -12.628                 3 Fe(OH)2  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 4 H+
+    383     X = -12.130                 2 Fe(OH)2  + 3 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 6 H+
+    384     Y = -33.267 -   1.000*X     2 Fe(OH)2  + 3 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 6 H+
+    385     X = -12.893                 5 Fe(OH)2  + 2 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 6 H+
+    386     X = -12.191                 5 Fe(OH)2  + 2 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 6 H+
+    387     X = -10.649                 2 Fe(OH)2  + SiO2(aq)  = Fayalite  + 2 H2O
+    388     X =  -8.871                 Fe(OH)2  = Fe(OH)2(ppd)
+    389     X = -10.322                 Fe(OH)2  = FeO(c)  + H2O
+    390     X = -11.258                 Fe(OH)2  + SiO2(aq)  = Ferrosilite  + H2O
+    391     X =  -1.584                 Fe(OH)2  + 2 H+  + SO4--  = FeSO4(c)  + 2 H2O
+    392     X = -12.287                 3 Fe(OH)2  + 2 SiO2(aq)  = Greenalite  + H2O
+    393     X =  -7.024                 Fe(OH)2  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 2 H+
+    394     X =  -9.180                 Fe(OH)2  + 2 H2O  + 2 Al+++  = Hercynite  + 6 H+
+    395     X =   7.916                 Fe(OH)2  + 2 H+  + 2 Cl-  = Lawrencite  + 2 H2O
+    396     Y = -26.710 -   0.500*X     Fe(OH)2  + 2 H2O  + 2 Fe+++  = Magnetite  + 6 H+
+    397     X =  -7.378                 Fe(OH)2  + 5 H2O  + 2 H+  + SO4--  = Melanterite
+    398     X = -13.142                 3 Fe(OH)2  + 4 SiO2(aq)  = Minnesotaite  + 2 H2O
+    399     Y = -10.834 +   1.000*X     30 Fe(OH)2  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 80 H2O  + 30 Fe+++
+    400     Y =  -7.012 +   1.071*X     15 Fe(OH)2  + 46 H+  + 2 SO4--  = Pyrite  + 38 H2O  + 14 Fe+++
+    401     Y =  -6.950 +   1.113*X     8.625 Fe(OH)2  + 25.25 H+  + SO4--  = Pyrrhotite  + 21.25 H2O  + 7.75 Fe+++
+    402     X =  -9.398                 2 Fe(OH)2  + 8 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 12 H+
+    403     X =  -7.645                 2 Fe(OH)2  + 8 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 12 H+
+    404     X = -13.375                 Fe(OH)2  + H+  + HCO3-  = Siderite  + 2 H2O
+    405     Y = -47.615 -   2.500*X     Fe(OH)2  + 8 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 14 H+
+    406     Y = -46.907 -   1.812*X     Fe(OH)2  + 13.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 22.14 H+
+    407     Y =  -9.055 +   1.000*X     6 Fe(OH)2  + 20 H+  + SO4--  = Sulfur-Rhmb  + 16 H2O  + 6 Fe+++
+    408     Y =  -6.865 +   1.125*X     9 Fe(OH)2  + 26 H+  + SO4--  = Troilite  + 22 H2O  + 8 Fe+++
+    409     Y = -74.749 -   7.934*X     Fe(OH)2  + .126 Fe+++  = 1.189 Wustite  + .8109 H2O  + .3781 H+
+    410     Y = -13.291 +   1.000*X     2 Fe(OH)2  + 6 H+  = H2(g)  + 4 H2O  + 2 Fe+++
+    411     Y =  -9.358 +   1.000*X     8 Fe(OH)2  + 26 H+  + SO4--  = H2S(g)  + 20 H2O  + 8 Fe+++
+    412     Y = -10.456 +   1.000*X     12 Fe(OH)2  + 40 H+  + 2 SO4--  = S2(g)  + 32 H2O  + 12 Fe+++
+    413        Products  favored        Fe(OH)3-  + 3 H+  + Cl-  = FeCl+  + 3 H2O
+    414        Products  favored        Fe(OH)3-  + 3 H+  + 2 Cl-  = FeCl2  + 3 H2O
+    415        Products  favored        Fe(OH)3-  + 2 H+  + HCO3-  = FeCO3  + 3 H2O
+    416        Products  favored        Fe(OH)3-  + 3 H+  + HCO3-  = FeHCO3+  + 3 H2O
+    417        Products  favored        Fe(OH)3-  + 2 H+  = FeOH+  + 2 H2O
+    418        Products  favored        Fe(OH)3-  + 3 H+  + SO4--  = FeSO4  + 3 H2O
+    419     Y =  -4.556 +   0.967*X     30 Fe(OH)3-  + 127 H+  + 8 HCO3-  = H(O-phth)-  + 110 H2O  + 30 Fe+++
+    420     Y =  -4.700 +   0.967*X     30 Fe(OH)3-  + 128 H+  + 8 HCO3-  = H2(O-phth)  + 110 H2O  + 30 Fe+++
+    421     Y =  -2.974 +   0.875*X     8 Fe(OH)3-  + 34 H+  + SO4--  = H2S(aq)  + 28 H2O  + 8 Fe+++
+    422     Y =  -4.580 +   0.967*X     30 Fe(OH)3-  + 126 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 110 H2O  + 30 Fe+++
+    423     Y =  -3.889 +   0.875*X     8 Fe(OH)3-  + 32 H+  + SO4--  = S--  + 28 H2O  + 8 Fe+++
+    424     Y =  -3.384 +   0.929*X     14 Fe(OH)3-  + 58 H+  + 2 SO4--  = S2--  + 50 H2O  + 14 Fe+++
+    425     Y =  -3.211 +   0.950*X     20 Fe(OH)3-  + 84 H+  + 3 SO4--  = S3--  + 72 H2O  + 20 Fe+++
+    426     Y =  -3.023 +   0.962*X     26 Fe(OH)3-  + 110 H+  + 4 SO4--  = S4--  + 94 H2O  + 26 Fe+++
+    427     Y =  -2.996 +   0.969*X     32 Fe(OH)3-  + 136 H+  + 5 SO4--  = S5--  + 116 H2O  + 32 Fe+++
+    428     Y =  -2.986 +   0.974*X     38 Fe(OH)3-  + 162 H+  + 6 SO4--  = S6--  + 138 H2O  + 38 Fe+++
+    429     X = -18.769                 3 Fe(OH)3-  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 3 H2O  + H+
+    430     X = -18.272                 2 Fe(OH)3-  + H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 4 H+
+    431     Y = -39.409 -   1.000*X     2 Fe(OH)3-  + H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 4 H+
+    432     X = -19.035                 5 Fe(OH)3-  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 3 H2O  + H+
+    433     X = -18.332                 5 Fe(OH)3-  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 3 H2O  + H+
+    434     X = -16.791                 2 Fe(OH)3-  + 2 H+  + SiO2(aq)  = Fayalite  + 4 H2O
+    435     X = -15.013                 Fe(OH)3-  + H+  = Fe(OH)2(ppd)  + H2O
+    436     X = -16.464                 Fe(OH)3-  + H+  = FeO(c)  + 2 H2O
+    437     X = -17.399                 Fe(OH)3-  + H+  + SiO2(aq)  = Ferrosilite  + 2 H2O
+    438     X =  -7.726                 Fe(OH)3-  + 3 H+  + SO4--  = FeSO4(c)  + 3 H2O
+    439     X = -18.429                 3 Fe(OH)3-  + 3 H+  + 2 SiO2(aq)  = Greenalite  + 4 H2O
+    440     X = -13.166                 Fe(OH)3-  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + H2O  + H+
+    441     X = -15.322                 Fe(OH)3-  + H2O  + 2 Al+++  = Hercynite  + 5 H+
+    442     X =   1.774                 Fe(OH)3-  + 3 H+  + 2 Cl-  = Lawrencite  + 3 H2O
+    443     Y = -29.781 -   0.500*X     Fe(OH)3-  + H2O  + 2 Fe+++  = Magnetite  + 5 H+
+    444     X = -13.519                 Fe(OH)3-  + 4 H2O  + 3 H+  + SO4--  = Melanterite
+    445     X = -19.284                 3 Fe(OH)3-  + 3 H+  + 4 SiO2(aq)  = Minnesotaite  + 5 H2O
+    446     Y =  -4.692 +   1.000*X     30 Fe(OH)3-  + 128 H+  + 8 HCO3-  = "O-phth acid(c)"  + 110 H2O  + 30 Fe+++
+    447     Y =  -0.431 +   1.071*X     15 Fe(OH)3-  + 61 H+  + 2 SO4--  = Pyrite  + 53 H2O  + 14 Fe+++
+    448     Y =  -0.115 +   1.113*X     8.625 Fe(OH)3-  + 33.88 H+  + SO4--  = Pyrrhotite  + 29.88 H2O  + 7.75 Fe+++
+    449     X = -15.539                 2 Fe(OH)3-  + 6 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 10 H+
+    450     X = -13.786                 2 Fe(OH)3-  + 6 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 10 H+
+    451     X = -19.517                 Fe(OH)3-  + 2 H+  + HCO3-  = Siderite  + 3 H2O
+    452     Y = -62.969 -   2.500*X     Fe(OH)3-  + 7 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 13 H+
+    453     Y = -58.039 -   1.812*X     Fe(OH)3-  + 12.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 21.14 H+
+    454     Y =  -2.913 +   1.000*X     6 Fe(OH)3-  + 26 H+  + SO4--  = Sulfur-Rhmb  + 22 H2O  + 6 Fe+++
+    455     Y =   0.045 +   1.125*X     9 Fe(OH)3-  + 35 H+  + SO4--  = Troilite  + 31 H2O  + 8 Fe+++
+    456     Y =-123.477 -   7.934*X     Fe(OH)3-  + .6219 H+  + .126 Fe+++  = 1.189 Wustite  + 1.811 H2O
+    457     Y =  -7.149 +   1.000*X     2 Fe(OH)3-  + 8 H+  = H2(g)  + 6 H2O  + 2 Fe+++
+    458     Y =  -3.217 +   1.000*X     8 Fe(OH)3-  + 34 H+  + SO4--  = H2S(g)  + 28 H2O  + 8 Fe+++
+    459     Y =  -4.314 +   1.000*X     12 Fe(OH)3-  + 52 H+  + 2 SO4--  = S2(g)  + 44 H2O  + 12 Fe+++
+    460        Reactants favored        FeCl+  + Cl-  = FeCl2
+    461        Products  favored        FeCl+  + HCO3-  = FeCO3  + H+  + Cl-
+    462        Products  favored        FeCl+  + HCO3-  = FeHCO3+  + Cl-
+    463        Reactants favored        FeCl+  + H2O  = FeOH+  + H+  + Cl-
+    464        Products  favored        FeCl+  + SO4--  = FeSO4  + Cl-
+    465     Y = -15.824 +   0.967*X     30 FeCl+  + 37 H+  + 8 HCO3-  = H(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 Cl-
+    466     Y = -15.969 +   0.967*X     30 FeCl+  + 38 H+  + 8 HCO3-  = H2(O-phth)  + 20 H2O  + 30 Fe+++  + 30 Cl-
+    467     Y = -14.242 +   0.875*X     8 FeCl+  + 10 H+  + SO4--  = H2S(aq)  + 4 H2O  + 8 Fe+++  + 8 Cl-
+    468     Y = -15.848 +   0.967*X     30 FeCl+  + 36 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 Cl-
+    469     Y = -15.158 +   0.875*X     8 FeCl+  + 8 H+  + SO4--  = S--  + 4 H2O  + 8 Fe+++  + 8 Cl-
+    470     Y = -14.653 +   0.929*X     14 FeCl+  + 16 H+  + 2 SO4--  = S2--  + 8 H2O  + 14 Fe+++  + 14 Cl-
+    471     Y = -14.479 +   0.950*X     20 FeCl+  + 24 H+  + 3 SO4--  = S3--  + 12 H2O  + 20 Fe+++  + 20 Cl-
+    472     Y = -14.291 +   0.962*X     26 FeCl+  + 32 H+  + 4 SO4--  = S4--  + 16 H2O  + 26 Fe+++  + 26 Cl-
+    473     Y = -14.264 +   0.969*X     32 FeCl+  + 40 H+  + 5 SO4--  = S5--  + 20 H2O  + 32 Fe+++  + 32 Cl-
+    474     Y = -14.254 +   0.974*X     38 FeCl+  + 48 H+  + 6 SO4--  = S6--  + 24 H2O  + 38 Fe+++  + 38 Cl-
+    475     X =  -7.501                 3 FeCl+  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 10 H+  + 3 Cl-
+    476     X =  -7.004                 2 FeCl+  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 10 H+  + 2 Cl-
+    477     Y = -28.140 -   1.000*X     2 FeCl+  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 10 H+  + 2 Cl-
+    478     X =  -7.767                 5 FeCl+  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 16 H+  + 5 Cl-
+    479     X =  -7.064                 5 FeCl+  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 16 H+  + 5 Cl-
+    480     X =  -5.523                 2 FeCl+  + 2 H2O  + SiO2(aq)  = Fayalite  + 4 H+  + 2 Cl-
+    481     X =  -3.745                 FeCl+  + 2 H2O  = Fe(OH)2(ppd)  + 2 H+  + Cl-
+    482     X =  -5.195                 FeCl+  + H2O  = FeO(c)  + 2 H+  + Cl-
+    483     X =  -6.131                 FeCl+  + H2O  + SiO2(aq)  = Ferrosilite  + 2 H+  + Cl-
+    484     X =   3.543                 FeCl+  + SO4--  = FeSO4(c)  + Cl-
+    485     X =  -7.161                 3 FeCl+  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+  + 3 Cl-
+    486     X =  -1.898                 FeCl+  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+  + Cl-
+    487     X =  -4.054                 FeCl+  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+  + Cl-
+    488     X =  13.043                 FeCl+  + Cl-  = Lawrencite
+    489     Y = -24.147 -   0.500*X     FeCl+  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + Cl-
+    490     X =  -2.251                 FeCl+  + 7 H2O  + SO4--  = Melanterite  + Cl-
+    491     X =  -8.015                 3 FeCl+  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 3 Cl-
+    492     Y = -15.960 +   1.000*X     30 FeCl+  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 30 Cl-
+    493     Y = -12.504 +   1.071*X     15 FeCl+  + 16 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++  + 15 Cl-
+    494     Y = -12.655 +   1.113*X     8.625 FeCl+  + 8 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 8.625 Cl-
+    495     X =  -4.271                 2 FeCl+  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 2 Cl-
+    496     X =  -2.518                 2 FeCl+  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 2 Cl-
+    497     X =  -8.248                 FeCl+  + HCO3-  = Siderite  + H+  + Cl-
+    498     Y = -34.799 -   2.500*X     FeCl+  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + Cl-
+    499     Y = -37.615 -   1.812*X     FeCl+  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + Cl-
+    500     Y = -14.182 +   1.000*X     6 FeCl+  + 8 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 6 Cl-
+    501     Y = -12.632 +   1.125*X     9 FeCl+  + 8 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 9 Cl-
+    502     Y = -34.076 -   7.934*X     FeCl+  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + Cl-
+    503     Y = -18.418 +   1.000*X     2 FeCl+  + 2 H+  = H2(g)  + 2 Fe+++  + 2 Cl-
+    504     Y = -14.485 +   1.000*X     8 FeCl+  + 10 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 8 Cl-
+    505     Y = -15.582 +   1.000*X     12 FeCl+  + 16 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 12 Cl-
+    506        Products  favored        FeCl2  + HCO3-  = FeCO3  + H+  + 2 Cl-
+    507        Products  favored        FeCl2  + HCO3-  = FeHCO3+  + 2 Cl-
+    508        Products  favored        FeCl2  + H2O  = FeOH+  + H+  + 2 Cl-
+    509        Products  favored        FeCl2  + SO4--  = FeSO4  + 2 Cl-
+    510     Y = -12.414 +   0.967*X     30 FeCl2  + 37 H+  + 8 HCO3-  = H(O-phth)-  + 20 H2O  + 30 Fe+++  + 60 Cl-
+    511     Y = -12.559 +   0.967*X     30 FeCl2  + 38 H+  + 8 HCO3-  = H2(O-phth)  + 20 H2O  + 30 Fe+++  + 60 Cl-
+    512     Y = -10.832 +   0.875*X     8 FeCl2  + 10 H+  + SO4--  = H2S(aq)  + 4 H2O  + 8 Fe+++  + 16 Cl-
+    513     Y = -12.438 +   0.967*X     30 FeCl2  + 36 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 60 Cl-
+    514     Y = -11.748 +   0.875*X     8 FeCl2  + 8 H+  + SO4--  = S--  + 4 H2O  + 8 Fe+++  + 16 Cl-
+    515     Y = -11.243 +   0.929*X     14 FeCl2  + 16 H+  + 2 SO4--  = S2--  + 8 H2O  + 14 Fe+++  + 28 Cl-
+    516     Y = -11.069 +   0.950*X     20 FeCl2  + 24 H+  + 3 SO4--  = S3--  + 12 H2O  + 20 Fe+++  + 40 Cl-
+    517     Y = -10.881 +   0.962*X     26 FeCl2  + 32 H+  + 4 SO4--  = S4--  + 16 H2O  + 26 Fe+++  + 52 Cl-
+    518     Y = -10.854 +   0.969*X     32 FeCl2  + 40 H+  + 5 SO4--  = S5--  + 20 H2O  + 32 Fe+++  + 64 Cl-
+    519     Y = -10.844 +   0.974*X     38 FeCl2  + 48 H+  + 6 SO4--  = S6--  + 24 H2O  + 38 Fe+++  + 76 Cl-
+    520     X = -10.911                 3 FeCl2  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 10 H+  + 6 Cl-
+    521     X = -10.414                 2 FeCl2  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 10 H+  + 4 Cl-
+    522     Y = -31.550 -   1.000*X     2 FeCl2  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 10 H+  + 4 Cl-
+    523     X = -11.177                 5 FeCl2  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 16 H+  + 10 Cl-
+    524     X = -10.474                 5 FeCl2  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 16 H+  + 10 Cl-
+    525     X =  -8.932                 2 FeCl2  + 2 H2O  + SiO2(aq)  = Fayalite  + 4 H+  + 4 Cl-
+    526     X =  -7.154                 FeCl2  + 2 H2O  = Fe(OH)2(ppd)  + 2 H+  + 2 Cl-
+    527     X =  -8.605                 FeCl2  + H2O  = FeO(c)  + 2 H+  + 2 Cl-
+    528     X =  -9.541                 FeCl2  + H2O  + SiO2(aq)  = Ferrosilite  + 2 H+  + 2 Cl-
+    529     X =   0.133                 FeCl2  + SO4--  = FeSO4(c)  + 2 Cl-
+    530     X = -10.571                 3 FeCl2  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+  + 6 Cl-
+    531     X =  -5.308                 FeCl2  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+  + 2 Cl-
+    532     X =  -7.464                 FeCl2  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+  + 2 Cl-
+    533     X =   9.633                 FeCl2  = Lawrencite
+    534     Y = -25.852 -   0.500*X     FeCl2  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + 2 Cl-
+    535     X =  -5.661                 FeCl2  + 7 H2O  + SO4--  = Melanterite  + 2 Cl-
+    536     X = -11.425                 3 FeCl2  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 6 Cl-
+    537     Y = -12.550 +   1.000*X     30 FeCl2  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 60 Cl-
+    538     Y =  -8.851 +   1.071*X     15 FeCl2  + 16 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++  + 30 Cl-
+    539     Y =  -8.860 +   1.113*X     8.625 FeCl2  + 8 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 17.25 Cl-
+    540     X =  -7.681                 2 FeCl2  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 4 Cl-
+    541     X =  -5.928                 2 FeCl2  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 4 Cl-
+    542     X = -11.658                 FeCl2  + HCO3-  = Siderite  + H+  + 2 Cl-
+    543     Y = -43.324 -   2.500*X     FeCl2  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + 2 Cl-
+    544     Y = -43.795 -   1.812*X     FeCl2  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + 2 Cl-
+    545     Y = -10.772 +   1.000*X     6 FeCl2  + 8 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 12 Cl-
+    546     Y =  -8.796 +   1.125*X     9 FeCl2  + 8 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 18 Cl-
+    547     Y = -61.129 -   7.934*X     FeCl2  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + 2 Cl-
+    548     Y = -15.008 +   1.000*X     2 FeCl2  + 2 H+  = H2(g)  + 2 Fe+++  + 4 Cl-
+    549     Y = -11.075 +   1.000*X     8 FeCl2  + 10 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 16 Cl-
+    550     Y = -12.172 +   1.000*X     12 FeCl2  + 16 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 24 Cl-
+    551        Products  favored        FeCO3  + H+  = FeHCO3+
+    552        Reactants favored        FeCO3  + H2O  = FeOH+  + HCO3-
+    553        Products  favored        FeCO3  + H+  + SO4--  = FeSO4  + HCO3-
+    554     Y = -17.742 +   0.967*X     30 FeCO3  + 67 H+  = H(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    555     Y = -17.887 +   0.967*X     30 FeCO3  + 68 H+  = H2(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    556     Y = -16.161 +   0.875*X     8 FeCO3  + 18 H+  + SO4--  = H2S(aq)  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    557     Y = -17.766 +   0.967*X     30 FeCO3  + 66 H+  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    558     Y = -17.076 +   0.875*X     8 FeCO3  + 16 H+  + SO4--  = S--  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    559     Y = -16.571 +   0.929*X     14 FeCO3  + 30 H+  + 2 SO4--  = S2--  + 8 H2O  + 14 Fe+++  + 14 HCO3-
+    560     Y = -16.398 +   0.950*X     20 FeCO3  + 44 H+  + 3 SO4--  = S3--  + 12 H2O  + 20 Fe+++  + 20 HCO3-
+    561     Y = -16.209 +   0.962*X     26 FeCO3  + 58 H+  + 4 SO4--  = S4--  + 16 H2O  + 26 Fe+++  + 26 HCO3-
+    562     Y = -16.182 +   0.969*X     32 FeCO3  + 72 H+  + 5 SO4--  = S5--  + 20 H2O  + 32 Fe+++  + 32 HCO3-
+    563     Y = -16.173 +   0.974*X     38 FeCO3  + 86 H+  + 6 SO4--  = S6--  + 24 H2O  + 38 Fe+++  + 38 HCO3-
+    564     X =  -5.583                 3 FeCO3  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 7 H+  + 3 HCO3-
+    565     X =  -5.085                 2 FeCO3  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 8 H+  + 2 HCO3-
+    566     Y = -26.222 -   1.000*X     2 FeCO3  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 8 H+  + 2 HCO3-
+    567     X =  -5.848                 5 FeCO3  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 11 H+  + 5 HCO3-
+    568     X =  -5.146                 5 FeCO3  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 11 H+  + 5 HCO3-
+    569     X =  -3.604                 2 FeCO3  + 2 H2O  + SiO2(aq)  = Fayalite  + 2 H+  + 2 HCO3-
+    570     X =  -1.826                 FeCO3  + 2 H2O  = Fe(OH)2(ppd)  + H+  + HCO3-
+    571     X =  -3.277                 FeCO3  + H2O  = FeO(c)  + H+  + HCO3-
+    572     X =  -4.213                 FeCO3  + H2O  + SiO2(aq)  = Ferrosilite  + H+  + HCO3-
+    573     X =   5.461                 FeCO3  + H+  + SO4--  = FeSO4(c)  + HCO3-
+    574     X =  -5.242                 3 FeCO3  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 3 H+  + 3 HCO3-
+    575     X =   0.021                 FeCO3  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 3 H+  + HCO3-
+    576     X =  -2.135                 FeCO3  + 4 H2O  + 2 Al+++  = Hercynite  + 7 H+  + HCO3-
+    577     X =  14.961                 FeCO3  + H+  + 2 Cl-  = Lawrencite  + HCO3-
+    578     Y = -23.188 -   0.500*X     FeCO3  + 4 H2O  + 2 Fe+++  = Magnetite  + 7 H+  + HCO3-
+    579     X =  -0.333                 FeCO3  + 7 H2O  + H+  + SO4--  = Melanterite  + HCO3-
+    580     X =  -6.097                 3 FeCO3  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 3 H+  + 3 HCO3-
+    581     Y = -17.879 +   1.000*X     30 FeCO3  + 68 H+  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    582     Y = -14.560 +   1.071*X     15 FeCO3  + 31 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++  + 15 HCO3-
+    583     Y = -14.790 +   1.113*X     8.625 FeCO3  + 16.63 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 8.625 HCO3-
+    584     X =  -2.353                 2 FeCO3  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 14 H+  + 2 HCO3-
+    585     X =  -0.600                 2 FeCO3  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 14 H+  + 2 HCO3-
+    586     X =  -6.330                 FeCO3  = Siderite
+    587     Y = -30.003 -   2.500*X     FeCO3  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 15 H+  + HCO3-
+    588     Y = -34.138 -   1.812*X     FeCO3  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 23.14 H+  + HCO3-
+    589     Y = -16.100 +   1.000*X     6 FeCO3  + 14 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 6 HCO3-
+    590     Y = -14.790 +   1.125*X     9 FeCO3  + 17 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 9 HCO3-
+    591     Y = -18.854 -   7.934*X     FeCO3  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 1.378 H+  + HCO3-
+    592     Y = -20.336 +   1.000*X     2 FeCO3  + 4 H+  = H2(g)  + 2 Fe+++  + 2 HCO3-
+    593     Y = -16.403 +   1.000*X     8 FeCO3  + 18 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    594     Y = -17.501 +   1.000*X     12 FeCO3  + 28 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 12 HCO3-
+    595        Reactants favored        FeHCO3+  + H2O  = FeOH+  + H+  + HCO3-
+    596        Reactants favored        FeHCO3+  + SO4--  = FeSO4  + HCO3-
+    597     Y = -18.412 +   0.967*X     30 FeHCO3+  + 37 H+  = H(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    598     Y = -18.557 +   0.967*X     30 FeHCO3+  + 38 H+  = H2(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    599     Y = -16.830 +   0.875*X     8 FeHCO3+  + 10 H+  + SO4--  = H2S(aq)  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    600     Y = -18.436 +   0.967*X     30 FeHCO3+  + 36 H+  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    601     Y = -17.746 +   0.875*X     8 FeHCO3+  + 8 H+  + SO4--  = S--  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    602     Y = -17.241 +   0.929*X     14 FeHCO3+  + 16 H+  + 2 SO4--  = S2--  + 8 H2O  + 14 Fe+++  + 14 HCO3-
+    603     Y = -17.067 +   0.950*X     20 FeHCO3+  + 24 H+  + 3 SO4--  = S3--  + 12 H2O  + 20 Fe+++  + 20 HCO3-
+    604     Y = -16.879 +   0.962*X     26 FeHCO3+  + 32 H+  + 4 SO4--  = S4--  + 16 H2O  + 26 Fe+++  + 26 HCO3-
+    605     Y = -16.852 +   0.969*X     32 FeHCO3+  + 40 H+  + 5 SO4--  = S5--  + 20 H2O  + 32 Fe+++  + 32 HCO3-
+    606     Y = -16.842 +   0.974*X     38 FeHCO3+  + 48 H+  + 6 SO4--  = S6--  + 24 H2O  + 38 Fe+++  + 38 HCO3-
+    607     X =  -4.913                 3 FeHCO3+  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 10 H+  + 3 HCO3-
+    608     X =  -4.416                 2 FeHCO3+  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 10 H+  + 2 HCO3-
+    609     Y = -25.552 -   1.000*X     2 FeHCO3+  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 10 H+  + 2 HCO3-
+    610     X =  -5.179                 5 FeHCO3+  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 16 H+  + 5 HCO3-
+    611     X =  -4.476                 5 FeHCO3+  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 16 H+  + 5 HCO3-
+    612     X =  -2.935                 2 FeHCO3+  + 2 H2O  + SiO2(aq)  = Fayalite  + 4 H+  + 2 HCO3-
+    613     X =  -1.157                 FeHCO3+  + 2 H2O  = Fe(OH)2(ppd)  + 2 H+  + HCO3-
+    614     X =  -2.607                 FeHCO3+  + H2O  = FeO(c)  + 2 H+  + HCO3-
+    615     X =  -3.543                 FeHCO3+  + H2O  + SiO2(aq)  = Ferrosilite  + 2 H+  + HCO3-
+    616     X =   6.131                 FeHCO3+  + SO4--  = FeSO4(c)  + HCO3-
+    617     X =  -4.573                 3 FeHCO3+  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+  + 3 HCO3-
+    618     X =   0.690                 FeHCO3+  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+  + HCO3-
+    619     X =  -1.466                 FeHCO3+  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+  + HCO3-
+    620     X =  15.631                 FeHCO3+  + 2 Cl-  = Lawrencite  + HCO3-
+    621     Y = -22.853 -   0.500*X     FeHCO3+  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + HCO3-
+    622     X =   0.337                 FeHCO3+  + 7 H2O  + SO4--  = Melanterite  + HCO3-
+    623     X =  -5.427                 3 FeHCO3+  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 3 HCO3-
+    624     Y = -18.548 +   1.000*X     30 FeHCO3+  + 38 H+  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 22 HCO3-
+    625     Y = -15.277 +   1.071*X     15 FeHCO3+  + 16 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++  + 15 HCO3-
+    626     Y = -15.535 +   1.113*X     8.625 FeHCO3+  + 8 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 8.625 HCO3-
+    627     X =  -1.683                 2 FeHCO3+  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 2 HCO3-
+    628     X =   0.070                 2 FeHCO3+  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 2 HCO3-
+    629     X =  -5.660                 FeHCO3+  = Siderite  + H+
+    630     Y = -28.329 -   2.500*X     FeHCO3+  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + HCO3-
+    631     Y = -32.924 -   1.812*X     FeHCO3+  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + HCO3-
+    632     Y = -16.770 +   1.000*X     6 FeHCO3+  + 8 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 6 HCO3-
+    633     Y = -15.544 +   1.125*X     9 FeHCO3+  + 8 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 9 HCO3-
+    634     Y = -13.542 -   7.934*X     FeHCO3+  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + HCO3-
+    635     Y = -21.006 +   1.000*X     2 FeHCO3+  + 2 H+  = H2(g)  + 2 Fe+++  + 2 HCO3-
+    636     Y = -17.073 +   1.000*X     8 FeHCO3+  + 10 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+    637     Y = -18.170 +   1.000*X     12 FeHCO3+  + 16 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 12 HCO3-
+    638        Products  favored        FeOH+  + H+  + SO4--  = FeSO4  + H2O
+    639     Y = -15.497 +   0.967*X     30 FeOH+  + 67 H+  + 8 HCO3-  = H(O-phth)-  + 50 H2O  + 30 Fe+++
+    640     Y = -15.642 +   0.967*X     30 FeOH+  + 68 H+  + 8 HCO3-  = H2(O-phth)  + 50 H2O  + 30 Fe+++
+    641     Y = -13.916 +   0.875*X     8 FeOH+  + 18 H+  + SO4--  = H2S(aq)  + 12 H2O  + 8 Fe+++
+    642     Y = -15.521 +   0.967*X     30 FeOH+  + 66 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 50 H2O  + 30 Fe+++
+    643     Y = -14.831 +   0.875*X     8 FeOH+  + 16 H+  + SO4--  = S--  + 12 H2O  + 8 Fe+++
+    644     Y = -14.326 +   0.929*X     14 FeOH+  + 30 H+  + 2 SO4--  = S2--  + 22 H2O  + 14 Fe+++
+    645     Y = -14.153 +   0.950*X     20 FeOH+  + 44 H+  + 3 SO4--  = S3--  + 32 H2O  + 20 Fe+++
+    646     Y = -13.964 +   0.962*X     26 FeOH+  + 58 H+  + 4 SO4--  = S4--  + 42 H2O  + 26 Fe+++
+    647     Y = -13.937 +   0.969*X     32 FeOH+  + 72 H+  + 5 SO4--  = S5--  + 52 H2O  + 32 Fe+++
+    648     Y = -13.928 +   0.974*X     38 FeOH+  + 86 H+  + 6 SO4--  = S6--  + 62 H2O  + 38 Fe+++
+    649     X =  -7.828                 3 FeOH+  + 3 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 7 H+
+    650     X =  -7.330                 2 FeOH+  + 5 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 8 H+
+    651     Y = -28.467 -   1.000*X     2 FeOH+  + 5 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 8 H+
+    652     X =  -8.094                 5 FeOH+  + 7 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 11 H+
+    653     X =  -7.391                 5 FeOH+  + 7 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 11 H+
+    654     X =  -5.849                 2 FeOH+  + SiO2(aq)  = Fayalite  + 2 H+
+    655     X =  -4.071                 FeOH+  + H2O  = Fe(OH)2(ppd)  + H+
+    656     X =  -5.522                 FeOH+  = FeO(c)  + H+
+    657     X =  -6.458                 FeOH+  + SiO2(aq)  = Ferrosilite  + H+
+    658     X =   3.216                 FeOH+  + H+  + SO4--  = FeSO4(c)  + H2O
+    659     X =  -7.487                 3 FeOH+  + 2 H2O  + 2 SiO2(aq)  = Greenalite  + 3 H+
+    660     X =  -2.224                 FeOH+  + H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 3 H+
+    661     X =  -4.380                 FeOH+  + 3 H2O  + 2 Al+++  = Hercynite  + 7 H+
+    662     X =  12.716                 FeOH+  + H+  + 2 Cl-  = Lawrencite  + H2O
+    663     Y = -24.310 -   0.500*X     FeOH+  + 3 H2O  + 2 Fe+++  = Magnetite  + 7 H+
+    664     X =  -2.578                 FeOH+  + 6 H2O  + H+  + SO4--  = Melanterite
+    665     X =  -8.342                 3 FeOH+  + H2O  + 4 SiO2(aq)  = Minnesotaite  + 3 H+
+    666     Y = -15.634 +   1.000*X     30 FeOH+  + 68 H+  + 8 HCO3-  = "O-phth acid(c)"  + 50 H2O  + 30 Fe+++
+    667     Y = -12.155 +   1.071*X     15 FeOH+  + 31 H+  + 2 SO4--  = Pyrite  + 23 H2O  + 14 Fe+++
+    668     Y = -12.292 +   1.113*X     8.625 FeOH+  + 16.63 H+  + SO4--  = Pyrrhotite  + 12.63 H2O  + 7.75 Fe+++
+    669     X =  -4.598                 2 FeOH+  + 10 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 14 H+
+    670     X =  -2.845                 2 FeOH+  + 10 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 14 H+
+    671     X =  -8.575                 FeOH+  + HCO3-  = Siderite  + H2O
+    672     Y = -35.615 -   2.500*X     FeOH+  + 9 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 15 H+
+    673     Y = -38.207 -   1.812*X     FeOH+  + 14.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 23.14 H+
+    674     Y = -13.855 +   1.000*X     6 FeOH+  + 14 H+  + SO4--  = Sulfur-Rhmb  + 10 H2O  + 6 Fe+++
+    675     Y = -12.265 +   1.125*X     9 FeOH+  + 17 H+  + SO4--  = Troilite  + 13 H2O  + 8 Fe+++
+    676     Y = -36.666 -   7.934*X     FeOH+  + .1891 H2O  + .126 Fe+++  = 1.189 Wustite  + 1.378 H+
+    677     Y = -18.091 +   1.000*X     2 FeOH+  + 4 H+  = H2(g)  + 2 H2O  + 2 Fe+++
+    678     Y = -14.158 +   1.000*X     8 FeOH+  + 18 H+  + SO4--  = H2S(g)  + 12 H2O  + 8 Fe+++
+    679     Y = -15.256 +   1.000*X     12 FeOH+  + 28 H+  + 2 SO4--  = S2(g)  + 20 H2O  + 12 Fe+++
+    680     Y = -17.764 +   0.967*X     30 FeSO4  + 37 H+  + 8 HCO3-  = H(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 SO4--
+    681     Y = -17.909 +   0.967*X     30 FeSO4  + 38 H+  + 8 HCO3-  = H2(O-phth)  + 20 H2O  + 30 Fe+++  + 30 SO4--
+    682     Y = -16.182 +   0.875*X     8 FeSO4  + 10 H+  = H2S(aq)  + 4 H2O  + 8 Fe+++  + 7 SO4--
+    683     Y = -17.788 +   0.967*X     30 FeSO4  + 36 H+  + 8 HCO3-  + Na+  = Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 SO4--
+    684     Y = -17.098 +   0.875*X     8 FeSO4  + 8 H+  = S--  + 4 H2O  + 8 Fe+++  + 7 SO4--
+    685     Y = -16.593 +   0.929*X     14 FeSO4  + 16 H+  = S2--  + 8 H2O  + 14 Fe+++  + 12 SO4--
+    686     Y = -16.419 +   0.950*X     20 FeSO4  + 24 H+  = S3--  + 12 H2O  + 20 Fe+++  + 17 SO4--
+    687     Y = -16.231 +   0.962*X     26 FeSO4  + 32 H+  = S4--  + 16 H2O  + 26 Fe+++  + 22 SO4--
+    688     Y = -16.204 +   0.969*X     32 FeSO4  + 40 H+  = S5--  + 20 H2O  + 32 Fe+++  + 27 SO4--
+    689     Y = -16.194 +   0.974*X     38 FeSO4  + 48 H+  = S6--  + 24 H2O  + 38 Fe+++  + 32 SO4--
+    690     X =  -5.561                 3 FeSO4  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++  = Annite  + 10 H+  + 3 SO4--
+    691     X =  -5.064                 2 FeSO4  + 7 H2O  + SiO2(aq)  + 2 Al+++  = Chamosite-7A  + 10 H+  + 2 SO4--
+    692     Y = -26.200 -   1.000*X     2 FeSO4  + 7 H2O  + 2 Fe+++  + SiO2(aq)  = Cronstedt-7A  + 10 H+  + 2 SO4--
+    693     X =  -5.827                 5 FeSO4  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 16 H+  + 5 SO4--
+    694     X =  -5.124                 5 FeSO4  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 16 H+  + 5 SO4--
+    695     X =  -3.583                 2 FeSO4  + 2 H2O  + SiO2(aq)  = Fayalite  + 4 H+  + 2 SO4--
+    696     X =  -1.805                 FeSO4  + 2 H2O  = Fe(OH)2(ppd)  + 2 H+  + SO4--
+    697     X =  -3.255                 FeSO4  + H2O  = FeO(c)  + 2 H+  + SO4--
+    698     X =  -4.191                 FeSO4  + H2O  + SiO2(aq)  = Ferrosilite  + 2 H+  + SO4--
+    699     X =   5.483                 FeSO4  = FeSO4(c)
+    700     X =  -5.221                 3 FeSO4  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+  + 3 SO4--
+    701     X =   0.042                 FeSO4  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+  + SO4--
+    702     X =  -2.114                 FeSO4  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+  + SO4--
+    703     X =  14.983                 FeSO4  + 2 Cl-  = Lawrencite  + SO4--
+    704     Y = -23.177 -   0.500*X     FeSO4  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + SO4--
+    705     X =  -0.311                 FeSO4  + 7 H2O  = Melanterite
+    706     X =  -6.075                 3 FeSO4  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 3 SO4--
+    707     Y = -17.900 +   1.000*X     30 FeSO4  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 30 SO4--
+    708     Y = -14.583 +   1.071*X     15 FeSO4  + 16 H+  = Pyrite  + 8 H2O  + 14 Fe+++  + 13 SO4--
+    709     Y = -14.814 +   1.113*X     8.625 FeSO4  + 8 H+  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 7.625 SO4--
+    710     X =  -2.331                 2 FeSO4  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 2 SO4--
+    711     X =  -0.578                 2 FeSO4  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 2 SO4--
+    712     X =  -6.308                 FeSO4  + HCO3-  = Siderite  + H+  + SO4--
+    713     Y = -29.949 -   2.500*X     FeSO4  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + SO4--
+    714     Y = -34.099 -   1.812*X     FeSO4  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + SO4--
+    715     Y = -16.122 +   1.000*X     6 FeSO4  + 8 H+  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 5 SO4--
+    716     Y = -14.815 +   1.125*X     9 FeSO4  + 8 H+  = Troilite  + 4 H2O  + 8 Fe+++  + 8 SO4--
+    717     Y = -18.683 -   7.934*X     FeSO4  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + SO4--
+    718     Y = -20.358 +   1.000*X     2 FeSO4  + 2 H+  = H2(g)  + 2 Fe+++  + 2 SO4--
+    719     Y = -16.425 +   1.000*X     8 FeSO4  + 10 H+  = H2S(g)  + 4 H2O  + 8 Fe+++  + 7 SO4--
+    720     Y = -17.522 +   1.000*X     12 FeSO4  + 16 H+  = S2(g)  + 8 H2O  + 12 Fe+++  + 10 SO4--
+    721        Reactants favored        H(O-phth)-  + H+  = H2(O-phth)
+    722     X =  17.256                 H(O-phth)-  + 5 H2O  + .5 H+  + 3.75 SO4--  = 3.75 H2S(aq)  + 8 HCO3-
+    723        Reactants favored        H(O-phth)-  + Na+  = Na(O-phth)-  + H+
+    724     X =   7.270                 H(O-phth)-  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 7 H+  + 8 HCO3-
+    725     X =  30.750                 H(O-phth)-  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 2.714 H+  + 8 HCO3-
+    726     X =  80.687                 H(O-phth)-  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + H+  + 8 HCO3-
+    727     X = 298.936                 H(O-phth)-  + 1.538 H2O  + 4.615 SO4--  = 1.154 S4--  + .07692 H+  + 8 HCO3-
+    728     X =-748.850                 1.067 H(O-phth)-  + 1.333 H2O  + .5333 H+  + 5 SO4--  = S5--  + 8.533 HCO3-
+    729     X =-223.678                 1.267 H(O-phth)-  + 1.333 H2O  + 1.133 H+  + 6 SO4--  = S6--  + 10.13 HCO3-
+    730     Y = -23.325 -   0.033*X     H(O-phth)-  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++  = 10 Annite  + 137 H+  + 8 HCO3-
+    731     Y = -22.828 -   0.033*X     H(O-phth)-  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++  = 15 Chamosite-7A  + 187 H+  + 8 HCO3-
+    732     Y = -21.982 -   0.017*X     H(O-phth)-  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 187 H+  + 8 HCO3-
+    733     Y = -23.591 -   0.033*X     H(O-phth)-  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-14A  + 133 H+  + 8 HCO3-
+    734     Y = -22.888 -   0.033*X     H(O-phth)-  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-7A  + 133 H+  + 8 HCO3-
+    735     Y = -21.347 -   0.033*X     H(O-phth)-  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 97 H+  + 8 HCO3-
+    736     Y = -19.569 -   0.033*X     H(O-phth)-  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 97 H+  + 8 HCO3-
+    737     Y = -21.019 -   0.033*X     H(O-phth)-  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 97 H+  + 8 HCO3-
+    738     Y = -21.955 -   0.033*X     H(O-phth)-  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 97 H+  + 8 HCO3-
+    739     Y = -12.281 -   0.033*X     H(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 37 H+  + 8 HCO3-
+    740     Y = -22.985 -   0.033*X     H(O-phth)-  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 97 H+  + 8 HCO3-
+    741     Y = -17.722 -   0.033*X     H(O-phth)-  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 157 H+  + 8 HCO3-
+    742     Y = -19.878 -   0.033*X     H(O-phth)-  + 140 H2O  + 30 Fe+++  + 60 Al+++  = 30 Hercynite  + 277 H+  + 8 HCO3-
+    743     Y =  -2.781 -   0.033*X     H(O-phth)-  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 37 H+  + 8 HCO3-
+    744     Y = -21.373 -   0.011*X     H(O-phth)-  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 277 H+  + 8 HCO3-
+    745     Y = -18.075 -   0.033*X     H(O-phth)-  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 37 H+  + 8 HCO3-
+    746     Y = -23.839 -   0.033*X     H(O-phth)-  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 97 H+  + 8 HCO3-
+    747     X =   4.087                 H(O-phth)-  + H+  = "O-phth acid(c)"
+    748     Y = -62.298 -   0.500*X     H(O-phth)-  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 5 H+  + 8 HCO3-
+    749     Y = -43.891 -   0.329*X     H(O-phth)-  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 9.174 H+  + 8 HCO3-
+    750     Y = -20.095 -   0.033*X     H(O-phth)-  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 277 H+  + 8 HCO3-
+    751     Y = -18.342 -   0.033*X     H(O-phth)-  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 277 H+  + 8 HCO3-
+    752     Y = -24.072 -   0.033*X     H(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 67 H+
+    753     Y = -21.245 -   0.024*X     H(O-phth)-  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 517 H+  + 8 HCO3-
+    754     Y = -23.572 -   0.021*X     H(O-phth)-  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 761.1 H+  + 8 HCO3-
+    755     X = -49.269                 H(O-phth)-  + 3 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-
+    756     Y = -41.359 -   0.300*X     H(O-phth)-  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 10.33 H+  + 8 HCO3-
+    757     Y = -17.867 -   0.030*X     H(O-phth)-  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 108.3 H+  + 8 HCO3-
+    758     X =  77.810                 H(O-phth)-  + 20 H2O  = 15 H2(g)  + 7 H+  + 8 HCO3-
+    759     X = -40.173                 H(O-phth)-  + 5 H2O  + .5 H+  + 3.75 SO4--  = 3.75 H2S(g)  + 8 HCO3-
+    760     X =  -7.257                 H(O-phth)-  + 3 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-
+    761     X =  18.834                 H2(O-phth)  + 5 H2O  + 3.75 SO4--  = 3.75 H2S(aq)  + .5 H+  + 8 HCO3-
+    762        Products  favored        H2(O-phth)  + Na+  = Na(O-phth)-  + 2 H+
+    763     X =   8.849                 H2(O-phth)  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 8 H+  + 8 HCO3-
+    764     X =  34.548                 H2(O-phth)  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 3.714 H+  + 8 HCO3-
+    765     X =  89.370                 H2(O-phth)  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + 2 H+  + 8 HCO3-
+    766     X = 327.153                 H2(O-phth)  + 1.538 H2O  + 4.615 SO4--  = 1.154 S4--  + 1.077 H+  + 8 HCO3-
+    767     X =-818.307                 1.067 H2(O-phth)  + 1.333 H2O  + 5 SO4--  = S5--  + .5333 H+  + 8.533 HCO3-
+    768     X =-244.298                 1.267 H2(O-phth)  + 1.333 H2O  + 6 SO4--  = S6--  + .1333 H+  + 10.13 HCO3-
+    769     Y = -23.470 -   0.033*X     H2(O-phth)  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++  = 10 Annite  + 138 H+  + 8 HCO3-
+    770     Y = -22.972 -   0.033*X     H2(O-phth)  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++  = 15 Chamosite-7A  + 188 H+  + 8 HCO3-
+    771     Y = -22.055 -   0.017*X     H2(O-phth)  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 188 H+  + 8 HCO3-
+    772     Y = -23.736 -   0.033*X     H2(O-phth)  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-14A  + 134 H+  + 8 HCO3-
+    773     Y = -23.033 -   0.033*X     H2(O-phth)  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-7A  + 134 H+  + 8 HCO3-
+    774     Y = -21.491 -   0.033*X     H2(O-phth)  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 98 H+  + 8 HCO3-
+    775     Y = -19.713 -   0.033*X     H2(O-phth)  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 98 H+  + 8 HCO3-
+    776     Y = -21.164 -   0.033*X     H2(O-phth)  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 98 H+  + 8 HCO3-
+    777     Y = -22.100 -   0.033*X     H2(O-phth)  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 98 H+  + 8 HCO3-
+    778     Y = -12.426 -   0.033*X     H2(O-phth)  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 38 H+  + 8 HCO3-
+    779     Y = -23.130 -   0.033*X     H2(O-phth)  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 98 H+  + 8 HCO3-
+    780     Y = -17.866 -   0.033*X     H2(O-phth)  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 158 H+  + 8 HCO3-
+    781     Y = -20.023 -   0.033*X     H2(O-phth)  + 140 H2O  + 30 Fe+++  + 60 Al+++  = 30 Hercynite  + 278 H+  + 8 HCO3-
+    782     Y =  -2.926 -   0.033*X     H2(O-phth)  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 38 H+  + 8 HCO3-
+    783     Y = -21.421 -   0.011*X     H2(O-phth)  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 278 H+  + 8 HCO3-
+    784     Y = -18.220 -   0.033*X     H2(O-phth)  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 38 H+  + 8 HCO3-
+    785     Y = -23.984 -   0.033*X     H2(O-phth)  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 98 H+  + 8 HCO3-
+    786     X =  -0.254                 H2(O-phth)  = "O-phth acid(c)"
+    787     Y = -64.469 -   0.500*X     H2(O-phth)  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 6 H+  + 8 HCO3-
+    788     Y = -45.317 -   0.329*X     H2(O-phth)  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 10.17 H+  + 8 HCO3-
+    789     Y = -20.240 -   0.033*X     H2(O-phth)  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 278 H+  + 8 HCO3-
+    790     Y = -18.487 -   0.033*X     H2(O-phth)  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 278 H+  + 8 HCO3-
+    791     Y = -24.217 -   0.033*X     H2(O-phth)  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 68 H+
+    792     Y = -21.349 -   0.024*X     H2(O-phth)  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 518 H+  + 8 HCO3-
+    793     Y = -23.665 -   0.021*X     H2(O-phth)  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 762.1 H+  + 8 HCO3-
+    794     X = -53.610                 H2(O-phth)  + 2 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-
+    795     Y = -42.661 -   0.300*X     H2(O-phth)  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 11.33 H+  + 8 HCO3-
+    796     Y = -17.995 -   0.030*X     H2(O-phth)  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 109.3 H+  + 8 HCO3-
+    797     X =  73.469                 H2(O-phth)  + 20 H2O  = 15 H2(g)  + 8 H+  + 8 HCO3-
+    798     X = -44.514                 H2(O-phth)  + 5 H2O  + 3.75 SO4--  = 3.75 H2S(g)  + .5 H+  + 8 HCO3-
+    799     X = -11.598                 H2(O-phth)  + 2 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-
+    800     X =  17.516                 3.75 H2S(aq)  + 8 HCO3-  + Na+  = Na(O-phth)-  + 5 H2O  + 1.5 H+  + 3.75 SO4--
+    801        Reactants favored        H2S(aq)  = S--  + 2 H+
+    802     X =   7.660                 1.75 H2S(aq)  + .25 SO4--  = S2--  + H2O  + 1.5 H+
+    803     X =   3.160                 2.5 H2S(aq)  + .5 SO4--  = S3--  + 2 H2O  + H+
+    804     X =   0.564                 3.25 H2S(aq)  + .75 SO4--  = S4--  + 3 H2O  + .5 H+
+    805     X =   0.231                 4 H2S(aq)  + SO4--  = S5--  + 4 H2O
+    806     X =   0.123                 4.75 H2S(aq)  + .5 H+  + 1.25 SO4--  = S6--  + 5 H2O
+    807     Y = -21.743 -   0.125*X     H2S(aq)  + 20 H2O  + 8 Fe+++  + 2.667 K+  + 8 SiO2(aq)  + 2.667 Al+++  = 2.667 Annite  + 36.67 H+  + SO4--
+    808     Y = -21.246 -   0.125*X     H2S(aq)  + 32 H2O  + 8 Fe+++  + 4 SiO2(aq)  + 8 Al+++  = 4 Chamosite-7A  + 50 H+  + SO4--
+    809     Y = -21.191 -   0.062*X     H2S(aq)  + 32 H2O  + 16 Fe+++  + 4 SiO2(aq)  = 4 Cronstedt-7A  + 50 H+  + SO4--
+    810     Y = -22.009 -   0.125*X     H2S(aq)  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-14A  + 35.6 H+  + SO4--
+    811     Y = -21.306 -   0.125*X     H2S(aq)  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-7A  + 35.6 H+  + SO4--
+    812     Y = -19.765 -   0.125*X     H2S(aq)  + 12 H2O  + 8 Fe+++  + 4 SiO2(aq)  = 4 Fayalite  + 26 H+  + SO4--
+    813     Y = -17.987 -   0.125*X     H2S(aq)  + 20 H2O  + 8 Fe+++  = 8 Fe(OH)2(ppd)  + 26 H+  + SO4--
+    814     Y = -19.438 -   0.125*X     H2S(aq)  + 12 H2O  + 8 Fe+++  = 8 FeO(c)  + 26 H+  + SO4--
+    815     Y = -20.373 -   0.125*X     H2S(aq)  + 12 H2O  + 8 Fe+++  + 8 SiO2(aq)  = 8 Ferrosilite  + 26 H+  + SO4--
+    816     Y = -10.700 -   0.125*X     H2S(aq)  + 4 H2O  + 8 Fe+++  + 7 SO4--  = 8 FeSO4(c)  + 10 H+
+    817     Y = -21.403 -   0.125*X     H2S(aq)  + 17.33 H2O  + 8 Fe+++  + 5.333 SiO2(aq)  = 2.667 Greenalite  + 26 H+  + SO4--
+    818     Y = -16.140 -   0.125*X     H2S(aq)  + 20 H2O  + 8 Fe+++  + 8 Ca++  + 16 SiO2(aq)  = 8 Hedenbergite  + 42 H+  + SO4--
+    819     Y = -18.296 -   0.125*X     H2S(aq)  + 36 H2O  + 8 Fe+++  + 16 Al+++  = 8 Hercynite  + 74 H+  + SO4--
+    820     Y =  -1.200 -   0.125*X     H2S(aq)  + 4 H2O  + 8 Fe+++  + 16 Cl-  = 8 Lawrencite  + 10 H+  + SO4--
+    821     Y = -20.845 -   0.042*X     H2S(aq)  + 36 H2O  + 24 Fe+++  = 8 Magnetite  + 74 H+  + SO4--
+    822     Y = -16.493 -   0.125*X     H2S(aq)  + 60 H2O  + 8 Fe+++  + 7 SO4--  = 8 Melanterite  + 10 H+
+    823     Y = -22.258 -   0.125*X     H2S(aq)  + 14.67 H2O  + 8 Fe+++  + 10.67 SiO2(aq)  = 2.667 Minnesotaite  + 26 H+  + SO4--
+    824     X =  13.744                 3.75 H2S(aq)  + .5 H+  + 8 HCO3-  = "O-phth acid(c)"  + 5 H2O  + 3.75 SO4--
+    825     Y = -38.571 -   1.875*X     1.875 H2S(aq)  + Fe+++  + .125 SO4--  = Pyrite  + .5 H2O  + 2.75 H+
+    826     Y = -28.299 -   1.232*X     1.078 H2S(aq)  + .3125 H2O  + .875 Fe+++  = Pyrrhotite  + 2.781 H+  + .07813 SO4--
+    827     Y = -18.513 -   0.125*X     H2S(aq)  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-14A  + 74 H+  + SO4--
+    828     Y = -16.760 -   0.125*X     H2S(aq)  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-7A  + 74 H+  + SO4--
+    829     Y = -22.491 -   0.125*X     H2S(aq)  + 4 H2O  + 8 Fe+++  + 8 HCO3-  = 8 Siderite  + 18 H+  + SO4--
+    830     Y = -20.116 -   0.089*X     H2S(aq)  + 84 H2O  + 11.2 Fe+++  + .4 Ca++  + 3.2 K+  + 18.4 Mg++  + 1.6 Na+  + 56 SiO2(aq)  + 20 Al+++  = 16 Smectite-high-Fe-Mg  + 138 H+  + SO4--
+    831     Y = -22.553 -   0.081*X     H2S(aq)  + 128.1 H2O  + 12.41 Fe+++  + .5517 Ca++  + 5.517 K+  + 24.83 Mg++  + 4.138 Na+  + 103.4 SiO2(aq)  + 34.48 Al+++  = 27.59 Smectite-low-Fe-Mg  + 203.1 H+  + SO4--
+    832     X =  -0.484                 H2S(aq)  + .6667 H+  + .3333 SO4--  = 1.333 Sulfur-Rhmb  + 1.333 H2O
+    833     Y = -27.123 -   1.125*X     1.125 H2S(aq)  + .5 H2O  + Fe+++  = Troilite  + 3.25 H+  + .125 SO4--
+    834     Y = -16.462 -   0.111*X     H2S(aq)  + 13.51 H2O  + 9.008 Fe+++  = 9.512 Wustite  + 29.02 H+  + SO4--
+    835     X =  33.404                 H2S(aq)  + 4 H2O  = 4 H2(g)  + 2 H+  + SO4--
+    836     X =   1.942                 H2S(aq)  = H2S(g)
+    837     X =  10.719                 1.5 H2S(aq)  + H+  + .5 SO4--  = S2(g)  + 2 H2O
+    838     X =   7.531                 Na(O-phth)-  + 5 H2O  + 3.75 SO4--  = 3.75 S--  + 6 H+  + 8 HCO3-  + Na+
+    839     X =  31.377                 Na(O-phth)-  + 2.857 H2O  + 4.286 SO4--  = 2.143 S2--  + 1.714 H+  + 8 HCO3-  + Na+
+    840     X =  82.120                 Na(O-phth)-  + 2 H2O  + 4.5 SO4--  = 1.5 S3--  + 8 HCO3-  + Na+
+    841     X = 303.592                 Na(O-phth)-  + 1.538 H2O  + .9231 H+  + 4.615 SO4--  = 1.154 S4--  + 8 HCO3-  + Na+
+    842     X =-760.311                 1.067 Na(O-phth)-  + 1.333 H2O  + 1.6 H+  + 5 SO4--  = S5--  + 8.533 HCO3-  + 1.067 Na+
+    843     X =-227.080                 1.267 Na(O-phth)-  + 1.333 H2O  + 2.4 H+  + 6 SO4--  = S6--  + 10.13 HCO3-  + 1.267 Na+
+    844     Y = -23.349 -   0.033*X     Na(O-phth)-  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++  = 10 Annite  + 136 H+  + 8 HCO3-  + Na+
+    845     Y = -22.852 -   0.033*X     Na(O-phth)-  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++  = 15 Chamosite-7A  + 186 H+  + 8 HCO3-  + Na+
+    846     Y = -21.994 -   0.017*X     Na(O-phth)-  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)  = 15 Cronstedt-7A  + 186 H+  + 8 HCO3-  + Na+
+    847     Y = -23.615 -   0.033*X     Na(O-phth)-  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-14A  + 132 H+  + 8 HCO3-  + Na+
+    848     Y = -22.912 -   0.033*X     Na(O-phth)-  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++  = 6 Daphnite-7A  + 132 H+  + 8 HCO3-  + Na+
+    849     Y = -21.370 -   0.033*X     Na(O-phth)-  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)  = 15 Fayalite  + 96 H+  + 8 HCO3-  + Na+
+    850     Y = -19.592 -   0.033*X     Na(O-phth)-  + 80 H2O  + 30 Fe+++  = 30 Fe(OH)2(ppd)  + 96 H+  + 8 HCO3-  + Na+
+    851     Y = -21.043 -   0.033*X     Na(O-phth)-  + 50 H2O  + 30 Fe+++  = 30 FeO(c)  + 96 H+  + 8 HCO3-  + Na+
+    852     Y = -21.979 -   0.033*X     Na(O-phth)-  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)  = 30 Ferrosilite  + 96 H+  + 8 HCO3-  + Na+
+    853     Y = -12.305 -   0.033*X     Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 30 SO4--  = 30 FeSO4(c)  + 36 H+  + 8 HCO3-  + Na+
+    854     Y = -23.009 -   0.033*X     Na(O-phth)-  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)  = 10 Greenalite  + 96 H+  + 8 HCO3-  + Na+
+    855     Y = -17.746 -   0.033*X     Na(O-phth)-  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)  = 30 Hedenbergite  + 156 H+  + 8 HCO3-  + Na+
+    856     Y = -19.902 -   0.033*X     Na(O-phth)-  + 140 H2O  + 30 Fe+++  + 60 Al+++  = 30 Hercynite  + 276 H+  + 8 HCO3-  + Na+
+    857     Y =  -2.805 -   0.033*X     Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 60 Cl-  = 30 Lawrencite  + 36 H+  + 8 HCO3-  + Na+
+    858     Y = -21.381 -   0.011*X     Na(O-phth)-  + 140 H2O  + 90 Fe+++  = 30 Magnetite  + 276 H+  + 8 HCO3-  + Na+
+    859     Y = -18.099 -   0.033*X     Na(O-phth)-  + 230 H2O  + 30 Fe+++  + 30 SO4--  = 30 Melanterite  + 36 H+  + 8 HCO3-  + Na+
+    860     Y = -23.863 -   0.033*X     Na(O-phth)-  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)  = 10 Minnesotaite  + 96 H+  + 8 HCO3-  + Na+
+    861     X =   3.370                 Na(O-phth)-  + 2 H+  = "O-phth acid(c)"  + Na+
+    862     Y = -62.656 -   0.500*X     Na(O-phth)-  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 4 H+  + 8 HCO3-  + Na+
+    863     Y = -44.126 -   0.329*X     Na(O-phth)-  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 8.174 H+  + 8 HCO3-  + Na+
+    864     Y = -20.119 -   0.033*X     Na(O-phth)-  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 276 H+  + 8 HCO3-  + Na+
+    865     Y = -18.366 -   0.033*X     Na(O-phth)-  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 276 H+  + 8 HCO3-  + Na+
+    866     Y = -24.096 -   0.033*X     Na(O-phth)-  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 66 H+  + Na+
+    867     Y = -21.262 -   0.024*X     Na(O-phth)-  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 5 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 516 H+  + 8 HCO3-
+    868     Y = -23.587 -   0.021*X     Na(O-phth)-  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 14.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 760.1 H+  + 8 HCO3-
+    869     X = -49.985                 Na(O-phth)-  + 4 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-  + Na+
+    870     Y = -41.574 -   0.300*X     Na(O-phth)-  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 9.333 H+  + 8 HCO3-  + Na+
+    871     Y = -17.888 -   0.030*X     Na(O-phth)-  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 107.3 H+  + 8 HCO3-  + Na+
+    872     X =  77.094                 Na(O-phth)-  + 20 H2O  = 15 H2(g)  + 6 H+  + 8 HCO3-  + Na+
+    873     X = -40.889                 Na(O-phth)-  + 5 H2O  + 1.5 H+  + 3.75 SO4--  = 3.75 H2S(g)  + 8 HCO3-  + Na+
+    874     X =  -7.974                 Na(O-phth)-  + 4 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-  + Na+
+    875     X =  -9.426                 1.75 S--  + 2 H+  + .25 SO4--  = S2--  + H2O
+    876     X =  -9.044                 2.5 S--  + 4 H+  + .5 SO4--  = S3--  + 2 H2O
+    877     X = -10.013                 3.25 S--  + 6 H+  + .75 SO4--  = S4--  + 3 H2O
+    878     X =  -9.532                 4 S--  + 8 H+  + SO4--  = S5--  + 4 H2O
+    879     X =  -9.153                 4.75 S--  + 10 H+  + 1.25 SO4--  = S6--  + 5 H2O
+    880     Y = -22.659 -   0.125*X     S--  + 20 H2O  + 8 Fe+++  + 2.667 K+  + 8 SiO2(aq)  + 2.667 Al+++  = 2.667 Annite  + 34.67 H+  + SO4--
+    881     Y = -22.161 -   0.125*X     S--  + 32 H2O  + 8 Fe+++  + 4 SiO2(aq)  + 8 Al+++  = 4 Chamosite-7A  + 48 H+  + SO4--
+    882     Y = -21.649 -   0.062*X     S--  + 32 H2O  + 16 Fe+++  + 4 SiO2(aq)  = 4 Cronstedt-7A  + 48 H+  + SO4--
+    883     Y = -22.925 -   0.125*X     S--  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-14A  + 33.6 H+  + SO4--
+    884     Y = -22.222 -   0.125*X     S--  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++  = 1.6 Daphnite-7A  + 33.6 H+  + SO4--
+    885     Y = -20.680 -   0.125*X     S--  + 12 H2O  + 8 Fe+++  + 4 SiO2(aq)  = 4 Fayalite  + 24 H+  + SO4--
+    886     Y = -18.902 -   0.125*X     S--  + 20 H2O  + 8 Fe+++  = 8 Fe(OH)2(ppd)  + 24 H+  + SO4--
+    887     Y = -20.353 -   0.125*X     S--  + 12 H2O  + 8 Fe+++  = 8 FeO(c)  + 24 H+  + SO4--
+    888     Y = -21.289 -   0.125*X     S--  + 12 H2O  + 8 Fe+++  + 8 SiO2(aq)  = 8 Ferrosilite  + 24 H+  + SO4--
+    889     Y = -11.615 -   0.125*X     S--  + 4 H2O  + 8 Fe+++  + 7 SO4--  = 8 FeSO4(c)  + 8 H+
+    890     Y = -22.318 -   0.125*X     S--  + 17.33 H2O  + 8 Fe+++  + 5.333 SiO2(aq)  = 2.667 Greenalite  + 24 H+  + SO4--
+    891     Y = -17.055 -   0.125*X     S--  + 20 H2O  + 8 Fe+++  + 8 Ca++  + 16 SiO2(aq)  = 8 Hedenbergite  + 40 H+  + SO4--
+    892     Y = -19.211 -   0.125*X     S--  + 36 H2O  + 8 Fe+++  + 16 Al+++  = 8 Hercynite  + 72 H+  + SO4--
+    893     Y =  -2.115 -   0.125*X     S--  + 4 H2O  + 8 Fe+++  + 16 Cl-  = 8 Lawrencite  + 8 H+  + SO4--
+    894     Y = -21.151 -   0.042*X     S--  + 36 H2O  + 24 Fe+++  = 8 Magnetite  + 72 H+  + SO4--
+    895     Y = -17.409 -   0.125*X     S--  + 60 H2O  + 8 Fe+++  + 7 SO4--  = 8 Melanterite  + 8 H+
+    896     Y = -23.173 -   0.125*X     S--  + 14.67 H2O  + 8 Fe+++  + 10.67 SiO2(aq)  = 2.667 Minnesotaite  + 24 H+  + SO4--
+    897     X =   6.421                 3.75 S--  + 8 H+  + 8 HCO3-  = "O-phth acid(c)"  + 5 H2O  + 3.75 SO4--
+    898     Y = -52.301 -   1.875*X     1.875 S--  + H+  + Fe+++  + .125 SO4--  = Pyrite  + .5 H2O
+    899     Y = -37.322 -   1.232*X     1.078 S--  + .3125 H2O  + .875 Fe+++  = Pyrrhotite  + .625 H+  + .07813 SO4--
+    900     Y = -19.429 -   0.125*X     S--  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-14A  + 72 H+  + SO4--
+    901     Y = -17.676 -   0.125*X     S--  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++  = 4 Ripidolit-7A  + 72 H+  + SO4--
+    902     Y = -23.406 -   0.125*X     S--  + 4 H2O  + 8 Fe+++  + 8 HCO3-  = 8 Siderite  + 16 H+  + SO4--
+    903     Y = -20.769 -   0.089*X     S--  + 84 H2O  + 11.2 Fe+++  + .4 Ca++  + 3.2 K+  + 18.4 Mg++  + 1.6 Na+  + 56 SiO2(aq)  + 20 Al+++  = 16 Smectite-high-Fe-Mg  + 136 H+  + SO4--
+    904     Y = -23.142 -   0.081*X     S--  + 128.1 H2O  + 12.41 Fe+++  + .5517 Ca++  + 5.517 K+  + 24.83 Mg++  + 4.138 Na+  + 103.4 SiO2(aq)  + 34.48 Al+++  = 27.59 Smectite-low-Fe-Mg  + 201.1 H+  + SO4--
+    905     X =  -7.807                 S--  + 2.667 H+  + .3333 SO4--  = 1.333 Sulfur-Rhmb  + 1.333 H2O
+    906     Y = -35.361 -   1.125*X     1.125 S--  + .5 H2O  + Fe+++  = Troilite  + H+  + .125 SO4--
+    907     Y = -17.275 -   0.111*X     S--  + 13.51 H2O  + 9.008 Fe+++  = 9.512 Wustite  + 27.02 H+  + SO4--
+    908     X =  26.081                 S--  + 4 H2O  = 4 H2(g)  + SO4--
+    909     X =  -5.381                 S--  + 2 H+  = H2S(g)
+    910     X =   3.396                 1.5 S--  + 4 H+  + .5 SO4--  = S2(g)  + 2 H2O
+    911     X =  -8.090                 1.429 S2--  + 1.143 H+  + .1429 SO4--  = S3--  + .5714 H2O
+    912     X = -10.968                 1.857 S2--  + 2.286 H+  + .2857 SO4--  = S4--  + 1.143 H2O
+    913     X =  -9.674                 2.286 S2--  + 3.429 H+  + .4286 SO4--  = S5--  + 1.714 H2O
+    914     X =  -8.828                 2.714 S2--  + 4.571 H+  + .5714 SO4--  = S6--  + 2.286 H2O
+    915     Y = -22.154 -   0.071*X     S2--  + 36 H2O  + 14 Fe+++  + 4.667 K+  + 14 SiO2(aq)  + 4.667 Al+++  = 4.667 Annite  + 62.67 H+  + 2 SO4--
+    916     Y = -21.656 -   0.071*X     S2--  + 57 H2O  + 14 Fe+++  + 7 SiO2(aq)  + 14 Al+++  = 7 Chamosite-7A  + 86 H+  + 2 SO4--
+    917     Y = -21.396 -   0.036*X     S2--  + 57 H2O  + 28 Fe+++  + 7 SiO2(aq)  = 7 Cronstedt-7A  + 86 H+  + 2 SO4--
+    918     Y = -22.420 -   0.071*X     S2--  + 41.6 H2O  + 14 Fe+++  + 8.4 SiO2(aq)  + 5.6 Al+++  = 2.8 Daphnite-14A  + 60.8 H+  + 2 SO4--
+    919     Y = -21.717 -   0.071*X     S2--  + 41.6 H2O  + 14 Fe+++  + 8.4 SiO2(aq)  + 5.6 Al+++  = 2.8 Daphnite-7A  + 60.8 H+  + 2 SO4--
+    920     Y = -20.175 -   0.071*X     S2--  + 22 H2O  + 14 Fe+++  + 7 SiO2(aq)  = 7 Fayalite  + 44 H+  + 2 SO4--
+    921     Y = -18.397 -   0.071*X     S2--  + 36 H2O  + 14 Fe+++  = 14 Fe(OH)2(ppd)  + 44 H+  + 2 SO4--
+    922     Y = -19.848 -   0.071*X     S2--  + 22 H2O  + 14 Fe+++  = 14 FeO(c)  + 44 H+  + 2 SO4--
+    923     Y = -20.784 -   0.071*X     S2--  + 22 H2O  + 14 Fe+++  + 14 SiO2(aq)  = 14 Ferrosilite  + 44 H+  + 2 SO4--
+    924     Y = -11.110 -   0.071*X     S2--  + 8 H2O  + 14 Fe+++  + 12 SO4--  = 14 FeSO4(c)  + 16 H+
+    925     Y = -21.814 -   0.071*X     S2--  + 31.33 H2O  + 14 Fe+++  + 9.333 SiO2(aq)  = 4.667 Greenalite  + 44 H+  + 2 SO4--
+    926     Y = -16.550 -   0.071*X     S2--  + 36 H2O  + 14 Fe+++  + 14 Ca++  + 28 SiO2(aq)  = 14 Hedenbergite  + 72 H+  + 2 SO4--
+    927     Y = -18.706 -   0.071*X     S2--  + 64 H2O  + 14 Fe+++  + 28 Al+++  = 14 Hercynite  + 128 H+  + 2 SO4--
+    928     Y =  -1.610 -   0.071*X     S2--  + 8 H2O  + 14 Fe+++  + 28 Cl-  = 14 Lawrencite  + 16 H+  + 2 SO4--
+    929     Y = -20.982 -   0.024*X     S2--  + 64 H2O  + 42 Fe+++  = 14 Magnetite  + 128 H+  + 2 SO4--
+    930     Y = -16.904 -   0.071*X     S2--  + 106 H2O  + 14 Fe+++  + 12 SO4--  = 14 Melanterite  + 16 H+
+    931     Y = -22.668 -   0.071*X     S2--  + 26.67 H2O  + 14 Fe+++  + 18.67 SiO2(aq)  = 4.667 Minnesotaite  + 44 H+  + 2 SO4--
+    932     X =  18.307                 2.143 S2--  + 3.714 H+  + 8 HCO3-  = "O-phth acid(c)"  + 2.857 H2O  + 4.286 SO4--
+    933     Y = -44.727 -   1.071*X     1.071 S2--  + .5714 H2O  + Fe+++  = Pyrite  + 1.143 H+  + .1429 SO4--
+    934     Y = -32.344 -   0.704*X     S2--  + 1.507 H2O  + 1.42 Fe+++  = 1.623 Pyrrhotite  + 3.014 H+  + .3768 SO4--
+    935     Y = -18.924 -   0.071*X     S2--  + 92 H2O  + 14 Fe+++  + 21 Mg++  + 21 SiO2(aq)  + 14 Al+++  = 7 Ripidolit-14A  + 128 H+  + 2 SO4--
+    936     Y = -17.171 -   0.071*X     S2--  + 92 H2O  + 14 Fe+++  + 21 Mg++  + 21 SiO2(aq)  + 14 Al+++  = 7 Ripidolit-7A  + 128 H+  + 2 SO4--
+    937     Y = -22.901 -   0.071*X     S2--  + 8 H2O  + 14 Fe+++  + 14 HCO3-  = 14 Siderite  + 30 H+  + 2 SO4--
+    938     Y = -20.409 -   0.051*X     S2--  + 148 H2O  + 19.6 Fe+++  + .7 Ca++  + 5.6 K+  + 32.2 Mg++  + 2.8 Na+  + 98 SiO2(aq)  + 35 Al+++  = 28 Smectite-high-Fe-Mg  + 240 H+  + 2 SO4--
+    939     Y = -22.817 -   0.046*X     S2--  + 225.2 H2O  + 21.72 Fe+++  + .9655 Ca++  + 9.655 K+  + 43.45 Mg++  + 7.241 Na+  + 181 SiO2(aq)  + 60.34 Al+++  = 48.28 Smectite-low-Fe-Mg  + 353.9 H+  + 2 SO4--
+    940     X =  -6.592                 S2--  + 2.667 H+  + .3333 SO4--  = 2.333 Sulfur-Rhmb  + 1.333 H2O
+    941     Y = -30.816 -   0.643*X     S2--  + 1.778 H2O  + 1.556 Fe+++  = 1.556 Troilite  + 3.556 H+  + .4444 SO4--
+    942     Y = -16.827 -   0.063*X     S2--  + 24.65 H2O  + 15.76 Fe+++  = 16.65 Wustite  + 49.29 H+  + 2 SO4--
+    943     X =  52.711                 S2--  + 8 H2O  = 7 H2(g)  + 2 H+  + 2 SO4--
+    944     X =  -2.347                 S2--  + H2O  + 1.5 H+  = 1.75 H2S(g)  + .25 SO4--
+    945     X =  13.013                 S2--  + 2.667 H+  + .3333 SO4--  = 1.167 S2(g)  + 1.333 H2O
+    946     X = -16.312                 1.3 S3--  + .8 H+  + .1 SO4--  = S4--  + .4 H2O
+    947     X = -11.483                 1.6 S3--  + 1.6 H+  + .2 SO4--  = S5--  + .8 H2O
+    948     X =  -9.495                 1.9 S3--  + 2.4 H+  + .3 SO4--  = S6--  + 1.2 H2O
+    949     Y = -21.980 -   0.050*X     S3--  + 52 H2O  + 20 Fe+++  + 6.667 K+  + 20 SiO2(aq)  + 6.667 Al+++  = 6.667 Annite  + 90.67 H+  + 3 SO4--
+    950     Y = -21.483 -   0.050*X     S3--  + 82 H2O  + 20 Fe+++  + 10 SiO2(aq)  + 20 Al+++  = 10 Chamosite-7A  + 124 H+  + 3 SO4--
+    951     Y = -21.310 -   0.025*X     S3--  + 82 H2O  + 40 Fe+++  + 10 SiO2(aq)  = 10 Cronstedt-7A  + 124 H+  + 3 SO4--
+    952     Y = -22.246 -   0.050*X     S3--  + 60 H2O  + 20 Fe+++  + 12 SiO2(aq)  + 8 Al+++  = 4 Daphnite-14A  + 88 H+  + 3 SO4--
+    953     Y = -21.543 -   0.050*X     S3--  + 60 H2O  + 20 Fe+++  + 12 SiO2(aq)  + 8 Al+++  = 4 Daphnite-7A  + 88 H+  + 3 SO4--
+    954     Y = -20.002 -   0.050*X     S3--  + 32 H2O  + 20 Fe+++  + 10 SiO2(aq)  = 10 Fayalite  + 64 H+  + 3 SO4--
+    955     Y = -18.224 -   0.050*X     S3--  + 52 H2O  + 20 Fe+++  = 20 Fe(OH)2(ppd)  + 64 H+  + 3 SO4--
+    956     Y = -19.675 -   0.050*X     S3--  + 32 H2O  + 20 Fe+++  = 20 FeO(c)  + 64 H+  + 3 SO4--
+    957     Y = -20.610 -   0.050*X     S3--  + 32 H2O  + 20 Fe+++  + 20 SiO2(aq)  = 20 Ferrosilite  + 64 H+  + 3 SO4--
+    958     Y = -10.937 -   0.050*X     S3--  + 12 H2O  + 20 Fe+++  + 17 SO4--  = 20 FeSO4(c)  + 24 H+
+    959     Y = -21.640 -   0.050*X     S3--  + 45.33 H2O  + 20 Fe+++  + 13.33 SiO2(aq)  = 6.667 Greenalite  + 64 H+  + 3 SO4--
+    960     Y = -16.377 -   0.050*X     S3--  + 52 H2O  + 20 Fe+++  + 20 Ca++  + 40 SiO2(aq)  = 20 Hedenbergite  + 104 H+  + 3 SO4--
+    961     Y = -18.533 -   0.050*X     S3--  + 92 H2O  + 20 Fe+++  + 40 Al+++  = 20 Hercynite  + 184 H+  + 3 SO4--
+    962     Y =  -1.437 -   0.050*X     S3--  + 12 H2O  + 20 Fe+++  + 40 Cl-  = 20 Lawrencite  + 24 H+  + 3 SO4--
+    963     Y = -20.924 -   0.017*X     S3--  + 92 H2O  + 60 Fe+++  = 20 Magnetite  + 184 H+  + 3 SO4--
+    964     Y = -16.730 -   0.050*X     S3--  + 152 H2O  + 20 Fe+++  + 17 SO4--  = 20 Melanterite  + 24 H+
+    965     Y = -22.495 -   0.050*X     S3--  + 38.67 H2O  + 20 Fe+++  + 26.67 SiO2(aq)  = 6.667 Minnesotaite  + 64 H+  + 3 SO4--
+    966     X =  29.620                 1.5 S3--  + 2 H+  + 8 HCO3-  = "O-phth acid(c)"  + 2 H2O  + 4.5 SO4--
+    967     Y = -42.126 -   0.750*X     S3--  + 1.333 H2O  + 1.333 Fe+++  = 1.333 Pyrite  + 2.667 H+  + .3333 SO4--
+    968     Y = -30.635 -   0.493*X     S3--  + 2.725 H2O  + 2.029 Fe+++  = 2.319 Pyrrhotite  + 5.449 H+  + .6812 SO4--
+    969     Y = -18.750 -   0.050*X     S3--  + 132 H2O  + 20 Fe+++  + 30 Mg++  + 30 SiO2(aq)  + 20 Al+++  = 10 Ripidolit-14A  + 184 H+  + 3 SO4--
+    970     Y = -16.997 -   0.050*X     S3--  + 132 H2O  + 20 Fe+++  + 30 Mg++  + 30 SiO2(aq)  + 20 Al+++  = 10 Ripidolit-7A  + 184 H+  + 3 SO4--
+    971     Y = -22.728 -   0.050*X     S3--  + 12 H2O  + 20 Fe+++  + 20 HCO3-  = 20 Siderite  + 44 H+  + 3 SO4--
+    972     Y = -20.285 -   0.036*X     S3--  + 212 H2O  + 28 Fe+++  + Ca++  + 8 K+  + 46 Mg++  + 4 Na+  + 140 SiO2(aq)  + 50 Al+++  = 40 Smectite-high-Fe-Mg  + 344 H+  + 3 SO4--
+    973     Y = -22.705 -   0.032*X     S3--  + 322.3 H2O  + 31.03 Fe+++  + 1.379 Ca++  + 13.79 K+  + 62.07 Mg++  + 10.34 Na+  + 258.6 SiO2(aq)  + 86.21 Al+++  = 68.97 Smectite-low-Fe-Mg  + 506.8 H+  + 3 SO4--
+    974     X =  -5.950                 S3--  + 2.667 H+  + .3333 SO4--  = 3.333 Sulfur-Rhmb  + 1.333 H2O
+    975     Y = -29.256 -   0.450*X     S3--  + 3.111 H2O  + 2.222 Fe+++  = 2.222 Troilite  + 6.222 H+  + .7778 SO4--
+    976     Y = -16.673 -   0.044*X     S3--  + 35.78 H2O  + 22.52 Fe+++  = 23.78 Wustite  + 71.56 H+  + 3 SO4--
+    977     X =  78.769                 S3--  + 12 H2O  = 10 H2(g)  + 4 H+  + 3 SO4--
+    978     X =   0.114                 S3--  + 2 H2O  + H+  = 2.5 H2S(g)  + .5 SO4--
+    979     X =  22.058                 S3--  + 2.667 H+  + .3333 SO4--  = 1.667 S2(g)  + 1.333 H2O
+    980     X =  -3.758                 1.231 S4--  + .6154 H+  + .07692 SO4--  = S5--  + .3077 H2O
+    981     X =  -3.018                 1.462 S4--  + 1.231 H+  + .1538 SO4--  = S6--  + .6154 H2O
+    982     Y = -21.792 -   0.038*X     S4--  + 68 H2O  + 26 Fe+++  + 8.667 K+  + 26 SiO2(aq)  + 8.667 Al+++  = 8.667 Annite  + 118.7 H+  + 4 SO4--
+    983     Y = -21.295 -   0.038*X     S4--  + 107 H2O  + 26 Fe+++  + 13 SiO2(aq)  + 26 Al+++  = 13 Chamosite-7A  + 162 H+  + 4 SO4--
+    984     Y = -21.216 -   0.019*X     S4--  + 107 H2O  + 52 Fe+++  + 13 SiO2(aq)  = 13 Cronstedt-7A  + 162 H+  + 4 SO4--
+    985     Y = -22.058 -   0.038*X     S4--  + 78.4 H2O  + 26 Fe+++  + 15.6 SiO2(aq)  + 10.4 Al+++  = 5.2 Daphnite-14A  + 115.2 H+  + 4 SO4--
+    986     Y = -21.355 -   0.038*X     S4--  + 78.4 H2O  + 26 Fe+++  + 15.6 SiO2(aq)  + 10.4 Al+++  = 5.2 Daphnite-7A  + 115.2 H+  + 4 SO4--
+    987     Y = -19.814 -   0.038*X     S4--  + 42 H2O  + 26 Fe+++  + 13 SiO2(aq)  = 13 Fayalite  + 84 H+  + 4 SO4--
+    988     Y = -18.036 -   0.038*X     S4--  + 68 H2O  + 26 Fe+++  = 26 Fe(OH)2(ppd)  + 84 H+  + 4 SO4--
+    989     Y = -19.486 -   0.038*X     S4--  + 42 H2O  + 26 Fe+++  = 26 FeO(c)  + 84 H+  + 4 SO4--
+    990     Y = -20.422 -   0.038*X     S4--  + 42 H2O  + 26 Fe+++  + 26 SiO2(aq)  = 26 Ferrosilite  + 84 H+  + 4 SO4--
+    991     Y = -10.748 -   0.038*X     S4--  + 16 H2O  + 26 Fe+++  + 22 SO4--  = 26 FeSO4(c)  + 32 H+
+    992     Y = -21.452 -   0.038*X     S4--  + 59.33 H2O  + 26 Fe+++  + 17.33 SiO2(aq)  = 8.667 Greenalite  + 84 H+  + 4 SO4--
+    993     Y = -16.189 -   0.038*X     S4--  + 68 H2O  + 26 Fe+++  + 26 Ca++  + 52 SiO2(aq)  = 26 Hedenbergite  + 136 H+  + 4 SO4--
+    994     Y = -18.345 -   0.038*X     S4--  + 120 H2O  + 26 Fe+++  + 52 Al+++  = 26 Hercynite  + 240 H+  + 4 SO4--
+    995     Y =  -1.248 -   0.038*X     S4--  + 16 H2O  + 26 Fe+++  + 52 Cl-  = 26 Lawrencite  + 32 H+  + 4 SO4--
+    996     Y = -20.862 -   0.013*X     S4--  + 120 H2O  + 78 Fe+++  = 26 Magnetite  + 240 H+  + 4 SO4--
+    997     Y = -16.542 -   0.038*X     S4--  + 198 H2O  + 26 Fe+++  + 22 SO4--  = 26 Melanterite  + 32 H+
+    998     Y = -22.306 -   0.038*X     S4--  + 50.67 H2O  + 26 Fe+++  + 34.67 SiO2(aq)  = 8.667 Minnesotaite  + 84 H+  + 4 SO4--
+    999     X =  43.400                 1.154 S4--  + 1.077 H+  + 8 HCO3-  = "O-phth acid(c)"  + 1.538 H2O  + 4.615 SO4--
+   1000     Y = -39.303 -   0.577*X     S4--  + 2.133 H2O  + 1.733 Fe+++  = 1.733 Pyrite  + 4.267 H+  + .5333 SO4--
+   1001     Y = -28.780 -   0.379*X     S4--  + 3.942 H2O  + 2.638 Fe+++  = 3.014 Pyrrhotite  + 7.884 H+  + .9855 SO4--
+   1002     Y = -18.562 -   0.038*X     S4--  + 172 H2O  + 26 Fe+++  + 39 Mg++  + 39 SiO2(aq)  + 26 Al+++  = 13 Ripidolit-14A  + 240 H+  + 4 SO4--
+   1003     Y = -16.809 -   0.038*X     S4--  + 172 H2O  + 26 Fe+++  + 39 Mg++  + 39 SiO2(aq)  + 26 Al+++  = 13 Ripidolit-7A  + 240 H+  + 4 SO4--
+   1004     Y = -22.539 -   0.038*X     S4--  + 16 H2O  + 26 Fe+++  + 26 HCO3-  = 26 Siderite  + 58 H+  + 4 SO4--
+   1005     Y = -20.150 -   0.027*X     S4--  + 276 H2O  + 36.4 Fe+++  + 1.3 Ca++  + 10.4 K+  + 59.8 Mg++  + 5.2 Na+  + 182 SiO2(aq)  + 65 Al+++  = 52 Smectite-high-Fe-Mg  + 448 H+  + 4 SO4--
+   1006     Y = -22.584 -   0.025*X     S4--  + 419.4 H2O  + 40.34 Fe+++  + 1.793 Ca++  + 17.93 K+  + 80.69 Mg++  + 13.45 Na+  + 336.2 SiO2(aq)  + 112.1 Al+++  = 89.66 Smectite-low-Fe-Mg  + 659.6 H+  + 4 SO4--
+   1007     X =  -2.842                 S4--  + 2.667 H+  + .3333 SO4--  = 4.333 Sulfur-Rhmb  + 1.333 H2O
+   1008     Y = -27.562 -   0.346*X     S4--  + 4.444 H2O  + 2.889 Fe+++  = 2.889 Troilite  + 8.889 H+  + 1.111 SO4--
+   1009     Y = -16.505 -   0.034*X     S4--  + 46.92 H2O  + 29.28 Fe+++  = 30.92 Wustite  + 93.83 H+  + 4 SO4--
+   1010     X = 107.294                 S4--  + 16 H2O  = 13 H2(g)  + 6 H+  + 4 SO4--
+   1011     X =   5.042                 S4--  + 3 H2O  + .5 H+  = 3.25 H2S(g)  + .75 SO4--
+   1012     X =  33.568                 S4--  + 2.667 H+  + .3333 SO4--  = 2.167 S2(g)  + 1.333 H2O
+   1013     X =  -1.938                 1.188 S5--  + .5 H+  + .0625 SO4--  = S6--  + .25 H2O
+   1014     Y = -21.765 -   0.031*X     S5--  + 84 H2O  + 32 Fe+++  + 10.67 K+  + 32 SiO2(aq)  + 10.67 Al+++  = 10.67 Annite  + 146.7 H+  + 5 SO4--
+   1015     Y = -21.268 -   0.031*X     S5--  + 132 H2O  + 32 Fe+++  + 16 SiO2(aq)  + 32 Al+++  = 16 Chamosite-7A  + 200 H+  + 5 SO4--
+   1016     Y = -21.202 -   0.016*X     S5--  + 132 H2O  + 64 Fe+++  + 16 SiO2(aq)  = 16 Cronstedt-7A  + 200 H+  + 5 SO4--
+   1017     Y = -22.031 -   0.031*X     S5--  + 96.8 H2O  + 32 Fe+++  + 19.2 SiO2(aq)  + 12.8 Al+++  = 6.4 Daphnite-14A  + 142.4 H+  + 5 SO4--
+   1018     Y = -21.328 -   0.031*X     S5--  + 96.8 H2O  + 32 Fe+++  + 19.2 SiO2(aq)  + 12.8 Al+++  = 6.4 Daphnite-7A  + 142.4 H+  + 5 SO4--
+   1019     Y = -19.786 -   0.031*X     S5--  + 52 H2O  + 32 Fe+++  + 16 SiO2(aq)  = 16 Fayalite  + 104 H+  + 5 SO4--
+   1020     Y = -18.008 -   0.031*X     S5--  + 84 H2O  + 32 Fe+++  = 32 Fe(OH)2(ppd)  + 104 H+  + 5 SO4--
+   1021     Y = -19.459 -   0.031*X     S5--  + 52 H2O  + 32 Fe+++  = 32 FeO(c)  + 104 H+  + 5 SO4--
+   1022     Y = -20.395 -   0.031*X     S5--  + 52 H2O  + 32 Fe+++  + 32 SiO2(aq)  = 32 Ferrosilite  + 104 H+  + 5 SO4--
+   1023     Y = -10.721 -   0.031*X     S5--  + 20 H2O  + 32 Fe+++  + 27 SO4--  = 32 FeSO4(c)  + 40 H+
+   1024     Y = -21.425 -   0.031*X     S5--  + 73.33 H2O  + 32 Fe+++  + 21.33 SiO2(aq)  = 10.67 Greenalite  + 104 H+  + 5 SO4--
+   1025     Y = -16.162 -   0.031*X     S5--  + 84 H2O  + 32 Fe+++  + 32 Ca++  + 64 SiO2(aq)  = 32 Hedenbergite  + 168 H+  + 5 SO4--
+   1026     Y = -18.318 -   0.031*X     S5--  + 148 H2O  + 32 Fe+++  + 64 Al+++  = 32 Hercynite  + 296 H+  + 5 SO4--
+   1027     Y =  -1.221 -   0.031*X     S5--  + 20 H2O  + 32 Fe+++  + 64 Cl-  = 32 Lawrencite  + 40 H+  + 5 SO4--
+   1028     Y = -20.853 -   0.010*X     S5--  + 148 H2O  + 96 Fe+++  = 32 Magnetite  + 296 H+  + 5 SO4--
+   1029     Y = -16.515 -   0.031*X     S5--  + 244 H2O  + 32 Fe+++  + 27 SO4--  = 32 Melanterite  + 40 H+
+   1030     Y = -22.279 -   0.031*X     S5--  + 62.67 H2O  + 32 Fe+++  + 42.67 SiO2(aq)  = 10.67 Minnesotaite  + 104 H+  + 5 SO4--
+   1031     X =  54.282                 S5--  + .5333 H+  + 8.533 HCO3-  = 1.067 "O-phth acid(c)"  + 1.333 H2O  + 5 SO4--
+   1032     Y = -38.897 -   0.469*X     S5--  + 2.933 H2O  + 2.133 Fe+++  = 2.133 Pyrite  + 5.867 H+  + .7333 SO4--
+   1033     Y = -28.513 -   0.308*X     S5--  + 5.159 H2O  + 3.246 Fe+++  = 3.71 Pyrrhotite  + 10.32 H+  + 1.29 SO4--
+   1034     Y = -18.535 -   0.031*X     S5--  + 212 H2O  + 32 Fe+++  + 48 Mg++  + 48 SiO2(aq)  + 32 Al+++  = 16 Ripidolit-14A  + 296 H+  + 5 SO4--
+   1035     Y = -16.782 -   0.031*X     S5--  + 212 H2O  + 32 Fe+++  + 48 Mg++  + 48 SiO2(aq)  + 32 Al+++  = 16 Ripidolit-7A  + 296 H+  + 5 SO4--
+   1036     Y = -22.512 -   0.031*X     S5--  + 20 H2O  + 32 Fe+++  + 32 HCO3-  = 32 Siderite  + 72 H+  + 5 SO4--
+   1037     Y = -20.131 -   0.022*X     S5--  + 340 H2O  + 44.8 Fe+++  + 1.6 Ca++  + 12.8 K+  + 73.6 Mg++  + 6.4 Na+  + 224 SiO2(aq)  + 80 Al+++  = 64 Smectite-high-Fe-Mg  + 552 H+  + 5 SO4--
+   1038     Y = -22.566 -   0.020*X     S5--  + 516.6 H2O  + 49.66 Fe+++  + 2.207 Ca++  + 22.07 K+  + 99.31 Mg++  + 16.55 Na+  + 413.8 SiO2(aq)  + 137.9 Al+++  = 110.3 Smectite-low-Fe-Mg  + 812.4 H+  + 5 SO4--
+   1039     X =  -2.630                 S5--  + 2.667 H+  + .3333 SO4--  = 5.333 Sulfur-Rhmb  + 1.333 H2O
+   1040     Y = -27.318 -   0.281*X     S5--  + 5.778 H2O  + 3.556 Fe+++  = 3.556 Troilite  + 11.56 H+  + 1.444 SO4--
+   1041     Y = -16.481 -   0.028*X     S5--  + 58.05 H2O  + 36.03 Fe+++  = 38.05 Wustite  + 116.1 H+  + 5 SO4--
+   1042     X = 132.921                 S5--  + 20 H2O  = 16 H2(g)  + 8 H+  + 5 SO4--
+   1043     X =   7.073                 S5--  + 4 H2O  = 4 H2S(g)  + SO4--
+   1044     X =  42.182                 S5--  + 2.667 H+  + .3333 SO4--  = 2.667 S2(g)  + 1.333 H2O
+   1045     Y = -21.756 -   0.026*X     S6--  + 100 H2O  + 38 Fe+++  + 12.67 K+  + 38 SiO2(aq)  + 12.67 Al+++  = 12.67 Annite  + 174.7 H+  + 6 SO4--
+   1046     Y = -21.258 -   0.026*X     S6--  + 157 H2O  + 38 Fe+++  + 19 SiO2(aq)  + 38 Al+++  = 19 Chamosite-7A  + 238 H+  + 6 SO4--
+   1047     Y = -21.197 -   0.013*X     S6--  + 157 H2O  + 76 Fe+++  + 19 SiO2(aq)  = 19 Cronstedt-7A  + 238 H+  + 6 SO4--
+   1048     Y = -22.021 -   0.026*X     S6--  + 115.2 H2O  + 38 Fe+++  + 22.8 SiO2(aq)  + 15.2 Al+++  = 7.6 Daphnite-14A  + 169.6 H+  + 6 SO4--
+   1049     Y = -21.318 -   0.026*X     S6--  + 115.2 H2O  + 38 Fe+++  + 22.8 SiO2(aq)  + 15.2 Al+++  = 7.6 Daphnite-7A  + 169.6 H+  + 6 SO4--
+   1050     Y = -19.777 -   0.026*X     S6--  + 62 H2O  + 38 Fe+++  + 19 SiO2(aq)  = 19 Fayalite  + 124 H+  + 6 SO4--
+   1051     Y = -17.999 -   0.026*X     S6--  + 100 H2O  + 38 Fe+++  = 38 Fe(OH)2(ppd)  + 124 H+  + 6 SO4--
+   1052     Y = -19.450 -   0.026*X     S6--  + 62 H2O  + 38 Fe+++  = 38 FeO(c)  + 124 H+  + 6 SO4--
+   1053     Y = -20.386 -   0.026*X     S6--  + 62 H2O  + 38 Fe+++  + 38 SiO2(aq)  = 38 Ferrosilite  + 124 H+  + 6 SO4--
+   1054     Y = -10.712 -   0.026*X     S6--  + 24 H2O  + 38 Fe+++  + 32 SO4--  = 38 FeSO4(c)  + 48 H+
+   1055     Y = -21.415 -   0.026*X     S6--  + 87.33 H2O  + 38 Fe+++  + 25.33 SiO2(aq)  = 12.67 Greenalite  + 124 H+  + 6 SO4--
+   1056     Y = -16.152 -   0.026*X     S6--  + 100 H2O  + 38 Fe+++  + 38 Ca++  + 76 SiO2(aq)  = 38 Hedenbergite  + 200 H+  + 6 SO4--
+   1057     Y = -18.308 -   0.026*X     S6--  + 176 H2O  + 38 Fe+++  + 76 Al+++  = 38 Hercynite  + 352 H+  + 6 SO4--
+   1058     Y =  -1.212 -   0.026*X     S6--  + 24 H2O  + 38 Fe+++  + 76 Cl-  = 38 Lawrencite  + 48 H+  + 6 SO4--
+   1059     Y = -20.849 -   0.009*X     S6--  + 176 H2O  + 114 Fe+++  = 38 Magnetite  + 352 H+  + 6 SO4--
+   1060     Y = -16.505 -   0.026*X     S6--  + 290 H2O  + 38 Fe+++  + 32 SO4--  = 38 Melanterite  + 48 H+
+   1061     Y = -22.270 -   0.026*X     S6--  + 74.67 H2O  + 38 Fe+++  + 50.67 SiO2(aq)  = 12.67 Minnesotaite  + 124 H+  + 6 SO4--
+   1062     X =  64.824                 S6--  + .1333 H+  + 10.13 HCO3-  = 1.267 "O-phth acid(c)"  + 1.333 H2O  + 6 SO4--
+   1063     Y = -38.753 -   0.395*X     S6--  + 3.733 H2O  + 2.533 Fe+++  = 2.533 Pyrite  + 7.467 H+  + .9333 SO4--
+   1064     Y = -28.419 -   0.259*X     S6--  + 6.377 H2O  + 3.855 Fe+++  = 4.406 Pyrrhotite  + 12.75 H+  + 1.594 SO4--
+   1065     Y = -18.525 -   0.026*X     S6--  + 252 H2O  + 38 Fe+++  + 57 Mg++  + 57 SiO2(aq)  + 38 Al+++  = 19 Ripidolit-14A  + 352 H+  + 6 SO4--
+   1066     Y = -16.772 -   0.026*X     S6--  + 252 H2O  + 38 Fe+++  + 57 Mg++  + 57 SiO2(aq)  + 38 Al+++  = 19 Ripidolit-7A  + 352 H+  + 6 SO4--
+   1067     Y = -22.503 -   0.026*X     S6--  + 24 H2O  + 38 Fe+++  + 38 HCO3-  = 38 Siderite  + 86 H+  + 6 SO4--
+   1068     Y = -20.124 -   0.019*X     S6--  + 404 H2O  + 53.2 Fe+++  + 1.9 Ca++  + 15.2 K+  + 87.4 Mg++  + 7.6 Na+  + 266 SiO2(aq)  + 95 Al+++  = 76 Smectite-high-Fe-Mg  + 656 H+  + 6 SO4--
+   1069     Y = -22.560 -   0.017*X     S6--  + 613.7 H2O  + 58.97 Fe+++  + 2.621 Ca++  + 26.21 K+  + 117.9 Mg++  + 19.66 Na+  + 491.4 SiO2(aq)  + 163.8 Al+++  = 131 Smectite-low-Fe-Mg  + 965.2 H+  + 6 SO4--
+   1070     X =  -2.760                 S6--  + 2.667 H+  + .3333 SO4--  = 6.333 Sulfur-Rhmb  + 1.333 H2O
+   1071     Y = -27.232 -   0.237*X     S6--  + 7.111 H2O  + 4.222 Fe+++  = 4.222 Troilite  + 14.22 H+  + 1.778 SO4--
+   1072     Y = -16.473 -   0.023*X     S6--  + 69.18 H2O  + 42.79 Fe+++  = 45.18 Wustite  + 138.4 H+  + 6 SO4--
+   1073     X = 158.207                 S6--  + 24 H2O  = 19 H2(g)  + 10 H+  + 6 SO4--
+   1074     X =   8.762                 S6--  + 5 H2O  = 4.75 H2S(g)  + .5 H+  + 1.25 SO4--
+   1075     X =  50.455                 S6--  + 2.667 H+  + .3333 SO4--  = 3.167 S2(g)  + 1.333 H2O
+   1076        Reactants favored        Annite  + 4.5 H2O  + 2 Al+++  = 1.5 Chamosite-7A  + 5 H+  + K+  + 1.5 SiO2(aq)
+   1077     Y = -20.639                 Annite  + 4.5 H2O  + 3 Fe+++  = 1.5 Cronstedt-7A  + 5 H+  + K+  + 1.5 SiO2(aq)  + Al+++
+   1078        Products  favored        1.667 Annite  + 2 H2O  + .6667 H+  + .3333 Al+++  = Daphnite-14A  + 1.667 K+  + 2 SiO2(aq)
+   1079        Reactants favored        1.667 Annite  + 2 H2O  + .6667 H+  + .3333 Al+++  = Daphnite-7A  + 1.667 K+  + 2 SiO2(aq)
+   1080        Reactants favored        Annite  + 4 H+  = 1.5 Fayalite  + 3 H2O  + K+  + 1.5 SiO2(aq)  + Al+++
+   1081        Reactants favored        Annite  + 4 H+  = 3 Fe(OH)2(ppd)  + K+  + 3 SiO2(aq)  + Al+++
+   1082        Reactants favored        Annite  + 4 H+  = 3 FeO(c)  + 3 H2O  + K+  + 3 SiO2(aq)  + Al+++
+   1083        Reactants favored        Annite  + 4 H+  = 3 Ferrosilite  + 3 H2O  + K+  + Al+++
+   1084        Reactants favored        Annite  + 10 H+  + 3 SO4--  = 3 FeSO4(c)  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++
+   1085        Reactants favored        Annite  + 4 H+  = Greenalite  + H2O  + K+  + SiO2(aq)  + Al+++
+   1086        Reactants favored        Annite  + 3 Ca++  + 3 SiO2(aq)  = 3 Hedenbergite  + 2 H+  + K+  + Al+++
+   1087        Reactants favored        Annite  + 6 H2O  + 5 Al+++  = 3 Hercynite  + 14 H+  + K+  + 3 SiO2(aq)
+   1088        Reactants favored        Annite  + 10 H+  + 6 Cl-  = 3 Lawrencite  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++
+   1089     Y = -20.396                 Annite  + 6 H2O  + 6 Fe+++  = 3 Magnetite  + 14 H+  + K+  + 3 SiO2(aq)  + Al+++
+   1090        Reactants favored        Annite  + 15 H2O  + 10 H+  + 3 SO4--  = 3 Melanterite  + K+  + 3 SiO2(aq)  + Al+++
+   1091        Products  favored        Annite  + 4 H+  + SiO2(aq)  = Minnesotaite  + 2 H2O  + K+  + Al+++
+   1092     Y = -23.461                 10 Annite  + 138 H+  + 8 HCO3-  = "O-phth acid(c)"  + 80 H2O  + 30 Fe+++  + 10 K+  + 30 SiO2(aq)  + 10 Al+++
+   1093     Y = -20.541                 5 Annite  + 66 H+  + 2 SO4--  = Pyrite  + 38 H2O  + 14 Fe+++  + 5 K+  + 15 SiO2(aq)  + 5 Al+++
+   1094     Y = -21.003                 2.875 Annite  + 36.75 H+  + SO4--  = Pyrrhotite  + 21.25 H2O  + 7.75 Fe+++  + 2.875 K+  + 8.625 SiO2(aq)  + 2.875 Al+++
+   1095        Reactants favored        Annite  + 12 H2O  + 4.5 Mg++  + 1.5 SiO2(aq)  + 2 Al+++  = 1.5 Ripidolit-14A  + 14 H+  + K+
+   1096        Reactants favored        Annite  + 12 H2O  + 4.5 Mg++  + 1.5 SiO2(aq)  + 2 Al+++  = 1.5 Ripidolit-7A  + 14 H+  + K+
+   1097        Products  favored        Annite  + 7 H+  + 3 HCO3-  = 3 Siderite  + 6 H2O  + K+  + 3 SiO2(aq)  + Al+++
+   1098     Y = -16.046                 Annite  + 24 H2O  + 1.2 Fe+++  + .15 Ca++  + .2 K+  + 6.9 Mg++  + .6 Na+  + 18 SiO2(aq)  + 6.5 Al+++  = 6 Smectite-high-Fe-Mg  + 38 H+
+   1099     Y = -24.019                 Annite  + 40.55 H2O  + 1.655 Fe+++  + .2069 Ca++  + 1.069 K+  + 9.31 Mg++  + 1.552 Na+  + 35.79 SiO2(aq)  + 11.93 Al+++  = 10.34 Smectite-low-Fe-Mg  + 62.41 H+
+   1100     Y = -21.683                 2 Annite  + 28 H+  + SO4--  = Sulfur-Rhmb  + 16 H2O  + 6 Fe+++  + 2 K+  + 6 SiO2(aq)  + 2 Al+++
+   1101     Y = -21.071                 3 Annite  + 38 H+  + SO4--  = Troilite  + 22 H2O  + 8 Fe+++  + 3 K+  + 9 SiO2(aq)  + 3 Al+++
+   1102     Y =  25.439                 Annite  + 2.866 H+  + .3781 Fe+++  = 3.567 Wustite  + 2.433 H2O  + K+  + 3 SiO2(aq)  + Al+++
+   1103     Y = -25.919                 Annite  + 13 H+  = 1.5 H2(g)  + 6 H2O  + 3 Fe+++  + K+  + 3 SiO2(aq)  + Al+++
+   1104     Y = -21.986                 2.667 Annite  + 36.67 H+  + SO4--  = H2S(g)  + 20 H2O  + 8 Fe+++  + 2.667 K+  + 8 SiO2(aq)  + 2.667 Al+++
+   1105     Y = -23.083                 4 Annite  + 56 H+  + 2 SO4--  = S2(g)  + 32 H2O  + 12 Fe+++  + 4 K+  + 12 SiO2(aq)  + 4 Al+++
+   1106     Y = -21.137                 Chamosite-7A  + 2 Fe+++  = Cronstedt-7A  + 2 Al+++
+   1107        Products  favored        2.5 Chamosite-7A  + 9 H+  + .5 SiO2(aq)  = Daphnite-14A  + 5.5 H2O  + 3 Al+++
+   1108        Products  favored        2.5 Chamosite-7A  + 9 H+  + .5 SiO2(aq)  = Daphnite-7A  + 5.5 H2O  + 3 Al+++
+   1109        Reactants favored        Chamosite-7A  + 6 H+  = Fayalite  + 5 H2O  + 2 Al+++
+   1110        Reactants favored        Chamosite-7A  + 6 H+  = 2 Fe(OH)2(ppd)  + 3 H2O  + SiO2(aq)  + 2 Al+++
+   1111        Reactants favored        Chamosite-7A  + 6 H+  = 2 FeO(c)  + 5 H2O  + SiO2(aq)  + 2 Al+++
+   1112        Reactants favored        Chamosite-7A  + 6 H+  + SiO2(aq)  = 2 Ferrosilite  + 5 H2O  + 2 Al+++
+   1113        Reactants favored        Chamosite-7A  + 10 H+  + 2 SO4--  = 2 FeSO4(c)  + 7 H2O  + SiO2(aq)  + 2 Al+++
+   1114        Products  favored        1.5 Chamosite-7A  + 9 H+  + .5 SiO2(aq)  = Greenalite  + 5.5 H2O  + 3 Al+++
+   1115        Reactants favored        Chamosite-7A  + 2 H+  + 2 Ca++  + 3 SiO2(aq)  = 2 Hedenbergite  + 3 H2O  + 2 Al+++
+   1116        Reactants favored        Chamosite-7A  + H2O  + 2 Al+++  = 2 Hercynite  + 6 H+  + SiO2(aq)
+   1117        Reactants favored        Chamosite-7A  + 10 H+  + 4 Cl-  = 2 Lawrencite  + 7 H2O  + SiO2(aq)  + 2 Al+++
+   1118     Y = -20.645                 Chamosite-7A  + H2O  + 4 Fe+++  = 2 Magnetite  + 6 H+  + SiO2(aq)  + 2 Al+++
+   1119        Reactants favored        Chamosite-7A  + 7 H2O  + 10 H+  + 2 SO4--  = 2 Melanterite  + SiO2(aq)  + 2 Al+++
+   1120        Products  favored        1.5 Chamosite-7A  + 9 H+  + 2.5 SiO2(aq)  = Minnesotaite  + 6.5 H2O  + 3 Al+++
+   1121     Y = -22.964                 15 Chamosite-7A  + 188 H+  + 8 HCO3-  = "O-phth acid(c)"  + 125 H2O  + 30 Fe+++  + 15 SiO2(aq)  + 30 Al+++
+   1122     Y = -20.008                 7.5 Chamosite-7A  + 91 H+  + 2 SO4--  = Pyrite  + 60.5 H2O  + 14 Fe+++  + 7.5 SiO2(aq)  + 15 Al+++
+   1123     Y = -20.450                 4.313 Chamosite-7A  + 51.13 H+  + SO4--  = Pyrrhotite  + 34.19 H2O  + 7.75 Fe+++  + 4.313 SiO2(aq)  + 8.625 Al+++
+   1124        Reactants favored        Chamosite-7A  + 5 H2O  + 3 Mg++  + 2 SiO2(aq)  = Ripidolit-14A  + 6 H+
+   1125        Reactants favored        Chamosite-7A  + 5 H2O  + 3 Mg++  + 2 SiO2(aq)  = Ripidolit-7A  + 6 H+
+   1126        Products  favored        Chamosite-7A  + 8 H+  + 2 HCO3-  = 2 Siderite  + 7 H2O  + SiO2(aq)  + 2 Al+++
+   1127     Y = -17.290                 Chamosite-7A  + 13 H2O  + .8 Fe+++  + .1 Ca++  + .8 K+  + 4.6 Mg++  + .4 Na+  + 13 SiO2(aq)  + 3 Al+++  = 4 Smectite-high-Fe-Mg  + 22 H+
+   1128     Y = -24.921                 Chamosite-7A  + 24.03 H2O  + 1.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 6.207 Mg++  + 1.034 Na+  + 24.86 SiO2(aq)  + 6.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 38.28 H+
+   1129     Y = -21.185                 3 Chamosite-7A  + 38 H+  + SO4--  = Sulfur-Rhmb  + 25 H2O  + 6 Fe+++  + 3 SiO2(aq)  + 6 Al+++
+   1130     Y = -20.511                 4.5 Chamosite-7A  + 53 H+  + SO4--  = Troilite  + 35.5 H2O  + 8 Fe+++  + 4.5 SiO2(aq)  + 9 Al+++
+   1131     Y =  21.492                 Chamosite-7A  + 5.244 H+  + .2521 Fe+++  = 2.378 Wustite  + 4.622 H2O  + SiO2(aq)  + 2 Al+++
+   1132     Y = -25.421                 Chamosite-7A  + 12 H+  = H2(g)  + 7 H2O  + 2 Fe+++  + SiO2(aq)  + 2 Al+++
+   1133     Y = -21.489                 4 Chamosite-7A  + 50 H+  + SO4--  = H2S(g)  + 32 H2O  + 8 Fe+++  + 4 SiO2(aq)  + 8 Al+++
+   1134     Y = -22.586                 6 Chamosite-7A  + 76 H+  + 2 SO4--  = S2(g)  + 50 H2O  + 12 Fe+++  + 6 SiO2(aq)  + 12 Al+++
+   1135     Y = -20.373                 2.5 Cronstedt-7A  + 9 H+  + .5 SiO2(aq)  + 2 Al+++  = Daphnite-14A  + 5.5 H2O  + 5 Fe+++
+   1136     Y = -21.076                 2.5 Cronstedt-7A  + 9 H+  + .5 SiO2(aq)  + 2 Al+++  = Daphnite-7A  + 5.5 H2O  + 5 Fe+++
+   1137     Y = -22.618                 Cronstedt-7A  + 6 H+  = Fayalite  + 5 H2O  + 2 Fe+++
+   1138     Y = -24.396                 Cronstedt-7A  + 6 H+  = 2 Fe(OH)2(ppd)  + 3 H2O  + 2 Fe+++  + SiO2(aq)
+   1139     Y = -22.945                 Cronstedt-7A  + 6 H+  = 2 FeO(c)  + 5 H2O  + 2 Fe+++  + SiO2(aq)
+   1140     Y = -22.009                 Cronstedt-7A  + 6 H+  + SiO2(aq)  = 2 Ferrosilite  + 5 H2O  + 2 Fe+++
+   1141     Y = -31.683                 Cronstedt-7A  + 10 H+  + 2 SO4--  = 2 FeSO4(c)  + 7 H2O  + 2 Fe+++  + SiO2(aq)
+   1142     Y = -20.979                 1.5 Cronstedt-7A  + 9 H+  + .5 SiO2(aq)  = Greenalite  + 5.5 H2O  + 3 Fe+++
+   1143     Y = -26.243                 Cronstedt-7A  + 2 H+  + 2 Ca++  + 3 SiO2(aq)  = 2 Hedenbergite  + 3 H2O  + 2 Fe+++
+   1144     Y = -24.086                 Cronstedt-7A  + H2O  + 4 Al+++  = 2 Hercynite  + 6 H+  + 2 Fe+++  + SiO2(aq)
+   1145     Y = -41.183                 Cronstedt-7A  + 10 H+  + 4 Cl-  = 2 Lawrencite  + 7 H2O  + 2 Fe+++  + SiO2(aq)
+   1146     Y = -20.154                 Cronstedt-7A  + H2O  + 2 Fe+++  = 2 Magnetite  + 6 H+  + SiO2(aq)
+   1147     Y = -25.889                 Cronstedt-7A  + 7 H2O  + 10 H+  + 2 SO4--  = 2 Melanterite  + 2 Fe+++  + SiO2(aq)
+   1148     Y = -20.125                 1.5 Cronstedt-7A  + 9 H+  + 2.5 SiO2(aq)  = Minnesotaite  + 6.5 H2O  + 3 Fe+++
+   1149     Y = -22.050                 15 Cronstedt-7A  + 188 H+  + 8 HCO3-  = "O-phth acid(c)"  + 125 H2O  + 60 Fe+++  + 15 SiO2(aq)
+   1150     Y = -20.592                 7.5 Cronstedt-7A  + 91 H+  + 2 SO4--  = Pyrite  + 60.5 H2O  + 29 Fe+++  + 7.5 SiO2(aq)
+   1151     Y = -20.811                 4.313 Cronstedt-7A  + 51.13 H+  + SO4--  = Pyrrhotite  + 34.19 H2O  + 16.38 Fe+++  + 4.313 SiO2(aq)
+   1152     Y = -23.869                 Cronstedt-7A  + 5 H2O  + 3 Mg++  + 2 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 6 H+  + 2 Fe+++
+   1153     Y = -25.622                 Cronstedt-7A  + 5 H2O  + 3 Mg++  + 2 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 6 H+  + 2 Fe+++
+   1154     Y = -19.892                 Cronstedt-7A  + 8 H+  + 2 HCO3-  = 2 Siderite  + 7 H2O  + 2 Fe+++  + SiO2(aq)
+   1155     Y = -23.701                 Cronstedt-7A  + 13 H2O  + .1 Ca++  + .8 K+  + 4.6 Mg++  + .4 Na+  + 13 SiO2(aq)  + 5 Al+++  = 4 Smectite-high-Fe-Mg  + 22 H+  + 1.2 Fe+++
+   1156     Y = -16.479                 Cronstedt-7A  + 24.03 H2O  + .1379 Ca++  + 1.379 K+  + 6.207 Mg++  + 1.034 Na+  + 24.86 SiO2(aq)  + 8.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 38.28 H+  + .8966 Fe+++
+   1157     Y = -21.161                 3 Cronstedt-7A  + 38 H+  + SO4--  = Sulfur-Rhmb  + 25 H2O  + 12 Fe+++  + 3 SiO2(aq)
+   1158     Y = -20.842                 4.5 Cronstedt-7A  + 53 H+  + SO4--  = Troilite  + 35.5 H2O  + 17 Fe+++  + 4.5 SiO2(aq)
+   1159     Y = -27.284                 Cronstedt-7A  + 5.244 H+  = 2.378 Wustite  + 4.622 H2O  + 1.748 Fe+++  + SiO2(aq)
+   1160     Y = -23.279                 Cronstedt-7A  + 12 H+  = H2(g)  + 7 H2O  + 4 Fe+++  + SiO2(aq)
+   1161     Y = -21.313                 4 Cronstedt-7A  + 50 H+  + SO4--  = H2S(g)  + 32 H2O  + 16 Fe+++  + 4 SiO2(aq)
+   1162     Y = -21.861                 6 Cronstedt-7A  + 76 H+  + 2 SO4--  = S2(g)  + 50 H2O  + 24 Fe+++  + 6 SiO2(aq)
+   1163        Reactants favored        Daphnite-14A  = Daphnite-7A
+   1164        Reactants favored        Daphnite-14A  + 6 H+  = 2.5 Fayalite  + 7 H2O  + .5 SiO2(aq)  + 2 Al+++
+   1165        Reactants favored        Daphnite-14A  + 6 H+  = 5 Fe(OH)2(ppd)  + 2 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1166        Reactants favored        Daphnite-14A  + 6 H+  = 5 FeO(c)  + 7 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1167        Reactants favored        Daphnite-14A  + 6 H+  + 2 SiO2(aq)  = 5 Ferrosilite  + 7 H2O  + 2 Al+++
+   1168        Reactants favored        Daphnite-14A  + 16 H+  + 5 SO4--  = 5 FeSO4(c)  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1169        Reactants favored        Daphnite-14A  + 6 H+  + .3333 SiO2(aq)  = 1.667 Greenalite  + 3.667 H2O  + 2 Al+++
+   1170        Reactants favored        Daphnite-14A  + 5 Ca++  + 7 SiO2(aq)  = 5 Hedenbergite  + 2 H2O  + 4 H+  + 2 Al+++
+   1171        Reactants favored        Daphnite-14A  + 8 H2O  + 8 Al+++  = 5 Hercynite  + 24 H+  + 3 SiO2(aq)
+   1172        Reactants favored        Daphnite-14A  + 16 H+  + 10 Cl-  = 5 Lawrencite  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1173     Y = -20.264                 Daphnite-14A  + 8 H2O  + 10 Fe+++  = 5 Magnetite  + 24 H+  + 3 SiO2(aq)  + 2 Al+++
+   1174        Reactants favored        Daphnite-14A  + 23 H2O  + 16 H+  + 5 SO4--  = 5 Melanterite  + 3 SiO2(aq)  + 2 Al+++
+   1175        Products  favored        Daphnite-14A  + 6 H+  + 3.667 SiO2(aq)  = 1.667 Minnesotaite  + 5.333 H2O  + 2 Al+++
+   1176     Y = -23.727                 6 Daphnite-14A  + 134 H+  + 8 HCO3-  = "O-phth acid(c)"  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++
+   1177     Y = -20.826                 3 Daphnite-14A  + 64 H+  + 2 SO4--  = Pyrite  + 44 H2O  + 14 Fe+++  + 9 SiO2(aq)  + 6 Al+++
+   1178     Y = -21.299                 1.725 Daphnite-14A  + 35.6 H+  + SO4--  = Pyrrhotite  + 24.7 H2O  + 7.75 Fe+++  + 5.175 SiO2(aq)  + 3.45 Al+++
+   1179        Reactants favored        Daphnite-14A  + 18 H2O  + 7.5 Mg++  + 4.5 SiO2(aq)  + 3 Al+++  = 2.5 Ripidolit-14A  + 24 H+
+   1180        Reactants favored        Daphnite-14A  + 18 H2O  + 7.5 Mg++  + 4.5 SiO2(aq)  + 3 Al+++  = 2.5 Ripidolit-7A  + 24 H+
+   1181        Products  favored        Daphnite-14A  + 11 H+  + 5 HCO3-  = 5 Siderite  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1182     Y = -15.381                 Daphnite-14A  + 38 H2O  + 2 Fe+++  + .25 Ca++  + 2 K+  + 11.5 Mg++  + Na+  + 32 SiO2(aq)  + 10.5 Al+++  = 10 Smectite-high-Fe-Mg  + 64 H+
+   1183     Y = -23.537                 Daphnite-14A  + 65.59 H2O  + 2.759 Fe+++  + .3448 Ca++  + 3.448 K+  + 15.52 Mg++  + 2.586 Na+  + 61.66 SiO2(aq)  + 19.55 Al+++  = 17.24 Smectite-low-Fe-Mg  + 104.7 H+
+   1184     Y = -21.949                 1.2 Daphnite-14A  + 27.2 H+  + SO4--  = Sulfur-Rhmb  + 18.4 H2O  + 6 Fe+++  + 3.6 SiO2(aq)  + 2.4 Al+++
+   1185     Y = -21.370                 1.8 Daphnite-14A  + 36.8 H+  + SO4--  = Troilite  + 25.6 H2O  + 8 Fe+++  + 5.4 SiO2(aq)  + 3.6 Al+++
+   1186     Y =  27.548                 Daphnite-14A  + 4.109 H+  + .6302 Fe+++  = 5.945 Wustite  + 6.055 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1187     Y = -26.185                 Daphnite-14A  + 21 H+  = 2.5 H2(g)  + 12 H2O  + 5 Fe+++  + 3 SiO2(aq)  + 2 Al+++
+   1188     Y = -22.252                 1.6 Daphnite-14A  + 35.6 H+  + SO4--  = H2S(g)  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++
+   1189     Y = -23.349                 2.4 Daphnite-14A  + 54.4 H+  + 2 SO4--  = S2(g)  + 36.8 H2O  + 12 Fe+++  + 7.2 SiO2(aq)  + 4.8 Al+++
+   1190        Reactants favored        Daphnite-7A  + 6 H+  = 2.5 Fayalite  + 7 H2O  + .5 SiO2(aq)  + 2 Al+++
+   1191        Reactants favored        Daphnite-7A  + 6 H+  = 5 Fe(OH)2(ppd)  + 2 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1192        Reactants favored        Daphnite-7A  + 6 H+  = 5 FeO(c)  + 7 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1193        Reactants favored        Daphnite-7A  + 6 H+  + 2 SiO2(aq)  = 5 Ferrosilite  + 7 H2O  + 2 Al+++
+   1194        Reactants favored        Daphnite-7A  + 16 H+  + 5 SO4--  = 5 FeSO4(c)  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1195        Products  favored        Daphnite-7A  + 6 H+  + .3333 SiO2(aq)  = 1.667 Greenalite  + 3.667 H2O  + 2 Al+++
+   1196        Reactants favored        Daphnite-7A  + 5 Ca++  + 7 SiO2(aq)  = 5 Hedenbergite  + 2 H2O  + 4 H+  + 2 Al+++
+   1197        Reactants favored        Daphnite-7A  + 8 H2O  + 8 Al+++  = 5 Hercynite  + 24 H+  + 3 SiO2(aq)
+   1198        Reactants favored        Daphnite-7A  + 16 H+  + 10 Cl-  = 5 Lawrencite  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1199     Y = -20.615                 Daphnite-7A  + 8 H2O  + 10 Fe+++  = 5 Magnetite  + 24 H+  + 3 SiO2(aq)  + 2 Al+++
+   1200        Reactants favored        Daphnite-7A  + 23 H2O  + 16 H+  + 5 SO4--  = 5 Melanterite  + 3 SiO2(aq)  + 2 Al+++
+   1201        Products  favored        Daphnite-7A  + 6 H+  + 3.667 SiO2(aq)  = 1.667 Minnesotaite  + 5.333 H2O  + 2 Al+++
+   1202     Y = -23.024                 6 Daphnite-7A  + 134 H+  + 8 HCO3-  = "O-phth acid(c)"  + 92 H2O  + 30 Fe+++  + 18 SiO2(aq)  + 12 Al+++
+   1203     Y = -20.073                 3 Daphnite-7A  + 64 H+  + 2 SO4--  = Pyrite  + 44 H2O  + 14 Fe+++  + 9 SiO2(aq)  + 6 Al+++
+   1204     Y = -20.517                 1.725 Daphnite-7A  + 35.6 H+  + SO4--  = Pyrrhotite  + 24.7 H2O  + 7.75 Fe+++  + 5.175 SiO2(aq)  + 3.45 Al+++
+   1205        Reactants favored        Daphnite-7A  + 18 H2O  + 7.5 Mg++  + 4.5 SiO2(aq)  + 3 Al+++  = 2.5 Ripidolit-14A  + 24 H+
+   1206        Reactants favored        Daphnite-7A  + 18 H2O  + 7.5 Mg++  + 4.5 SiO2(aq)  + 3 Al+++  = 2.5 Ripidolit-7A  + 24 H+
+   1207        Products  favored        Daphnite-7A  + 11 H+  + 5 HCO3-  = 5 Siderite  + 12 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1208     Y = -17.139                 Daphnite-7A  + 38 H2O  + 2 Fe+++  + .25 Ca++  + 2 K+  + 11.5 Mg++  + Na+  + 32 SiO2(aq)  + 10.5 Al+++  = 10 Smectite-high-Fe-Mg  + 64 H+
+   1209     Y = -24.811                 Daphnite-7A  + 65.59 H2O  + 2.759 Fe+++  + .3448 Ca++  + 3.448 K+  + 15.52 Mg++  + 2.586 Na+  + 61.66 SiO2(aq)  + 19.55 Al+++  = 17.24 Smectite-low-Fe-Mg  + 104.7 H+
+   1210     Y = -21.246                 1.2 Daphnite-7A  + 27.2 H+  + SO4--  = Sulfur-Rhmb  + 18.4 H2O  + 6 Fe+++  + 3.6 SiO2(aq)  + 2.4 Al+++
+   1211     Y = -20.579                 1.8 Daphnite-7A  + 36.8 H+  + SO4--  = Troilite  + 25.6 H2O  + 8 Fe+++  + 5.4 SiO2(aq)  + 3.6 Al+++
+   1212     Y =  21.971                 Daphnite-7A  + 4.109 H+  + .6302 Fe+++  = 5.945 Wustite  + 6.055 H2O  + 3 SiO2(aq)  + 2 Al+++
+   1213     Y = -25.482                 Daphnite-7A  + 21 H+  = 2.5 H2(g)  + 12 H2O  + 5 Fe+++  + 3 SiO2(aq)  + 2 Al+++
+   1214     Y = -21.549                 1.6 Daphnite-7A  + 35.6 H+  + SO4--  = H2S(g)  + 23.2 H2O  + 8 Fe+++  + 4.8 SiO2(aq)  + 3.2 Al+++
+   1215     Y = -22.646                 2.4 Daphnite-7A  + 54.4 H+  + 2 SO4--  = S2(g)  + 36.8 H2O  + 12 Fe+++  + 7.2 SiO2(aq)  + 4.8 Al+++
+   1216        Reactants favored        Fayalite  + 2 H2O  = 2 Fe(OH)2(ppd)  + SiO2(aq)
+   1217        Reactants favored        Fayalite  = 2 FeO(c)  + SiO2(aq)
+   1218        Products  favored        Fayalite  + SiO2(aq)  = 2 Ferrosilite
+   1219        Reactants favored        Fayalite  + 4 H+  + 2 SO4--  = 2 FeSO4(c)  + 2 H2O  + SiO2(aq)
+   1220        Products  favored        1.5 Fayalite  + 2 H2O  + .5 SiO2(aq)  = Greenalite
+   1221        Reactants favored        Fayalite  + 2 H2O  + 2 Ca++  + 3 SiO2(aq)  = 2 Hedenbergite  + 4 H+
+   1222        Reactants favored        Fayalite  + 6 H2O  + 4 Al+++  = 2 Hercynite  + 12 H+  + SiO2(aq)
+   1223        Reactants favored        Fayalite  + 4 H+  + 4 Cl-  = 2 Lawrencite  + 2 H2O  + SiO2(aq)
+   1224     Y = -21.386                 Fayalite  + 6 H2O  + 4 Fe+++  = 2 Magnetite  + 12 H+  + SiO2(aq)
+   1225        Reactants favored        Fayalite  + 12 H2O  + 4 H+  + 2 SO4--  = 2 Melanterite  + SiO2(aq)
+   1226        Products  favored        1.5 Fayalite  + H2O  + 2.5 SiO2(aq)  = Minnesotaite
+   1227     Y = -21.483                 15 Fayalite  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 50 H2O  + 30 Fe+++  + 15 SiO2(aq)
+   1228     Y = -18.421                 7.5 Fayalite  + 46 H+  + 2 SO4--  = Pyrite  + 23 H2O  + 14 Fe+++  + 7.5 SiO2(aq)
+   1229     Y = -18.801                 4.313 Fayalite  + 25.25 H+  + SO4--  = Pyrrhotite  + 12.63 H2O  + 7.75 Fe+++  + 4.313 SiO2(aq)
+   1230        Reactants favored        Fayalite  + 10 H2O  + 3 Mg++  + 2 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 12 H+
+   1231        Reactants favored        Fayalite  + 10 H2O  + 3 Mg++  + 2 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 12 H+
+   1232        Products  favored        Fayalite  + 2 H+  + 2 HCO3-  = 2 Siderite  + 2 H2O  + SiO2(aq)
+   1233     Y = -20.993                 Fayalite  + 18 H2O  + .8 Fe+++  + .1 Ca++  + .8 K+  + 4.6 Mg++  + .4 Na+  + 13 SiO2(aq)  + 5 Al+++  = 4 Smectite-high-Fe-Mg  + 28 H+
+   1234     Y = -27.605                 Fayalite  + 29.03 H2O  + 1.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 6.207 Mg++  + 1.034 Na+  + 24.86 SiO2(aq)  + 8.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 44.28 H+
+   1235     Y = -19.704                 3 Fayalite  + 20 H+  + SO4--  = Sulfur-Rhmb  + 10 H2O  + 6 Fe+++  + 3 SiO2(aq)
+   1236     Y = -18.845                 4.5 Fayalite  + 26 H+  + SO4--  = Troilite  + 13 H2O  + 8 Fe+++  + 4.5 SiO2(aq)
+   1237     Y =   9.740                 Fayalite  + .3781 H2O  + .2521 Fe+++  = 2.378 Wustite  + .7562 H+  + SiO2(aq)
+   1238     Y = -23.940                 Fayalite  + 6 H+  = H2(g)  + 2 H2O  + 2 Fe+++  + SiO2(aq)
+   1239     Y = -20.007                 4 Fayalite  + 26 H+  + SO4--  = H2S(g)  + 12 H2O  + 8 Fe+++  + 4 SiO2(aq)
+   1240     Y = -21.105                 6 Fayalite  + 40 H+  + 2 SO4--  = S2(g)  + 20 H2O  + 12 Fe+++  + 6 SiO2(aq)
+   1241        Products  favored        Fe(OH)2(ppd)  = FeO(c)  + H2O
+   1242        Products  favored        Fe(OH)2(ppd)  + SiO2(aq)  = Ferrosilite  + H2O
+   1243        Reactants favored        Fe(OH)2(ppd)  + 2 H+  + SO4--  = FeSO4(c)  + 2 H2O
+   1244        Products  favored        3 Fe(OH)2(ppd)  + 2 SiO2(aq)  = Greenalite  + H2O
+   1245        Reactants favored        Fe(OH)2(ppd)  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 2 H+
+   1246        Products  favored        Fe(OH)2(ppd)  + 2 H2O  + 2 Al+++  = Hercynite  + 6 H+
+   1247        Reactants favored        Fe(OH)2(ppd)  + 2 H+  + 2 Cl-  = Lawrencite  + 2 H2O
+   1248     Y = -22.275                 Fe(OH)2(ppd)  + 2 H2O  + 2 Fe+++  = Magnetite  + 6 H+
+   1249        Reactants favored        Fe(OH)2(ppd)  + 5 H2O  + 2 H+  + SO4--  = Melanterite
+   1250        Products  favored        3 Fe(OH)2(ppd)  + 4 SiO2(aq)  = Minnesotaite  + 2 H2O
+   1251     Y = -19.705                 30 Fe(OH)2(ppd)  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 80 H2O  + 30 Fe+++
+   1252     Y = -16.516                 15 Fe(OH)2(ppd)  + 46 H+  + 2 SO4--  = Pyrite  + 38 H2O  + 14 Fe+++
+   1253     Y = -16.822                 8.625 Fe(OH)2(ppd)  + 25.25 H+  + SO4--  = Pyrrhotite  + 21.25 H2O  + 7.75 Fe+++
+   1254        Products  favored        2 Fe(OH)2(ppd)  + 8 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 12 H+
+   1255        Reactants favored        2 Fe(OH)2(ppd)  + 8 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 12 H+
+   1256        Products  favored        Fe(OH)2(ppd)  + H+  + HCO3-  = Siderite  + 2 H2O
+   1257     Y = -25.438                 Fe(OH)2(ppd)  + 8 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 14 H+
+   1258     Y = -30.828                 Fe(OH)2(ppd)  + 13.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 22.14 H+
+   1259     Y = -17.926                 6 Fe(OH)2(ppd)  + 20 H+  + SO4--  = Sulfur-Rhmb  + 16 H2O  + 6 Fe+++
+   1260     Y = -16.845                 9 Fe(OH)2(ppd)  + 26 H+  + SO4--  = Troilite  + 22 H2O  + 8 Fe+++
+   1261     Y =  -4.366                 Fe(OH)2(ppd)  + .126 Fe+++  = 1.189 Wustite  + .8109 H2O  + .3781 H+
+   1262     Y = -22.162                 2 Fe(OH)2(ppd)  + 6 H+  = H2(g)  + 4 H2O  + 2 Fe+++
+   1263     Y = -18.229                 8 Fe(OH)2(ppd)  + 26 H+  + SO4--  = H2S(g)  + 20 H2O  + 8 Fe+++
+   1264     Y = -19.327                 12 Fe(OH)2(ppd)  + 40 H+  + 2 SO4--  = S2(g)  + 32 H2O  + 12 Fe+++
+   1265        Products  favored        FeO(c)  + SiO2(aq)  = Ferrosilite
+   1266        Reactants favored        FeO(c)  + 2 H+  + SO4--  = FeSO4(c)  + H2O
+   1267        Products  favored        3 FeO(c)  + 2 H2O  + 2 SiO2(aq)  = Greenalite
+   1268        Reactants favored        FeO(c)  + H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 2 H+
+   1269        Reactants favored        FeO(c)  + 3 H2O  + 2 Al+++  = Hercynite  + 6 H+
+   1270        Reactants favored        FeO(c)  + 2 H+  + 2 Cl-  = Lawrencite  + H2O
+   1271     Y = -21.549                 FeO(c)  + 3 H2O  + 2 Fe+++  = Magnetite  + 6 H+
+   1272        Reactants favored        FeO(c)  + 6 H2O  + 2 H+  + SO4--  = Melanterite
+   1273        Products  favored        3 FeO(c)  + H2O  + 4 SiO2(aq)  = Minnesotaite
+   1274     Y = -21.156                 30 FeO(c)  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 50 H2O  + 30 Fe+++
+   1275     Y = -18.071                 15 FeO(c)  + 46 H+  + 2 SO4--  = Pyrite  + 23 H2O  + 14 Fe+++
+   1276     Y = -18.437                 8.625 FeO(c)  + 25.25 H+  + SO4--  = Pyrrhotite  + 12.63 H2O  + 7.75 Fe+++
+   1277        Reactants favored        2 FeO(c)  + 10 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 12 H+
+   1278        Reactants favored        2 FeO(c)  + 10 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 12 H+
+   1279        Products  favored        FeO(c)  + H+  + HCO3-  = Siderite  + H2O
+   1280     Y = -21.810                 FeO(c)  + 9 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 14 H+
+   1281     Y = -28.198                 FeO(c)  + 14.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 22.14 H+
+   1282     Y = -19.377                 6 FeO(c)  + 20 H+  + SO4--  = Sulfur-Rhmb  + 10 H2O  + 6 Fe+++
+   1283     Y = -18.477                 9 FeO(c)  + 26 H+  + SO4--  = Troilite  + 13 H2O  + 8 Fe+++
+   1284     Y =   7.145                 FeO(c)  + .1891 H2O  + .126 Fe+++  = 1.189 Wustite  + .3781 H+
+   1285     Y = -23.613                 2 FeO(c)  + 6 H+  = H2(g)  + 2 H2O  + 2 Fe+++
+   1286     Y = -19.680                 8 FeO(c)  + 26 H+  + SO4--  = H2S(g)  + 12 H2O  + 8 Fe+++
+   1287     Y = -20.778                 12 FeO(c)  + 40 H+  + 2 SO4--  = S2(g)  + 20 H2O  + 12 Fe+++
+   1288        Reactants favored        Ferrosilite  + 2 H+  + SO4--  = FeSO4(c)  + H2O  + SiO2(aq)
+   1289        Products  favored        3 Ferrosilite  + 2 H2O  = Greenalite  + SiO2(aq)
+   1290        Reactants favored        Ferrosilite  + H2O  + Ca++  + SiO2(aq)  = Hedenbergite  + 2 H+
+   1291        Reactants favored        Ferrosilite  + 3 H2O  + 2 Al+++  = Hercynite  + 6 H+  + SiO2(aq)
+   1292        Reactants favored        Ferrosilite  + 2 H+  + 2 Cl-  = Lawrencite  + H2O  + SiO2(aq)
+   1293     Y = -21.081                 Ferrosilite  + 3 H2O  + 2 Fe+++  = Magnetite  + 6 H+  + SiO2(aq)
+   1294        Reactants favored        Ferrosilite  + 6 H2O  + 2 H+  + SO4--  = Melanterite  + SiO2(aq)
+   1295        Products  favored        3 Ferrosilite  + H2O  + SiO2(aq)  = Minnesotaite
+   1296     Y = -22.091                 30 Ferrosilite  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 50 H2O  + 30 Fe+++  + 30 SiO2(aq)
+   1297     Y = -19.074                 15 Ferrosilite  + 46 H+  + 2 SO4--  = Pyrite  + 23 H2O  + 14 Fe+++  + 15 SiO2(aq)
+   1298     Y = -19.479                 8.625 Ferrosilite  + 25.25 H+  + SO4--  = Pyrrhotite  + 12.63 H2O  + 7.75 Fe+++  + 8.625 SiO2(aq)
+   1299        Reactants favored        2 Ferrosilite  + 10 H2O  + 3 Mg++  + SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 12 H+
+   1300        Reactants favored        2 Ferrosilite  + 10 H2O  + 3 Mg++  + SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 12 H+
+   1301        Products  favored        Ferrosilite  + H+  + HCO3-  = Siderite  + H2O  + SiO2(aq)
+   1302     Y = -19.471                 Ferrosilite  + 9 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 6 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 14 H+
+   1303     Y = -26.502                 Ferrosilite  + 14.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 11.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 22.14 H+
+   1304     Y = -20.313                 6 Ferrosilite  + 20 H+  + SO4--  = Sulfur-Rhmb  + 10 H2O  + 6 Fe+++  + 6 SiO2(aq)
+   1305     Y = -19.530                 9 Ferrosilite  + 26 H+  + SO4--  = Troilite  + 13 H2O  + 8 Fe+++  + 9 SiO2(aq)
+   1306     Y =  14.569                 Ferrosilite  + .1891 H2O  + .126 Fe+++  = 1.189 Wustite  + .3781 H+  + SiO2(aq)
+   1307     Y = -24.549                 2 Ferrosilite  + 6 H+  = H2(g)  + 2 H2O  + 2 Fe+++  + 2 SiO2(aq)
+   1308     Y = -20.616                 8 Ferrosilite  + 26 H+  + SO4--  = H2S(g)  + 12 H2O  + 8 Fe+++  + 8 SiO2(aq)
+   1309     Y = -21.713                 12 Ferrosilite  + 40 H+  + 2 SO4--  = S2(g)  + 20 H2O  + 12 Fe+++  + 12 SiO2(aq)
+   1310        Products  favored        3 FeSO4(c)  + 5 H2O  + 2 SiO2(aq)  = Greenalite  + 6 H+  + 3 SO4--
+   1311        Products  favored        FeSO4(c)  + 2 H2O  + Ca++  + 2 SiO2(aq)  = Hedenbergite  + 4 H+  + SO4--
+   1312        Products  favored        FeSO4(c)  + 4 H2O  + 2 Al+++  = Hercynite  + 8 H+  + SO4--
+   1313        Reactants favored        FeSO4(c)  + 2 Cl-  = Lawrencite  + SO4--
+   1314     Y = -25.918                 FeSO4(c)  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + SO4--
+   1315        Products  favored        FeSO4(c)  + 7 H2O  = Melanterite
+   1316        Products  favored        3 FeSO4(c)  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 3 SO4--
+   1317     Y = -12.418                 30 FeSO4(c)  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 30 SO4--
+   1318     Y =  -8.709                 15 FeSO4(c)  + 16 H+  = Pyrite  + 8 H2O  + 14 Fe+++  + 13 SO4--
+   1319     Y =  -8.713                 8.625 FeSO4(c)  + 8 H+  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 7.625 SO4--
+   1320        Products  favored        2 FeSO4(c)  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 2 SO4--
+   1321        Products  favored        2 FeSO4(c)  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 2 SO4--
+   1322        Products  favored        FeSO4(c)  + HCO3-  = Siderite  + H+  + SO4--
+   1323     Y = -43.655                 FeSO4(c)  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + SO4--
+   1324     Y = -44.036                 FeSO4(c)  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + SO4--
+   1325     Y = -10.639                 6 FeSO4(c)  + 8 H+  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 5 SO4--
+   1326     Y =  -8.647                 9 FeSO4(c)  + 8 H+  = Troilite  + 4 H2O  + 8 Fe+++  + 8 SO4--
+   1327     Y = -62.182                 FeSO4(c)  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + SO4--
+   1328     Y = -14.875                 2 FeSO4(c)  + 2 H+  = H2(g)  + 2 Fe+++  + 2 SO4--
+   1329     Y = -10.942                 8 FeSO4(c)  + 10 H+  = H2S(g)  + 4 H2O  + 8 Fe+++  + 7 SO4--
+   1330     Y = -12.039                 12 FeSO4(c)  + 16 H+  = S2(g)  + 8 H2O  + 12 Fe+++  + 10 SO4--
+   1331        Reactants favored        Greenalite  + H2O  + 3 Ca++  + 4 SiO2(aq)  = 3 Hedenbergite  + 6 H+
+   1332        Reactants favored        Greenalite  + 7 H2O  + 6 Al+++  = 3 Hercynite  + 18 H+  + 2 SiO2(aq)
+   1333        Reactants favored        Greenalite  + 6 H+  + 6 Cl-  = 3 Lawrencite  + 5 H2O  + 2 SiO2(aq)
+   1334     Y = -20.567                 Greenalite  + 7 H2O  + 6 Fe+++  = 3 Magnetite  + 18 H+  + 2 SiO2(aq)
+   1335        Reactants favored        Greenalite  + 16 H2O  + 6 H+  + 3 SO4--  = 3 Melanterite  + 2 SiO2(aq)
+   1336        Products  favored        Greenalite  + 2 SiO2(aq)  = Minnesotaite  + H2O
+   1337     Y = -23.121                 10 Greenalite  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 70 H2O  + 30 Fe+++  + 20 SiO2(aq)
+   1338     Y = -20.177                 5 Greenalite  + 46 H+  + 2 SO4--  = Pyrite  + 33 H2O  + 14 Fe+++  + 10 SiO2(aq)
+   1339     Y = -20.625                 2.875 Greenalite  + 25.25 H+  + SO4--  = Pyrrhotite  + 18.38 H2O  + 7.75 Fe+++  + 5.75 SiO2(aq)
+   1340        Reactants favored        Greenalite  + 13 H2O  + 4.5 Mg++  + 2.5 SiO2(aq)  + 3 Al+++  = 1.5 Ripidolit-14A  + 18 H+
+   1341        Reactants favored        Greenalite  + 13 H2O  + 4.5 Mg++  + 2.5 SiO2(aq)  + 3 Al+++  = 1.5 Ripidolit-7A  + 18 H+
+   1342        Products  favored        Greenalite  + 3 H+  + 3 HCO3-  = 3 Siderite  + 5 H2O  + 2 SiO2(aq)
+   1343     Y = -16.897                 Greenalite  + 25 H2O  + 1.2 Fe+++  + .15 Ca++  + 1.2 K+  + 6.9 Mg++  + .6 Na+  + 19 SiO2(aq)  + 7.5 Al+++  = 6 Smectite-high-Fe-Mg  + 42 H+
+   1344     Y = -24.636                 Greenalite  + 41.55 H2O  + 1.655 Fe+++  + .2069 Ca++  + 2.069 K+  + 9.31 Mg++  + 1.552 Na+  + 36.79 SiO2(aq)  + 12.93 Al+++  = 10.34 Smectite-low-Fe-Mg  + 66.41 H+
+   1345     Y = -21.343                 2 Greenalite  + 20 H+  + SO4--  = Sulfur-Rhmb  + 14 H2O  + 6 Fe+++  + 4 SiO2(aq)
+   1346     Y = -20.688                 3 Greenalite  + 26 H+  + SO4--  = Troilite  + 19 H2O  + 8 Fe+++  + 6 SiO2(aq)
+   1347     Y =  22.739                 Greenalite  + .3781 Fe+++  = 3.567 Wustite  + 1.433 H2O  + 1.134 H+  + 2 SiO2(aq)
+   1348     Y = -25.579                 Greenalite  + 9 H+  = 1.5 H2(g)  + 5 H2O  + 3 Fe+++  + 2 SiO2(aq)
+   1349     Y = -21.646                 2.667 Greenalite  + 26 H+  + SO4--  = H2S(g)  + 17.33 H2O  + 8 Fe+++  + 5.333 SiO2(aq)
+   1350     Y = -22.743                 4 Greenalite  + 40 H+  + 2 SO4--  = S2(g)  + 28 H2O  + 12 Fe+++  + 8 SiO2(aq)
+   1351        Products  favored        Hedenbergite  + 2 H2O  + 2 Al+++  = Hercynite  + 4 H+  + Ca++  + 2 SiO2(aq)
+   1352        Reactants favored        Hedenbergite  + 4 H+  + 2 Cl-  = Lawrencite  + 2 H2O  + Ca++  + 2 SiO2(aq)
+   1353     Y = -23.198                 Hedenbergite  + 2 H2O  + 2 Fe+++  = Magnetite  + 4 H+  + Ca++  + 2 SiO2(aq)
+   1354        Products  favored        Hedenbergite  + 5 H2O  + 4 H+  + SO4--  = Melanterite  + Ca++  + 2 SiO2(aq)
+   1355        Products  favored        3 Hedenbergite  + 6 H+  = Minnesotaite  + 2 H2O  + 3 Ca++  + 2 SiO2(aq)
+   1356     Y = -17.858                 30 Hedenbergite  + 158 H+  + 8 HCO3-  = "O-phth acid(c)"  + 80 H2O  + 30 Fe+++  + 30 Ca++  + 60 SiO2(aq)
+   1357     Y = -14.538                 15 Hedenbergite  + 76 H+  + 2 SO4--  = Pyrite  + 38 H2O  + 14 Fe+++  + 15 Ca++  + 30 SiO2(aq)
+   1358     Y = -14.767                 8.625 Hedenbergite  + 42.5 H+  + SO4--  = Pyrrhotite  + 21.25 H2O  + 7.75 Fe+++  + 8.625 Ca++  + 17.25 SiO2(aq)
+   1359        Products  favored        2 Hedenbergite  + 8 H2O  + 3 Mg++  + 2 Al+++  = Ripidolit-14A  + 8 H+  + 2 Ca++  + SiO2(aq)
+   1360        Products  favored        2 Hedenbergite  + 8 H2O  + 3 Mg++  + 2 Al+++  = Ripidolit-7A  + 8 H+  + 2 Ca++  + SiO2(aq)
+   1361        Products  favored        Hedenbergite  + 3 H+  + HCO3-  = Siderite  + 2 H2O  + Ca++  + 2 SiO2(aq)
+   1362     Y = -30.055                 Hedenbergite  + 8 H2O  + .4 Fe+++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 5 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 12 H+  + .95 Ca++
+   1363     Y = -34.175                 Hedenbergite  + 13.52 H2O  + .5517 Fe+++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 10.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 20.14 H+  + .931 Ca++
+   1364     Y = -16.079                 6 Hedenbergite  + 32 H+  + SO4--  = Sulfur-Rhmb  + 16 H2O  + 6 Fe+++  + 6 Ca++  + 12 SiO2(aq)
+   1365     Y = -14.767                 9 Hedenbergite  + 44 H+  + SO4--  = Troilite  + 22 H2O  + 8 Fe+++  + 9 Ca++  + 18 SiO2(aq)
+   1366     Y = -19.020                 Hedenbergite  + 1.622 H+  + .126 Fe+++  = 1.189 Wustite  + .8109 H2O  + Ca++  + 2 SiO2(aq)
+   1367     Y = -20.315                 2 Hedenbergite  + 10 H+  = H2(g)  + 4 H2O  + 2 Fe+++  + 2 Ca++  + 4 SiO2(aq)
+   1368     Y = -16.383                 8 Hedenbergite  + 42 H+  + SO4--  = H2S(g)  + 20 H2O  + 8 Fe+++  + 8 Ca++  + 16 SiO2(aq)
+   1369     Y = -17.480                 12 Hedenbergite  + 64 H+  + 2 SO4--  = S2(g)  + 32 H2O  + 12 Fe+++  + 12 Ca++  + 24 SiO2(aq)
+   1370        Reactants favored        Hercynite  + 8 H+  + 2 Cl-  = Lawrencite  + 4 H2O  + 2 Al+++
+   1371     Y = -22.120                 Hercynite  + 2 Fe+++  = Magnetite  + 2 Al+++
+   1372        Reactants favored        Hercynite  + 3 H2O  + 8 H+  + SO4--  = Melanterite  + 2 Al+++
+   1373        Products  favored        3 Hercynite  + 18 H+  + 4 SiO2(aq)  = Minnesotaite  + 8 H2O  + 6 Al+++
+   1374     Y = -20.014                 30 Hercynite  + 278 H+  + 8 HCO3-  = "O-phth acid(c)"  + 140 H2O  + 30 Fe+++  + 60 Al+++
+   1375     Y = -16.848                 15 Hercynite  + 136 H+  + 2 SO4--  = Pyrite  + 68 H2O  + 14 Fe+++  + 30 Al+++
+   1376     Y = -17.167                 8.625 Hercynite  + 77 H+  + SO4--  = Pyrrhotite  + 38.5 H2O  + 7.75 Fe+++  + 17.25 Al+++
+   1377        Products  favored        2 Hercynite  + 4 H2O  + 3 Mg++  + 3 SiO2(aq)  = Ripidolit-14A  + 2 Al+++
+   1378        Reactants favored        2 Hercynite  + 4 H2O  + 3 Mg++  + 3 SiO2(aq)  = Ripidolit-7A  + 2 Al+++
+   1379        Products  favored        Hercynite  + 7 H+  + HCO3-  = Siderite  + 4 H2O  + 2 Al+++
+   1380     Y = -24.664                 Hercynite  + 6 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + .5 Al+++  = 2 Smectite-high-Fe-Mg  + 8 H+
+   1381     Y = -30.267                 Hercynite  + 11.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 2.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 16.14 H+
+   1382     Y = -18.236                 6 Hercynite  + 56 H+  + SO4--  = Sulfur-Rhmb  + 28 H2O  + 6 Fe+++  + 12 Al+++
+   1383     Y = -17.193                 9 Hercynite  + 80 H+  + SO4--  = Troilite  + 40 H2O  + 8 Fe+++  + 18 Al+++
+   1384     Y =  -1.912                 Hercynite  + 5.622 H+  + .126 Fe+++  = 1.189 Wustite  + 2.811 H2O  + 2 Al+++
+   1385     Y = -22.472                 2 Hercynite  + 18 H+  = H2(g)  + 8 H2O  + 2 Fe+++  + 4 Al+++
+   1386     Y = -18.539                 8 Hercynite  + 74 H+  + SO4--  = H2S(g)  + 36 H2O  + 8 Fe+++  + 16 Al+++
+   1387     Y = -19.636                 12 Hercynite  + 112 H+  + 2 SO4--  = S2(g)  + 56 H2O  + 12 Fe+++  + 24 Al+++
+   1388     Y = -30.668                 Lawrencite  + 4 H2O  + 2 Fe+++  = Magnetite  + 8 H+  + 2 Cl-
+   1389        Products  favored        Lawrencite  + 7 H2O  + SO4--  = Melanterite  + 2 Cl-
+   1390        Products  favored        3 Lawrencite  + 4 H2O  + 4 SiO2(aq)  = Minnesotaite  + 6 H+  + 6 Cl-
+   1391     Y =  -2.918                 30 Lawrencite  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 60 Cl-
+   1392     Y =   1.470                 15 Lawrencite  + 16 H+  + 2 SO4--  = Pyrite  + 8 H2O  + 14 Fe+++  + 30 Cl-
+   1393     Y =   1.860                 8.625 Lawrencite  + 8 H+  + SO4--  = Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 17.25 Cl-
+   1394        Products  favored        2 Lawrencite  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 16 H+  + 4 Cl-
+   1395        Products  favored        2 Lawrencite  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 16 H+  + 4 Cl-
+   1396        Products  favored        Lawrencite  + HCO3-  = Siderite  + H+  + 2 Cl-
+   1397     Y = -67.405                 Lawrencite  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + 2 Cl-
+   1398     Y = -61.255                 Lawrencite  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + 2 Cl-
+   1399     Y =  -1.139                 6 Lawrencite  + 8 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 12 Cl-
+   1400     Y =   2.041                 9 Lawrencite  + 8 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 18 Cl-
+   1401     Y =-137.554                 Lawrencite  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 2.378 H+  + 2 Cl-
+   1402     Y =  -5.375                 2 Lawrencite  + 2 H+  = H2(g)  + 2 Fe+++  + 4 Cl-
+   1403     Y =  -1.442                 8 Lawrencite  + 10 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 16 Cl-
+   1404     Y =  -2.540                 12 Lawrencite  + 16 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 24 Cl-
+   1405     Y = -23.022                 Magnetite  + 3 H2O  + 8 H+  + SO4--  = Melanterite  + 2 Fe+++
+   1406     Y = -20.139                 3 Magnetite  + 18 H+  + 4 SiO2(aq)  = Minnesotaite  + 8 H2O  + 6 Fe+++
+   1407     Y = -21.418                 30 Magnetite  + 278 H+  + 8 HCO3-  = "O-phth acid(c)"  + 140 H2O  + 90 Fe+++
+   1408     Y = -20.443                 15 Magnetite  + 136 H+  + 2 SO4--  = Pyrite  + 68 H2O  + 44 Fe+++
+   1409     Y = -20.585                 8.625 Magnetite  + 77 H+  + SO4--  = Pyrrhotite  + 38.5 H2O  + 25 Fe+++
+   1410     Y = -22.012                 2 Magnetite  + 4 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 4 Fe+++
+   1411     Y = -22.888                 2 Magnetite  + 4 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 4 Fe+++
+   1412     Y = -20.023                 Magnetite  + 7 H+  + HCO3-  = Siderite  + 4 H2O  + 2 Fe+++
+   1413     Y = -21.484                 Magnetite  + 6 H2O  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 8 H+  + 1.6 Fe+++
+   1414     Y = -19.016                 Magnetite  + 11.52 H2O  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 16.14 H+  + 1.448 Fe+++
+   1415     Y = -20.825                 6 Magnetite  + 56 H+  + SO4--  = Sulfur-Rhmb  + 28 H2O  + 18 Fe+++
+   1416     Y = -20.604                 9 Magnetite  + 80 H+  + SO4--  = Troilite  + 40 H2O  + 26 Fe+++
+   1417     Y = -23.479                 Magnetite  + 5.622 H+  = 1.189 Wustite  + 2.811 H2O  + 1.874 Fe+++
+   1418     Y = -22.237                 2 Magnetite  + 18 H+  = H2(g)  + 8 H2O  + 6 Fe+++
+   1419     Y = -20.926                 8 Magnetite  + 74 H+  + SO4--  = H2S(g)  + 36 H2O  + 24 Fe+++
+   1420     Y = -21.292                 12 Magnetite  + 112 H+  + 2 SO4--  = S2(g)  + 56 H2O  + 36 Fe+++
+   1421        Products  favored        3 Melanterite  + 4 SiO2(aq)  = Minnesotaite  + 17 H2O  + 6 H+  + 3 SO4--
+   1422     Y = -18.211                 30 Melanterite  + 38 H+  + 8 HCO3-  = "O-phth acid(c)"  + 230 H2O  + 30 Fe+++  + 30 SO4--
+   1423     Y = -14.916                 15 Melanterite  + 16 H+  = Pyrite  + 113 H2O  + 14 Fe+++  + 13 SO4--
+   1424     Y = -15.160                 8.625 Melanterite  + 8 H+  = Pyrrhotite  + 64.38 H2O  + 7.75 Fe+++  + 7.625 SO4--
+   1425        Products  favored        2 Melanterite  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-14A  + 2 H2O  + 16 H+  + 2 SO4--
+   1426        Products  favored        2 Melanterite  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++  = Ripidolit-7A  + 2 H2O  + 16 H+  + 2 SO4--
+   1427        Products  favored        Melanterite  + HCO3-  = Siderite  + 7 H2O  + H+  + SO4--
+   1428     Y = -29.171                 Melanterite  + 3 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 16 H+  + SO4--
+   1429     Y = -33.535                 Melanterite  + 8.517 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 24.14 H+  + SO4--
+   1430     Y = -16.433                 6 Melanterite  + 8 H+  = Sulfur-Rhmb  + 46 H2O  + 6 Fe+++  + 5 SO4--
+   1431     Y = -15.165                 9 Melanterite  + 8 H+  = Troilite  + 67 H2O  + 8 Fe+++  + 8 SO4--
+   1432     Y = -16.216                 Melanterite  + .126 Fe+++  = 1.189 Wustite  + 5.811 H2O  + 2.378 H+  + SO4--
+   1433     Y = -20.669                 2 Melanterite  + 2 H+  = H2(g)  + 14 H2O  + 2 Fe+++  + 2 SO4--
+   1434     Y = -16.736                 8 Melanterite  + 10 H+  = H2S(g)  + 60 H2O  + 8 Fe+++  + 7 SO4--
+   1435     Y = -17.833                 12 Melanterite  + 16 H+  = S2(g)  + 92 H2O  + 12 Fe+++  + 10 SO4--
+   1436     Y = -23.976                 10 Minnesotaite  + 98 H+  + 8 HCO3-  = "O-phth acid(c)"  + 60 H2O  + 30 Fe+++  + 40 SiO2(aq)
+   1437     Y = -21.092                 5 Minnesotaite  + 46 H+  + 2 SO4--  = Pyrite  + 28 H2O  + 14 Fe+++  + 20 SiO2(aq)
+   1438     Y = -21.575                 2.875 Minnesotaite  + 25.25 H+  + SO4--  = Pyrrhotite  + 15.5 H2O  + 7.75 Fe+++  + 11.5 SiO2(aq)
+   1439        Reactants favored        Minnesotaite  + 14 H2O  + 4.5 Mg++  + .5 SiO2(aq)  + 3 Al+++  = 1.5 Ripidolit-14A  + 18 H+
+   1440        Reactants favored        Minnesotaite  + 14 H2O  + 4.5 Mg++  + .5 SiO2(aq)  + 3 Al+++  = 1.5 Ripidolit-7A  + 18 H+
+   1441        Products  favored        Minnesotaite  + 3 H+  + 3 HCO3-  = 3 Siderite  + 4 H2O  + 4 SiO2(aq)
+   1442     Y = -14.761                 Minnesotaite  + 26 H2O  + 1.2 Fe+++  + .15 Ca++  + 1.2 K+  + 6.9 Mg++  + .6 Na+  + 17 SiO2(aq)  + 7.5 Al+++  = 6 Smectite-high-Fe-Mg  + 42 H+
+   1443     Y = -23.087                 Minnesotaite  + 42.55 H2O  + 1.655 Fe+++  + .2069 Ca++  + 2.069 K+  + 9.31 Mg++  + 1.552 Na+  + 34.79 SiO2(aq)  + 12.93 Al+++  = 10.34 Smectite-low-Fe-Mg  + 66.41 H+
+   1444     Y = -22.197                 2 Minnesotaite  + 20 H+  + SO4--  = Sulfur-Rhmb  + 12 H2O  + 6 Fe+++  + 8 SiO2(aq)
+   1445     Y = -21.649                 3 Minnesotaite  + 26 H+  + SO4--  = Troilite  + 16 H2O  + 8 Fe+++  + 12 SiO2(aq)
+   1446     Y =  29.518                 Minnesotaite  + .3781 Fe+++  = 3.567 Wustite  + .4328 H2O  + 1.134 H+  + 4 SiO2(aq)
+   1447     Y = -26.433                 Minnesotaite  + 9 H+  = 1.5 H2(g)  + 4 H2O  + 3 Fe+++  + 4 SiO2(aq)
+   1448     Y = -22.500                 2.667 Minnesotaite  + 26 H+  + SO4--  = H2S(g)  + 14.67 H2O  + 8 Fe+++  + 10.67 SiO2(aq)
+   1449     Y = -23.597                 4 Minnesotaite  + 40 H+  + 2 SO4--  = S2(g)  + 24 H2O  + 12 Fe+++  + 16 SiO2(aq)
+   1450     Y = -64.341                 "O-phth acid(c)"  + 4 H2O  + 2 Fe+++  + 4 SO4--  = 2 Pyrite  + 6 H+  + 8 HCO3-
+   1451     Y = -45.234                 "O-phth acid(c)"  + 6.087 H2O  + 3.043 Fe+++  + 3.478 SO4--  = 3.478 Pyrrhotite  + 10.17 H+  + 8 HCO3-
+   1452     Y = -20.231                 "O-phth acid(c)"  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-14A  + 278 H+  + 8 HCO3-
+   1453     Y = -18.478                 "O-phth acid(c)"  + 200 H2O  + 30 Fe+++  + 45 Mg++  + 45 SiO2(aq)  + 30 Al+++  = 15 Ripidolit-7A  + 278 H+  + 8 HCO3-
+   1454     Y = -24.209                 "O-phth acid(c)"  + 20 H2O  + 30 Fe+++  + 22 HCO3-  = 30 Siderite  + 68 H+
+   1455     Y = -21.343                 "O-phth acid(c)"  + 320 H2O  + 42 Fe+++  + 1.5 Ca++  + 12 K+  + 69 Mg++  + 6 Na+  + 210 SiO2(aq)  + 75 Al+++  = 60 Smectite-high-Fe-Mg  + 518 H+  + 8 HCO3-
+   1456     Y = -23.660                 "O-phth acid(c)"  + 485.5 H2O  + 46.55 Fe+++  + 2.069 Ca++  + 20.69 K+  + 93.1 Mg++  + 15.52 Na+  + 387.9 SiO2(aq)  + 129.3 Al+++  = 103.4 Smectite-low-Fe-Mg  + 762.1 H+  + 8 HCO3-
+   1457        Products  favored        "O-phth acid(c)"  + 2 H+  + 5 SO4--  = 5 Sulfur-Rhmb  + 8 HCO3-
+   1458     Y = -42.585                 "O-phth acid(c)"  + 6.667 H2O  + 3.333 Fe+++  + 3.333 SO4--  = 3.333 Troilite  + 11.33 H+  + 8 HCO3-
+   1459     Y = -17.988                 "O-phth acid(c)"  + 55.67 H2O  + 33.78 Fe+++  = 35.67 Wustite  + 109.3 H+  + 8 HCO3-
+   1460        Reactants favored        "O-phth acid(c)"  + 20 H2O  = 15 H2(g)  + 8 H+  + 8 HCO3-
+   1461        Products  favored        "O-phth acid(c)"  + 5 H2O  + 3.75 SO4--  = 3.75 H2S(g)  + .5 H+  + 8 HCO3-
+   1462        Products  favored        "O-phth acid(c)"  + 2 H+  + 5 SO4--  = 2.5 S2(g)  + 8 HCO3-
+   1463     Y =  -8.610                 Pyrite  + 1.043 H2O  + .5217 Fe+++  = 1.739 Pyrrhotite  + 2.087 H+  + .2609 SO4--
+   1464     Y = -17.081                 Pyrite  + 98 H2O  + 14 Fe+++  + 22.5 Mg++  + 22.5 SiO2(aq)  + 15 Al+++  = 7.5 Ripidolit-14A  + 136 H+  + 2 SO4--
+   1465     Y = -15.202                 Pyrite  + 98 H2O  + 14 Fe+++  + 22.5 Mg++  + 22.5 SiO2(aq)  + 15 Al+++  = 7.5 Ripidolit-7A  + 136 H+  + 2 SO4--
+   1466     Y = -21.342                 Pyrite  + 8 H2O  + 14 Fe+++  + 15 HCO3-  = 15 Siderite  + 31 H+  + 2 SO4--
+   1467     Y = -19.193                 Pyrite  + 158 H2O  + 20 Fe+++  + .75 Ca++  + 6 K+  + 34.5 Mg++  + 3 Na+  + 105 SiO2(aq)  + 37.5 Al+++  = 30 Smectite-high-Fe-Mg  + 256 H+  + 2 SO4--
+   1468     Y = -21.833                 Pyrite  + 240.8 H2O  + 22.28 Fe+++  + 1.034 Ca++  + 10.34 K+  + 46.55 Mg++  + 7.759 Na+  + 194 SiO2(aq)  + 64.66 Al+++  = 51.72 Smectite-low-Fe-Mg  + 378.1 H+  + 2 SO4--
+   1469     Y = -37.664                 Pyrite  + 4 H+  + .5 SO4--  = 2.5 Sulfur-Rhmb  + 2 H2O  + Fe+++
+   1470     Y =  -9.951                 Pyrite  + 1.333 H2O  + .6667 Fe+++  = 1.667 Troilite  + 2.667 H+  + .3333 SO4--
+   1471     Y = -15.071                 Pyrite  + 25.84 H2O  + 15.89 Fe+++  = 17.84 Wustite  + 51.67 H+  + 2 SO4--
+   1472     Y =-101.203                 Pyrite  + 8 H2O  = 7.5 H2(g)  + H+  + Fe+++  + 2 SO4--
+   1473     Y = -42.212                 Pyrite  + .5 H2O  + 2.75 H+  = 1.875 H2S(g)  + Fe+++  + .125 SO4--
+   1474     Y = -58.669                 Pyrite  + 4 H+  + .5 SO4--  = 1.25 S2(g)  + 2 H2O  + Fe+++
+   1475     Y = -17.408                 Pyrrhotite  + 55.75 H2O  + 7.75 Fe+++  + 12.94 Mg++  + 12.94 SiO2(aq)  + 8.625 Al+++  = 4.313 Ripidolit-14A  + 77 H+  + SO4--
+   1476     Y = -15.458                 Pyrrhotite  + 55.75 H2O  + 7.75 Fe+++  + 12.94 Mg++  + 12.94 SiO2(aq)  + 8.625 Al+++  = 4.313 Ripidolit-7A  + 77 H+  + SO4--
+   1477     Y = -21.835                 Pyrrhotite  + 4 H2O  + 7.75 Fe+++  + 8.625 HCO3-  = 8.625 Siderite  + 16.63 H+  + SO4--
+   1478     Y = -19.476                 Pyrrhotite  + 90.25 H2O  + 11.2 Fe+++  + .4313 Ca++  + 3.45 K+  + 19.84 Mg++  + 1.725 Na+  + 60.38 SiO2(aq)  + 21.56 Al+++  = 17.25 Smectite-high-Fe-Mg  + 146 H+  + SO4--
+   1479     Y = -22.151                 Pyrrhotite  + 137.8 H2O  + 12.51 Fe+++  + .5948 Ca++  + 5.948 K+  + 26.77 Mg++  + 4.461 Na+  + 111.5 SiO2(aq)  + 37.18 Al+++  = 29.74 Smectite-low-Fe-Mg  + 216.2 H+  + SO4--
+   1480     Y = -27.703                 Pyrrhotite  + 3.5 H+  + .4375 SO4--  = 1.438 Sulfur-Rhmb  + 1.75 H2O  + .875 Fe+++
+   1481     Y = -14.775                 1.043 Pyrrhotite  + .1739 H2O  + .08696 Fe+++  = Troilite  + .3478 H+  + .04348 SO4--
+   1482     Y = -15.290                 Pyrrhotite  + 14.26 H2O  + 8.837 Fe+++  = 10.26 Wustite  + 28.51 H+  + SO4--
+   1483     Y = -69.457                 Pyrrhotite  + 4 H2O  + .625 H+  = 4.313 H2(g)  + .875 Fe+++  + SO4--
+   1484     Y = -30.691                 Pyrrhotite  + 2.781 H+  + .07813 SO4--  = 1.078 H2S(g)  + .3125 H2O  + .875 Fe+++
+   1485     Y = -41.506                 1.391 Pyrrhotite  + 4.87 H+  + .6087 SO4--  = S2(g)  + 2.435 H2O  + 1.217 Fe+++
+   1486        Reactants favored        Ripidolit-14A  = Ripidolit-7A
+   1487        Products  favored        Ripidolit-14A  + 14 H+  + 2 HCO3-  = 2 Siderite  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1488     Y = -24.121                 Ripidolit-14A  + 8 H2O  + .8 Fe+++  + .1 Ca++  + .8 K+  + 1.6 Mg++  + .4 Na+  + 11 SiO2(aq)  + 3 Al+++  = 4 Smectite-high-Fe-Mg  + 16 H+
+   1489     Y = -29.874                 Ripidolit-14A  + 19.03 H2O  + 1.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 3.207 Mg++  + 1.034 Na+  + 22.86 SiO2(aq)  + 6.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 32.28 H+
+   1490     Y = -18.453                 3 Ripidolit-14A  + 56 H+  + SO4--  = Sulfur-Rhmb  + 40 H2O  + 6 Fe+++  + 9 Mg++  + 9 SiO2(aq)  + 6 Al+++
+   1491     Y = -17.437                 4.5 Ripidolit-14A  + 80 H+  + SO4--  = Troilite  + 58 H2O  + 8 Fe+++  + 13.5 Mg++  + 13.5 SiO2(aq)  + 9 Al+++
+   1492     Y =  -0.189                 Ripidolit-14A  + 11.24 H+  + .2521 Fe+++  = 2.378 Wustite  + 9.622 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1493     Y = -22.689                 Ripidolit-14A  + 18 H+  = H2(g)  + 12 H2O  + 2 Fe+++  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1494     Y = -18.756                 4 Ripidolit-14A  + 74 H+  + SO4--  = H2S(g)  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++
+   1495     Y = -19.853                 6 Ripidolit-14A  + 112 H+  + 2 SO4--  = S2(g)  + 80 H2O  + 12 Fe+++  + 18 Mg++  + 18 SiO2(aq)  + 12 Al+++
+   1496        Products  favored        Ripidolit-7A  + 14 H+  + 2 HCO3-  = 2 Siderite  + 12 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1497     Y = -28.504                 Ripidolit-7A  + 8 H2O  + .8 Fe+++  + .1 Ca++  + .8 K+  + 1.6 Mg++  + .4 Na+  + 11 SiO2(aq)  + 3 Al+++  = 4 Smectite-high-Fe-Mg  + 16 H+
+   1498     Y = -33.051                 Ripidolit-7A  + 19.03 H2O  + 1.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 3.207 Mg++  + 1.034 Na+  + 22.86 SiO2(aq)  + 6.621 Al+++  = 6.897 Smectite-low-Fe-Mg  + 32.28 H+
+   1499     Y = -16.700                 3 Ripidolit-7A  + 56 H+  + SO4--  = Sulfur-Rhmb  + 40 H2O  + 6 Fe+++  + 9 Mg++  + 9 SiO2(aq)  + 6 Al+++
+   1500     Y = -15.465                 4.5 Ripidolit-7A  + 80 H+  + SO4--  = Troilite  + 58 H2O  + 8 Fe+++  + 13.5 Mg++  + 13.5 SiO2(aq)  + 9 Al+++
+   1501     Y = -14.097                 Ripidolit-7A  + 11.24 H+  + .2521 Fe+++  = 2.378 Wustite  + 9.622 H2O  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1502     Y = -20.936                 Ripidolit-7A  + 18 H+  = H2(g)  + 12 H2O  + 2 Fe+++  + 3 Mg++  + 3 SiO2(aq)  + 2 Al+++
+   1503     Y = -17.003                 4 Ripidolit-7A  + 74 H+  + SO4--  = H2S(g)  + 52 H2O  + 8 Fe+++  + 12 Mg++  + 12 SiO2(aq)  + 8 Al+++
+   1504     Y = -18.100                 6 Ripidolit-7A  + 112 H+  + 2 SO4--  = S2(g)  + 80 H2O  + 12 Fe+++  + 18 Mg++  + 18 SiO2(aq)  + 12 Al+++
+   1505     Y = -14.178                 Siderite  + 10 H2O  + .4 Fe+++  + .05 Ca++  + .4 K+  + 2.3 Mg++  + .2 Na+  + 7 SiO2(aq)  + 2.5 Al+++  = 2 Smectite-high-Fe-Mg  + 15 H+  + HCO3-
+   1506     Y = -22.665                 Siderite  + 15.52 H2O  + .5517 Fe+++  + .06897 Ca++  + .6897 K+  + 3.103 Mg++  + .5172 Na+  + 12.93 SiO2(aq)  + 4.31 Al+++  = 3.448 Smectite-low-Fe-Mg  + 23.14 H+  + HCO3-
+   1507     Y = -22.430                 6 Siderite  + 14 H+  + SO4--  = Sulfur-Rhmb  + 4 H2O  + 6 Fe+++  + 6 HCO3-
+   1508     Y = -21.912                 9 Siderite  + 17 H+  + SO4--  = Troilite  + 4 H2O  + 8 Fe+++  + 9 HCO3-
+   1509     Y =  31.367                 Siderite  + 1.189 H2O  + .126 Fe+++  = 1.189 Wustite  + 1.378 H+  + HCO3-
+   1510     Y = -26.666                 2 Siderite  + 4 H+  = H2(g)  + 2 Fe+++  + 2 HCO3-
+   1511     Y = -22.733                 8 Siderite  + 18 H+  + SO4--  = H2S(g)  + 4 H2O  + 8 Fe+++  + 8 HCO3-
+   1512     Y = -23.831                 12 Siderite  + 28 H+  + 2 SO4--  = S2(g)  + 8 H2O  + 12 Fe+++  + 12 HCO3-
+   1513     Y = -45.039                 Smectite-high-Fe-Mg  + 2.759 H2O  + .07586 Fe+++  + .009483 Ca++  + .1448 K+  + .4017 Mg++  + .1586 Na+  + 2.966 SiO2(aq)  + .9052 Al+++  = 1.724 Smectite-low-Fe-Mg  + 4.069 H+
+   1514     Y = -20.072                 12 Smectite-high-Fe-Mg  + 104 H+  + SO4--  = Sulfur-Rhmb  + 64 H2O  + 8.4 Fe+++  + .3 Ca++  + 2.4 K+  + 13.8 Mg++  + 1.2 Na+  + 42 SiO2(aq)  + 15 Al+++
+   1515     Y = -19.511                 18 Smectite-high-Fe-Mg  + 152 H+  + SO4--  = Troilite  + 94 H2O  + 11.6 Fe+++  + .45 Ca++  + 3.6 K+  + 20.7 Mg++  + 1.8 Na+  + 63 SiO2(aq)  + 22.5 Al+++
+   1516     Y = -35.132                 1.682 Smectite-high-Fe-Mg  + 11.46 H+  = Wustite  + 7.41 H2O  + .2304 Fe+++  + .04205 Ca++  + .3364 K+  + 1.934 Mg++  + .1682 Na+  + 5.887 SiO2(aq)  + 2.103 Al+++
+   1517     Y = -23.098                 4 Smectite-high-Fe-Mg  + 34 H+  = H2(g)  + 20 H2O  + 2.8 Fe+++  + .1 Ca++  + .8 K+  + 4.6 Mg++  + .4 Na+  + 14 SiO2(aq)  + 5 Al+++
+   1518     Y = -20.289                 16 Smectite-high-Fe-Mg  + 138 H+  + SO4--  = H2S(g)  + 84 H2O  + 11.2 Fe+++  + .4 Ca++  + 3.2 K+  + 18.4 Mg++  + 1.6 Na+  + 56 SiO2(aq)  + 20 Al+++
+   1519     Y = -21.073                 24 Smectite-high-Fe-Mg  + 208 H+  + 2 SO4--  = S2(g)  + 128 H2O  + 16.8 Fe+++  + .6 Ca++  + 4.8 K+  + 27.6 Mg++  + 2.4 Na+  + 84 SiO2(aq)  + 30 Al+++
+   1520     Y = -22.514                 20.69 Smectite-low-Fe-Mg  + 152.8 H+  + SO4--  = Sulfur-Rhmb  + 97.1 H2O  + 9.31 Fe+++  + .4138 Ca++  + 4.138 K+  + 18.62 Mg++  + 3.103 Na+  + 77.59 SiO2(aq)  + 25.86 Al+++
+   1521     Y = -22.200                 31.03 Smectite-low-Fe-Mg  + 225.2 H+  + SO4--  = Troilite  + 143.7 H2O  + 12.97 Fe+++  + .6207 Ca++  + 6.207 K+  + 27.93 Mg++  + 4.655 Na+  + 116.4 SiO2(aq)  + 38.79 Al+++
+   1522     Y = -38.663                 2.9 Smectite-low-Fe-Mg  + 18.3 H+  = Wustite  + 12.05 H2O  + .358 Fe+++  + .058 Ca++  + .58 K+  + 2.61 Mg++  + .435 Na+  + 10.88 SiO2(aq)  + 3.625 Al+++
+   1523     Y = -25.243                 6.897 Smectite-low-Fe-Mg  + 50.28 H+  = H2(g)  + 31.03 H2O  + 3.103 Fe+++  + .1379 Ca++  + 1.379 K+  + 6.207 Mg++  + 1.034 Na+  + 25.86 SiO2(aq)  + 8.621 Al+++
+   1524     Y = -22.709                 27.59 Smectite-low-Fe-Mg  + 203.1 H+  + SO4--  = H2S(g)  + 128.1 H2O  + 12.41 Fe+++  + .5517 Ca++  + 5.517 K+  + 24.83 Mg++  + 4.138 Na+  + 103.4 SiO2(aq)  + 34.48 Al+++
+   1525     Y = -23.416                 41.38 Smectite-low-Fe-Mg  + 305.7 H+  + 2 SO4--  = S2(g)  + 194.2 H2O  + 18.62 Fe+++  + .8276 Ca++  + 8.276 K+  + 37.24 Mg++  + 6.207 Na+  + 155.2 SiO2(aq)  + 51.72 Al+++
+   1526     Y = -26.578                 1.5 Sulfur-Rhmb  + 2 H2O  + Fe+++  = Troilite  + 4 H+  + .5 SO4--
+   1527     Y = -16.408                 Sulfur-Rhmb  + 11.13 H2O  + 6.756 Fe+++  = 7.134 Wustite  + 22.27 H+  + SO4--
+   1528        Reactants favored        Sulfur-Rhmb  + 4 H2O  = 3 H2(g)  + 2 H+  + SO4--
+   1529        Reactants favored        1.333 Sulfur-Rhmb  + 1.333 H2O  = H2S(g)  + .6667 H+  + .3333 SO4--
+   1530        Reactants favored        2 Sulfur-Rhmb  = S2(g)
+   1531     Y = -15.295                 Troilite  + 14.7 H2O  + 9.134 Fe+++  = 10.7 Wustite  + 29.4 H+  + SO4--
+   1532     Y = -64.702                 Troilite  + 4 H2O  + H+  = 4.5 H2(g)  + Fe+++  + SO4--
+   1533     Y = -29.307                 Troilite  + 3.25 H+  + .125 SO4--  = 1.125 H2S(g)  + .5 H2O  + Fe+++
+   1534     Y = -39.182                 1.333 Troilite  + 5.333 H+  + .6667 SO4--  = S2(g)  + 2.667 H2O  + 1.333 Fe+++
+   1535     Y = -20.170                 2.378 Wustite  + 6.756 H+  = H2(g)  + 2.378 H2O  + 2.252 Fe+++
+   1536     Y = -16.678                 9.512 Wustite  + 29.02 H+  + SO4--  = H2S(g)  + 13.51 H2O  + 9.008 Fe+++
+   1537     Y = -17.652                 14.27 Wustite  + 44.54 H+  + 2 SO4--  = S2(g)  + 22.27 H2O  + 13.51 Fe+++
+   1538        Products  favored        4 H2(g)  + 2 H+  + SO4--  = H2S(g)  + 4 H2O
+   1539        Products  favored        6 H2(g)  + 4 H+  + 2 SO4--  = S2(g)  + 8 H2O
+   1540        Reactants favored        1.5 H2S(g)  + H+  + .5 SO4--  = S2(g)  + 2 H2O
+ ------------------------------------------------------------------------------------------------------------------------
+
+ Main Diagram
+
+                                       Fe++      Fe+++           Fe++      Fe+++   Equation  Type
+ ----------------------------------------------------------------------------------------------------
+  Fe++                              -16.383   -14.438          -7.226   -19.016         39    Upper
+                                     -7.226   -19.016          -5.672   -21.833         49    Upper
+                                     -5.672   -21.833          -7.743   -24.053         43    Lower
+                                     -7.743   -24.053         -12.560   -28.268         17    Lower
+                                    -12.560   -28.268         -20.000   -31.987          2    Lower
+  H2(aq)                            -20.000   -31.987         -12.560   -28.268          2    Upper
+                                    -12.560   -28.268         -12.560   -32.000        124    Right
+  H2S(aq)                           -12.560   -28.268          -7.743   -24.053         17    Upper
+                                     -7.743   -24.053          -5.954   -27.407        825    Upper
+                                    -12.560   -32.000         -12.560   -28.268        124    Left 
+  Magnetite                           2.000   -19.016          -7.226   -19.016        1414    Lower
+                                     -7.226   -19.016         -16.383   -14.438         39    Lower
+  Pyrite                             -7.743   -24.053          -5.672   -21.833         43    Upper
+                                     -5.672   -21.833          -0.381   -21.833        1468    Upper
+                                     -5.954   -27.407          -7.743   -24.053        825    Lower
+  Smectite-low-Fe-Mg                 -7.226   -19.016           2.000   -19.016        1414    Upper
+                                     -0.381   -21.833          -5.672   -21.833        1468    Lower
+                                     -5.672   -21.833          -7.226   -19.016         49    Lower
+ ----------------------------------------------------------------------------------------------------

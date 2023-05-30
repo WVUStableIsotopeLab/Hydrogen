@@ -1,0 +1,400 @@
+Input:
+
+> data = thermo.tdat verify
+     > conductivity = conductivity-USGS.dat
+     > temperature = 9.8 C
+     > H2O          = 1 free kg
+     > pH           = 7.2
+     > O2(aq)       = .009 mg/l
+     > Na+          = .72 mmol/l
+     > K+           = .04 mmol/l
+     > Ca++         = 3.49 mmol/l
+     > Mg++         = .234 mmol/l
+     > swap Quartz for SiO2(aq)
+     > Quartz       = 1 free mmol/l
+     > Fe++         = 32 umol/l as Fe
+     > Mn++         = 3.77 umol/l as Mn
+     > Cl-          = .81 mmol/l
+     > SO4--        = .95 mmol/l
+     > NO3-         = 6 umol/l
+     > Br-          = 1.25 umol/l
+     > swap Kaolinite for Al+++
+     > Kaolinite    = 1 free mmol/l
+     > F-           = 5.3 umol/l
+     > HCO3-        = 5.4 mmol/l
+
+Output:
+          Temperature =   9.8 C    Pressure =  1.013 bar
+          pH =  7.200              log fO2 =  -33.638
+          Eh =   0.3557 volts      pe =   6.3353
+          Ionic strength      =    0.011321 molal
+          Charge imbalance    =    0.000853 eq/kg (5.917% error)
+          Activity of water   =    0.999972
+          Solvent mass        =      1.0000 kg
+          Solution mass       =      1.0006 kg
+          Mineral mass        =  0.00031864 kg
+          Fluid density       =    0.999    g/cm3
+            compressibility   =   4.651e-05 /bar
+            expansivity       =   0.0001444 /C
+            viscosity         =    0.013    poise
+          Chlorinity          =    0.000811 molal
+          Dissolved solids    =         608 mg/kg sol'n
+          Elect. conductivity =      705.78 uS/cm (or umho/cm)
+          Hardness            =      372.97 mg/kg sol'n as CaCO3
+            carbonate         =      231.72 mg/kg sol'n as CaCO3
+            non-carbonate     =      141.26 mg/kg sol'n as CaCO3
+          Carbonate alkalinity=      231.72 mg/kg sol'n as CaCO3
+          Water type          =    Ca-HCO3
+          Bulk volume         =    1.00e+03 cm3
+          Fluid volume        =    1.00e+03 cm3
+          Mineral volume      =       0.122 cm3
+          Inert volume        =        0.00 cm3
+          Porosity            =        100. %
+          Permeability        =        98.3 cm2
+
+  Minerals in system                    moles      log moles      grams        volume (cm3)
+ -------------------------------------------------------------------------------------------
+   Kaolinite                            0.001001     -2.999         0.2585         0.09964
+   Quartz                               0.001001     -2.999        0.06016         0.02272
+                                                              _____________   _____________
+   (total)                                                          0.3186          0.1224 
+
+  Aqueous species                      molality    mg/kg sol'n    act. coef.     log act.
+ ------------------------------------------------------------------------------------------
+   HCO3-                                0.004489         273.8      0.9007       -2.3932
+   Ca++                                 0.003139         125.7      0.6688       -2.6780
+   Cl-                                 0.0007990         28.31      0.8962       -3.1450
+   CO2(aq)                             0.0007540         33.16      1.0000       -3.1226
+   SO4--                               0.0007428         71.31      0.6525       -3.3145
+   Na+                                 0.0007146         16.42      0.8993       -3.1921
+   Mg++                                0.0002163         5.254      0.6836       -3.8302
+   CaSO4                               0.0001953         26.58      1.0000       -3.7092
+   CaHCO3+                             0.0001429         14.44      0.9027       -3.8895
+   SiO2(aq)                            5.094e-05         3.059      1.0031       -4.2916
+   K+                                  3.992e-05         1.560      0.8962       -4.4464
+   Fe(OH)3                             2.294e-05         2.451      1.0000       -4.6393
+   CaCl+                               1.181e-05        0.8913      0.8993       -4.9740
+   MgSO4                               1.108e-05         1.333      1.0000       -4.9553
+   Fe(OH)2+                            8.159e-06        0.7327      0.8993       -5.1345
+   MgHCO3+                             6.470e-06        0.5517      0.8993       -5.2352
+   CaCO3                               5.668e-06        0.5670      1.0000       -5.2466
+   F-                                  5.164e-06       0.09804      0.8978       -5.3339
+   NaHCO3                              4.748e-06        0.3987      1.0000       -5.3235
+   Mn++                                3.409e-06        0.1871      0.6688       -5.6422
+   CO3--                               3.128e-06        0.1876      0.6567       -5.6873
+   N2(aq)                              3.004e-06       0.08409      1.0000       -5.5223
+   NaSO4-                              1.582e-06        0.1882      0.8993       -5.8470
+   Br-                                 1.252e-06       0.09994      0.8962       -5.9501
+   Fe++                                7.560e-07       0.04220      0.6688       -6.2962
+   MgCl+                               2.141e-07       0.01278      0.8993       -6.7156
+   MnHCO3+                             1.796e-07       0.02081      0.8993       -6.7918
+   MgCO3                               1.779e-07       0.01499      1.0000       -6.7499
+   MnSO4                               1.631e-07       0.02461      1.0000       -6.7876
+   KSO4-                               1.319e-07       0.01781      0.8993       -6.9260
+   CaF+                                1.039e-07      0.006137      0.8993       -7.0293
+   H3SiO4-                             8.539e-08      0.008116      0.8993       -7.1147
+   H+                                  6.918e-08     6.968e-05      0.9121       -7.2000
+   FeHCO3+                             6.777e-08      0.007915      0.8993       -7.2151
+   Fe(OH)4-                            5.412e-08      0.006700      0.8993       -7.3128
+   OH-                                 5.136e-08     0.0008729      0.8978       -7.3362
+   FeSO4                               3.839e-08      0.005828      1.0000       -7.4158
+   MgF+                                3.800e-08      0.001644      0.8993       -7.4664
+   MnCO3                               2.183e-08      0.002508      1.0000       -7.6609
+   FeCO3                               1.304e-08      0.001510      1.0000       -7.8846
+   Al(OH)4-                            8.465e-09     0.0008038      0.8993       -8.1185
+   NaCl                                8.168e-09     0.0004771      1.0000       -8.0879
+   NaCO3-                              6.892e-09     0.0005717      0.8993       -8.2077
+   CaH3SiO4+                           5.321e-09     0.0007189      0.8993       -8.3201
+   FeOH++                              3.887e-09     0.0002830      0.6608       -8.5903
+   FeCO3+                              3.345e-09     0.0003873      0.8993       -8.5218
+   HSO4-                               2.199e-09     0.0002133      0.8993       -8.7039
+   CaOH+                               1.894e-09     0.0001081      0.8993       -8.7686
+   Al(OH)3                             1.784e-09     0.0001391      1.0000       -8.7486
+   MnCl+                               1.151e-09     0.0001040      0.8993       -8.9851
+   MgOH+                               1.009e-09     4.165e-05      0.8993       -9.0423
+   NaH3SiO4                            7.313e-10     8.632e-05      1.0000       -9.1359
+   MgH3SiO4+                           6.598e-10     7.874e-05      0.8993       -9.2267
+   KCl                                 5.260e-10     3.919e-05      1.0000       -9.2790
+   FeCl+                               5.061e-10     4.618e-05      0.8993       -9.3418
+   Al(OH)2+                            3.646e-10     2.223e-05      0.8993       -9.4843
+   HF                                  3.302e-10     6.602e-06      1.0000       -9.4812
+   MnOH+                               3.110e-10     2.236e-05      0.8993       -9.5533
+   NaF                                 3.064e-10     1.286e-05      1.0000       -9.5137
+   FeOH+                               2.444e-10     1.780e-05      0.8993       -9.6579
+   MnF+                                1.979e-10     1.462e-05      0.8993       -9.7496
+   Mg2CO3++                            1.889e-10     2.050e-05      0.6608       -9.9037
+   FeF+                                6.891e-11     5.154e-06      0.8993      -10.2079
+   CaH2SiO4                            2.322e-11     3.113e-06      1.0000      -10.6342
+   MgH2SiO4                            1.938e-11     2.294e-06      1.0000      -10.7126
+   NaOH                                1.837e-11     7.345e-07      1.0000      -10.7358
+   FeH3SiO4++                          1.496e-11     2.256e-06      0.6608      -11.0051
+   AlOH++                              1.230e-11     5.405e-07      0.6608      -11.0902
+   AlF2+                               9.582e-12     6.222e-07      0.8993      -11.0647
+   AlF++                               7.660e-12     3.520e-07      0.6608      -11.2956
+   MnCl2                               2.093e-12     2.632e-07      1.0000      -11.6793
+   KOH                                 4.936e-13     2.768e-08      1.0000      -12.3066
+   AlF3                                4.860e-13     4.078e-08      1.0000      -12.3134
+   Ca(H3SiO4)2                         4.434e-13     1.020e-07      1.0000      -12.3533
+   FeF2+                               4.385e-13     4.113e-08      0.8993      -12.4041
+   FeF++                               3.742e-13     2.799e-08      0.6608      -12.6068
+   Al+++                               2.805e-13     7.564e-09      0.4342      -12.9143
+   FeSO4+                              2.794e-13     4.242e-08      0.8993      -12.5998
+   Mg(H3SiO4)2                         2.641e-13     5.662e-08      1.0000      -12.5782
+   FeCl2                               1.729e-13     2.191e-08      1.0000      -12.7621
+   Fe+++                               1.507e-13     8.408e-09      0.4342      -13.1843
+   AlSO4+                              5.877e-14     7.227e-09      0.8993      -13.2769
+   H2SiO4--                            5.064e-14     4.762e-09      0.6525      -13.4809
+   Mn(OH)2                             3.644e-14     3.240e-09      1.0000      -13.4384
+   Mn2(OH)3+                           2.927e-14     4.707e-09      0.8993      -13.5797
+   Mg2OH+++                            9.368e-15     6.143e-10      0.4245      -14.4005
+   Mn2OH+++                            5.405e-15     6.854e-10      0.4245      -14.6393
+   HF2-                                5.020e-15     1.957e-10      0.8993      -14.3454
+   Fe(OH)2                             3.484e-15     3.129e-10      1.0000      -14.4579
+   Fe(SO4)2-                           2.142e-15     5.308e-10      0.8993      -14.7153
+   Al(SO4)2-                           1.974e-15     4.322e-10      0.8993      -14.7508
+   Fe2(OH)2++++                        1.402e-15     2.042e-10      0.2444      -15.4651
+   FeCl++                              1.073e-15     9.790e-11      0.6608      -15.1493
+   AlF4-                               6.307e-16     6.491e-11      0.8993      -15.2463
+   MnCl3-                              4.505e-16     7.261e-11      0.8993      -15.3925
+   FeF3                                3.306e-16     3.729e-11      1.0000      -15.4806
+   H6(H2SiO4)4--                       8.535e-17     3.262e-11      0.6525      -16.2542
+   Fe3(OH)4(5+)                        2.795e-17     6.580e-12      0.1106      -17.5100
+   HCl                                 5.858e-18     2.134e-13      1.0000      -17.2323
+   FeCl2+                              2.570e-18     3.255e-13      0.8993      -17.6362
+   Mn(OH)3-                            6.162e-19     6.525e-14      0.8993      -18.2564
+   H2F2                                5.002e-19     2.000e-14      1.0000      -18.3008
+   AlF5--                              3.565e-19     4.346e-14      0.6525      -18.6333
+   H2SO4                               5.990e-20     5.871e-15      1.0000      -19.2226
+   Al2(OH)2++++                        5.434e-20     4.778e-15      0.2444      -19.8768
+   FeHSO4++                            9.316e-21     1.424e-15      0.6608      -20.2107
+   Fe(OH)3-                            2.796e-21     2.986e-16      0.8993      -20.5996
+   FeCl3                               1.279e-22     2.073e-17      1.0000      -21.8932
+   H4(H2SiO4)4----                     3.898e-24     1.482e-18      0.1809      -24.1516
+   AlF6---                             1.705e-24     2.402e-19      0.3824      -24.1858
+   Mn(OH)4--                           1.125e-25     1.383e-20      0.6525      -25.1342
+   Al3(OH)4(5+)                        9.021e-26     1.343e-20      0.1106      -26.0011
+   FeCl4-                              9.272e-28     1.831e-22      0.8993      -27.0790
+   Mg4(OH)4++++                        1.523e-29     2.516e-24      0.2444      -29.4291
+   H2(aq)                              3.155e-31     6.355e-28      1.0031      -30.4997
+   NH4+                                3.687e-35     6.648e-31      0.8947      -34.4816
+   SiF6--                              1.842e-35     2.615e-30      0.6525      -34.9202
+   NO2-                                1.568e-35     7.210e-31      0.8962      -34.8522
+   O2(aq)                              3.960e-37     1.266e-32      1.0031      -36.4010
+   NO3-                                1.642e-37     1.017e-32      0.8962      -36.8322
+   NH4SO4-                             1.275e-37     1.454e-32      0.8993      -36.9405
+   NH3                                 8.630e-38     1.469e-33      1.0000      -37.0640
+   CaNO3+                              2.738e-39     2.794e-34      0.8993      -38.6086
+   HNO2                                2.031e-39     9.542e-35      1.0000      -38.6923
+   MnNH3++                             7.970e-42     5.732e-37      0.6525      -41.2839
+   MnNO3+                              6.150e-43     7.187e-38      0.8993      -42.2573
+   FeNO2++                             2.433e-45     2.477e-40      0.6608      -44.7938
+   MnO4--                              1.164e-47     1.384e-42      0.6525      -47.1193
+   FeNO3++                             3.417e-49     4.025e-44      0.6608      -48.6463
+   Al13O4(OH)24(7+)                    1.069e-50     8.792e-45      0.0133      -51.8457
+   MnO4-                               1.031e-51     1.225e-46      0.8993      -51.0329
+   Mn(NH3)2++                          6.279e-78     5.585e-73      0.6525      -77.3875
+   Mn(NO3)2                            1.970e-79     3.523e-74      1.0000      -78.7056
+   H2S(aq)                             9.087e-85     3.095e-80      1.0000      -84.0416
+   HS-                                 7.164e-85     2.367e-80      0.8978      -84.1917
+   CH4(aq)                             9.140e-90     1.465e-85      1.0031      -89.0377
+   S--                                 6.542e-92     2.096e-87      0.6608      -91.3642
+   ClO4-                               5.737e-93     5.702e-88      0.8978      -92.2882
+   CH3COO-                             8.506e-95     5.019e-90      0.9007      -94.1157
+   HCH3COO                             2.919e-97     1.752e-92      1.0000      -96.5348
+   MgCH3COO+                           1.318e-97     1.097e-92      0.8993      -96.9264
+   NaCH3COO                            1.815e-98     1.488e-93      1.0000      -97.7411
+   CaCH3COO+                           8.545e-99     8.465e-94      0.8993      -98.1144
+   FeCH3COO+                           5.522e-99     6.341e-94      0.8993      -98.3040
+   FeCH3COO++                         2.868e-104     3.293e-99      0.6608     -103.7223
+   AlCH3COO++                         6.239e-105    5.364e-100      0.6608     -104.3848
+   Mn(NH3)3++                         2.056e-114    2.179e-109      0.6525     -113.8723
+   S2--                               6.249e-153    4.004e-148      0.6525     -152.3896
+   Fe(CH3COO)2+                       5.707e-195    9.921e-190      0.8993     -194.2897
+   S3--                               1.932e-214    1.857e-209      0.6525     -213.8993
+   S4--                               1.922e-273    2.464e-268      0.6525     -272.9015
+   Fe(CH3COO)3                        2.204e-287    5.133e-282      1.0000     -286.6567
+   Ca(O-phth)                              0.000         0.000      1.0000     -300.0000
+   S6--                                    0.000         0.000      0.6525     -300.0000
+   S5--                                    0.000         0.000      0.6525     -300.0000
+   H2(O-phth)                              0.000         0.000      1.0000     -300.0000
+   H(O-phth)-                              0.000         0.000      0.8993     -300.0000
+   Na(O-phth)-                             0.000         0.000      0.8993     -300.0000
+   Al(O-phth)2-                            0.000         0.000      0.8993     -300.0000
+   Al(O-phth)+                             0.000         0.000      0.8993     -300.0000
+   (O-phth)--                              0.000         0.000      0.6525     -300.0000
+
+  Mineral saturation states         log Q/K                                         log Q/K
+ -----------------------------------------------------------------------------------------------
+   Nontronit-Ca                     17.0000s/sat   Alunite                          -9.2221     
+   Nontronit-Mg                     16.7987s/sat   Annite                           -9.2953     
+   Nontronit-Na                     16.3895s/sat   Anorthite                        -9.3198     
+   Nontronit-K                      16.3590s/sat   Hedenbergite                     -9.3906     
+   Hematite                         15.5558s/sat   Thenardite                       -9.4541     
+   Magnetite                        12.5941s/sat   Clinoptil-Na                     -9.5341     
+   Cronstedt-7A                     10.2872s/sat   Gaylussite                       -9.5924     
+   Goethite                          7.3230s/sat   Artinite                         -9.6186     
+   Ferrite-Ca                        4.4934s/sat   FeF3(c)                          -9.9624     
+   Ferrite-Mg                        3.6314s/sat   Arcanite                        -10.2582     
+   Andradite                         3.3922s/sat   Manganosite                     -10.2626     
+   Fe(OH)3(ppd)                      2.7607s/sat   Pirssonite                      -10.3357     
+   Calcite                           0.2001s/sat   Chrysotile                      -10.5281     
+   Dolomite-ord                      0.0584s/sat   Clinoptil-Mg                    -10.5452     
+   Dolomite                          0.0584s/sat   Phlogopite                      -10.8847     
+   Aragonite                         0.0334s/sat   KBr                             -11.3059     
+   Quartz                            0.0000 sat    Mn(OH)3(c)                      -11.3342     
+   Kaolinite                         0.0000 sat    Tephroite                       -11.3544     
+   Tridymite                        -0.1806        Clinozoisite                    -11.4650     
+   Gibbsite                         -0.1905        Zoisite                         -11.5133     
+   Chalcedony                       -0.2858        Hausmannite                     -11.5339     
+   Smectite-Reykjanes               -0.3441        KNaCO3^6H2O                     -11.8383     
+   Jarosite-K                       -0.3606        NaBr                            -12.0658     
+   Epidote-ord                      -0.4536        Portlandite                     -12.0697     
+   Epidote                          -0.4546        Ca(OH)2(c)                      -12.0697     
+   Cristobalite                     -0.5861        MHSH(Mg1.5)                     -12.1612     
+   Monohydrocalcite                 -0.7667        MnSO4(c)                        -12.1957     
+   Rhodochrosite                    -0.7735        Daphnite-14A                    -12.5373     
+   Muscovite                        -0.8080        FeSO4(c)                        -12.8984     
+   Diaspore                         -1.1194        MgSO4(c)                        -12.9838     
+   Jarosite-Na                      -1.2165        Antarcticite                    -13.0126     
+   Beidellit-Ca                     -1.3650        Mercallite                      -13.1463     
+   Amrph^silica                     -1.4145        Forsterite                      -13.2609     
+   Gypsum                           -1.5276        Monticellite                    -13.6147     
+   Siderite                         -1.5547        Ca2Si3O8^5/2H2O                 -13.6376     
+   Beidellit-Mg                     -1.5664        CaCl2^4H2O                      -13.9399     
+   Dolomite-dis                     -1.6018        Spinel                          -14.0935     
+   Maximum Microcline               -1.7434        Bloedite                        -14.5799     
+   K-feldspar                       -1.7455        Kainite                         -14.7056     
+   Pyrophyllite                     -1.7791        MnCl2^4H2O                      -14.7410     
+   Anhydrite                        -1.8571        Bischofite                      -14.7927     
+   Magnesite                        -1.8675        Ripidolit-14A                   -14.8778     
+   Beidellit-Na                     -1.9756        Ca-Al Pyroxene                  -14.9601     
+   Beidellit-K                      -2.0116        FeF2(c)                         -14.9746     
+   Boehmite                         -2.0465        Mg2Cl(OH)3^4H2O                 -15.9713     
+   Illite                           -2.1097        Daphnite-7A                     -16.0519     
+   Fluorite                         -2.1812        Sepiolite                       -16.0950     
+   Dawsonite                        -2.2466        Amesite-14A                     -16.1692     
+   Mordenite-K                      -2.2496        MnCl2^2H2O                      -16.2195     
+   Beidellit-H                      -2.2679        Grossular                       -16.4491     
+   Bassanite                        -2.4903        MgOHCl                          -16.9328     
+   CaSO4^1/2H2O(beta)               -2.6782        Clinochl-14A                    -16.9548     
+   Sanidine high                    -3.0474        K2CO3^3/2H2O                    -17.1479     
+   Smectite-low-Fe-Mg               -3.5632        CaCl2^2H2O                      -17.4693     
+   Albite low                       -3.7690        CaCl2^H2O                       -17.6758     
+   Albite                           -3.7691        MnCl2^H2O                       -17.9172     
+   Paragonite                       -3.7703        MgCl2^4H2O                      -17.9785     
+   Phengite                         -3.8445        Ripidolit-7A                    -18.3838     
+   Laumontite                       -3.9150        Na2Si2O5                        -19.2638     
+   Analcime                         -3.9602        Na2SiO3                         -19.3593     
+   FeO(c)                           -4.1360        Ca2SiO4^7/6H2O                  -19.6891     
+   Ferrosilite                      -4.1623        Hydromagnesite                  -19.7826     
+   Manganite                        -4.2929        Ca2SiO4(gamma)                  -20.4394     
+   Lawsonite                        -4.4069        Clinochl-7A                     -20.4566     
+   Clinoptil-K                      -4.5014        Ferrite-2-Ca                    -21.0030     
+   Clinoptil-Ca                     -4.6828        MgBr2^6H2O                      -21.1167     
+   Heulandite                       -4.6859        Scacchite                       -21.3629     
+   Mordenite-Na                     -4.7691        Hydrophilite                    -21.5217     
+   Smectite-high-Fe-Mg              -4.8716        Na3H(SO4)2                      -21.9223     
+   Nesquehonite                     -4.9879        Larnite                         -21.9992     
+   Kalsilite                        -5.0950        Carnallite                      -22.0784     
+   Albite high                      -5.1918        Lawrencite                      -22.3948     
+   Epsomite                         -5.2439        Akermanite                      -22.4936     
+   Kyanite                          -5.2968        Cordier^hydr                    -22.5359     
+   Jadeite                          -5.3907        Lime                            -22.7991     
+   Fe(OH)2(ppd)                     -5.5869        Tremolite                       -23.6814     
+   Hexahydrite                      -5.5881        MgCl2^2H2O                      -23.8602     
+   Andalusite                       -5.6124        Ca2Cl2(OH)2^H2O                 -24.3901     
+   Wustite                          -5.6333        Gehlenite                       -24.6243     
+   Rhodonite                        -5.8868        Cordier^anhy                    -25.1793     
+   Pentahydrite                     -5.9096        MgCl2^H2O                       -27.4677     
+   Enstatite                        -5.9919        Rankinite                       -28.2540     
+   Sillimanite                      -6.0019        Burkeite                        -29.7310     
+   MgF2(c)                          -6.4609        KMgCl3^2H2O                     -32.5427     
+   Corundum                         -6.4689        Anthophyllite                   -32.8587     
+   Leonhardtite                     -6.5022        Ca5Si6O17^21/2H2O               -33.5323     
+   Kalicinite                       -6.6240        Chloromagnesite                 -33.5954     
+   Wollastonite                     -6.9221        Ca4Si3O10^3/2H2O                -34.2154     
+   Brucite                          -6.9242        Merwinite                       -35.1530     
+   Nepheline                        -6.9695        Ca5Si6O17^11/2H2O               -35.9043     
+   CaSi2O5^2H2O                     -7.0277        Ca3Si2O7^3H2O                   -36.6662     
+   Melanterite                      -7.1049        Molysite                        -37.4929     
+   Hercynite                        -7.1062        Fe2(SO4)3(c)                    -39.3291     
+   Huntite                          -7.2558        Al2(SO4)3^6H2O                  -39.7845     
+   Pseudowollastonite               -7.3494        Ca5Si6O17^3H2O                  -40.0274     
+   Chamosite-7A                     -7.4462        KMgCl3                          -40.3722     
+   Mn(OH)2(am)                      -7.4599        Todorokite                      -41.1218     
+   Kieserite                        -7.4907        Pargasite                       -41.4341     
+   Minnesotaite                     -7.7967        Ca4Cl2(OH)6^13H2O               -42.5290     
+   Halite                           -7.8816        Graphite                        -44.9477     
+   Mirabilite                       -7.9006        MgBr2                           -46.1640     
+   Pyrolusite                       -7.9380        Ca3SiO5                         -47.2662     
+   Saponite-Ca                      -8.0809        Tachyhydrite                    -47.4050     
+   Prehnite                         -8.1952        Birnessite                      -51.2529     
+   Saponite-Mg                      -8.2804        Ca6Si6O18^H2O                   -52.7526     
+   Sylvite                          -8.3750        Na4SiO4                         -57.7047     
+   Greenalite                       -8.4356        Al2(SO4)3                       -58.7034     
+   Bixbyite                         -8.4425        K8H4(CO3)6^3H2O                 -60.6002     
+   Talc                             -8.5044        Sulfur-Rhmb                     -61.9968     
+   Diopside                         -8.5504        Pyrrhotite                      -76.4063     
+   Fayalite                         -8.5798        Antigorite                      -77.5415     
+   Saponite-Na                      -8.6915        Troilite                        -79.5890     
+   Saponite-K                       -8.7275        Alabandite                      -82.4904     
+   Wairakite                        -8.8244        Misenite                        -87.9793     
+   Analc-dehydr                     -8.9507        Na6Si2O7                        -90.7804     
+   Saponite-H                       -8.9824        Pyrite                         -130.5006     
+   Margarite                        -9.0111        O-phth acid(c)                 -366.8684     
+   NaFeO2(c)                        -9.0114     
+
+                                        partial
+  Gases                              press. (bar)     fugacity     fug. coef.    log fug.
+ -----------------------------------------------------------------------------------------
+   CO2(g)                                0.01383       0.01375        0.9940     -1.8618
+   Steam                                 0.01279       0.01192        0.9323     -1.9236
+   N2(g)                                0.003523      0.003522        0.9996     -2.4532
+   H2(g)                               3.659e-28     3.662e-28         1.001    -27.4363
+   O2(g)                               2.302e-34     2.300e-34        0.9992    -33.6383
+   H2S(g)                              4.140e-84     4.103e-84        0.9911    -83.3869
+   CH4(g)                              4.840e-87     4.829e-87        0.9979    -86.3161
+   S2(g)                              7.849e-140    7.849e-140         1.000*  -139.1052
+    *no data, gas taken to be ideal
+
+                                                       In fluid                 Sorbed
+  Original basis                    total moles     moles       mg/kg        moles       mg/kg
+ -------------------------------------------------------------------------------------------------
+   H2O                                   55.51        55.51   9.994e+05
+   Al+++                              0.002003    1.064e-08   0.0002870
+   Br-                               1.252e-06    1.252e-06     0.09994
+   Ca++                               0.003494     0.003494       140.0
+   Cl-                               0.0008110    0.0008110       28.74
+   F-                                5.307e-06    5.307e-06      0.1008
+   Fe++                              3.204e-05    3.204e-05       1.788
+   H+                                -0.005311    0.0006966      0.7017
+   HCO3-                              0.005407     0.005407       329.7
+   K+                                4.005e-05    4.005e-05       1.565
+   Mg++                              0.0002343    0.0002343       5.691
+   Mn++                              3.775e-06    3.775e-06      0.2073
+   NO3-                              6.008e-06    6.008e-06      0.3723
+   Na+                               0.0007209    0.0007209       16.56
+   O2(aq)                            2.816e-07    2.816e-07    0.009006
+   SO4--                             0.0009512    0.0009512       91.31
+   SiO2(aq)                           0.003055    5.103e-05       3.064
+
+                                                        In fluid                  Sorbed
+  Elemental composition             total moles     moles       mg/kg        moles       mg/kg
+ -------------------------------------------------------------------------------------------------
+   Aluminum                           0.002003    1.064e-08   0.0002870
+   Bromine                           1.252e-06    1.252e-06     0.09994
+   Calcium                            0.003494     0.003494       140.0
+   Carbon                             0.005407     0.005407       64.90
+   Chlorine                          0.0008110    0.0008110       28.74
+   Fluorine                          5.307e-06    5.307e-06      0.1008
+   Hydrogen                              111.0        111.0   1.118e+05
+   Iron                              3.204e-05    3.204e-05       1.788
+   Magnesium                         0.0002343    0.0002343       5.691
+   Manganese                         3.775e-06    3.775e-06      0.2073
+   Nitrogen                          6.008e-06    6.008e-06     0.08409
+   Oxygen                                55.54        55.53   8.879e+05
+   Potassium                         4.005e-05    4.005e-05       1.565
+   Silicon                            0.003055    5.103e-05       1.432
+   Sodium                            0.0007209    0.0007209       16.56
+   Sulfur                            0.0009512    0.0009512       30.48
+

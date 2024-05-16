@@ -1,0 +1,40 @@
+# React script, saved Sun Mar 10 2024 by ap00115
+data = thermo.tdat verify
+conductivity = conductivity-USGS.dat
+suppress  (O-phth)-- Aragonite Ca(O-phth) Chalcedony
+suppress  Cristobalite FeO(c) Ferrite-2-Ca Ferrite-Ca
+suppress  Ferrite-Cu Ferrite-Mg Ferrite-Zn H(O-phth)-
+suppress  H2(O-phth) Hematite Monohydrocalcite Na(O-phth)-
+suppress  "O-phth acid(c)" Pyrrhotite Quartz Tridymite
+suppress  Troilite Wustite
+time start = 0 day, end = 2 yr
+temperature = 50 C
+pressure = 200
+decouple CH3COO-
+decouple CH4(aq)
+decouple HS-
+decouple N2(aq)
+decouple NH4+
+decouple NO2-
+H2O          = 1 free kg
+pH           = 7.9
+Cl-          = 7.1 mmol/l
+NO3-         = .0016 mmol/l
+SO4--        = .15 mmol/l
+HCO3-        = 8.51 mmol/l
+Ca++         = .26 mmol/l
+swap Fe(OH)2(ppd) for Fe++
+Fe(OH)2(ppd) = .001 wt%
+Mg++         = .14 mmol/l
+K+           = .27 mmol/l
+Na+          = 14.89 mmol/l
+swap H2(g) for O2(aq)
+H2(g)        = 10 bar
+swap H2S(g) for HS-
+H2S(g)       = -10 log bar
+swap CH4(g) for CH4(aq)
+CH4(g)       = -10 log bar
+balance off
+kinetic redox-1 rxn = "4 H2(aq)  + SO4--  + 2 H+  -> H2S(aq)  + 4 H2O" rate_con = 1e-15
+kinetic redox-2 rxn = "CO2(aq)  + 4 H2(aq)  -> CH4(aq)  + 2 H2O" rate_con = 1e-10
+kinetic Calcite 1 wt% rate_con = 1e-10 surface = 1e4 apower(H+) = 1

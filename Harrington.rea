@@ -1,0 +1,29 @@
+# React script, saved Mon Jan 15 2024 by ap00115
+data = thermo.tdat verify
+conductivity = conductivity-USGS.dat
+suppress  Dolomite Dolomite-dis Dolomite-ord FeO(c)
+suppress  Magnetite Pyrite Pyrrhotite Siderite
+suppress  Troilite
+time start = 0 day, end = 100 yr
+temperature = 50 C
+pressure = 1000
+decouple CH3COO-
+decouple CH4(aq)
+decouple HS-
+H2O          = 1 free kg
+pH           = 5.9
+Na+          = .542 mol/kg
+Mg++         = .058 mol/kg
+K+           = .006 mol/kg
+Ca++         = .008 mol/kg
+Cl-          = .652 mol/kg
+SO4--        = .039 mol/kg
+HCO3-        = .88 mol/kg
+Fe++         = 1 mmol/kg
+swap H2(g) for O2(aq)
+H2(g)        = 10 bar
+swap H2S(g) for HS-
+H2S(g)       = -10 log bar
+balance off
+kinetic Hematite 100 g rate_con = 5e-14 surface = 20 fpower(H2(g)) = 1
+kinetic redox-2 rxn = "4 H2(aq)  + SO4--  + H+  -> HS-  + 4 H2O" rate_con = 1e-12
